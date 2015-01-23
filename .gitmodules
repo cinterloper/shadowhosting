@@ -1,0 +1,3 @@
+[submodule "docker/saltmaster/srv/easy-rsa"]
+	path = docker/saltmaster/srv/easy-rsa
+	url = https://github.com/OpenVPN/easy-rsa.git

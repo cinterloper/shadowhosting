@@ -1,5 +1,5 @@
 base: 
  'bigdog': 
   - Desktop
- 'lilminow':
+ 'edge*':
   - Edge
