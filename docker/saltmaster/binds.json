@@ -1,0 +1,4 @@
+{
+  "saltmaster/config/etc/salt":"/etc/salt",
+  "saltmaster/srv":"/srv"
+}

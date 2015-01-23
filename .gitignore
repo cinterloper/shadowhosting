@@ -1,0 +1,14 @@
+*.pem
+*.crt
+*.key
+*.csr
+*.p12
+*.gz
+*.bin
+*.o
+*.so
+*.providers 
+*.pub 
+*.pem 
+*.crt 
+*.key 
