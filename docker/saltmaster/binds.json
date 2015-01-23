@@ -1,0 +1,8 @@
+{
+  "saltmaster/config/etc/supervisord.conf":"/etc/supervisord.conf",
+  "saltmaster/config/etc/salt":"/etc/salt",
+  "saltmaster/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
+  "id.pub":"/root/.ssh/authorized_keys",
+  "saltmaster/srv":"/srv",
+  "saltmaster/log/supervisor":"/var/log/supervisor"
+}

@@ -1,0 +1,4 @@
+{
+ "tag":"saltmaster",
+ "extra":"--add-host='salt:127.1.1.1'"
+}

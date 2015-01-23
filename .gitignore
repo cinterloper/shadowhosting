@@ -1,0 +1,17 @@
+docker/saltmaster/config/etc/salt/minion_id
+docker/saltmaster/config/etc/salt/pki/master/minions/*
+*.log
+*.pem
+*.crt
+*.key
+*.csr
+*.p12
+*.gz
+*.bin
+*.o
+*.so
+*.providers 
+*.pub 
+*.pem 
+*.crt 
+*.key 

@@ -1,0 +1,7 @@
+rest_tornado:
+  # can be any port
+  port: 8000
+  ssl_crt: /etc/pki/tls/certs/localhost.crt
+  ssl_key: /etc/pki/tls/certs/localhost.key
+  debug: False
+  disable_ssl: False
