@@ -1,0 +1,248 @@
+#!/usr/bin/env groovy 
+
+import groovy.sql.Sql
+import org.h2.Driver
+import durbin.util.*
+
+err = System.err
+
+parser = new Parser(description: '''
+ Treates csv (or tab) files as database tables and allows you to perform arbitrary select queries
+ on those files/tables, including multi-file/table joins.  The query grammer is described here:
+ http://www.h2database.com/html/grammar.html.  The input files can be tab or csv and must end with 
+ one of .csv, .tsv, or .tab. 
+ 
+ The file name can be referenced anywhere in the query, one or more times.  Any other references 
+ to the base name (e.g. beer for beer.csv) will refer to that same file/table.  This is best seen
+ with examples. 
+ 
+ Examples:
+
+ csvsql "select name,score from people.csv where age >40"
+ csvsql "select name,score from people.csv where age <50 and score > 100"
+ csvsql "select * from people.csv where age > 40"
+ 
+ Full path names should work fine: 
+ 
+ csvsql "select * from /users/data/people.csv where age > 40 order by age"
+ csvsql "select people.name from /users/data/people.csv where age > 40"
+
+ You can even do queries with sum and average and so on like:
+ 
+ csvsql "select sum(score) from people.csv where age < 40"
+
+ If children.csv is a file with same key name as people, then you can join 
+ query like: 
+  
+ csvsql "select people.name,children.child from people.csv,children.csv where people.name=children.name"
+
+ You can also enter the query on multiple lines like:
+ 
+ csvsql "
+ > select people.name,children.child
+ > from people.csv,children.csv
+ > where people.name=children.name and people.age < 40"
+ 
+ More Examples:
+ 
+ csvsql "select alcohol,count(*) from beer.tab group by alcohol"
+ csvsql "select brand,alcohol,price as SalesPrice from beer.tab order by price"
+ 
+ 
+ Author:  James Durbin  
+''')
+
+parser.with{  
+  flag 'h','help',[default:false,description: 'Print script help.']
+}
+
+// Check that there is a query... 
+// KJD: Need to clean up Parser so no error when no required options.
+parser.validate{parameters->
+  if (parser.remainder.size() == 0){
+    throw new Exception("Must specify a query.")
+  }
+}
+
+try{ 
+  options = parser.parse(args)
+}catch(Exception e){
+  System.err << parser.usage
+  System.exit(1)
+}
+
+rawQuery = parser.remainder.join(" ")
+
+// Get a list of the csv or tab files mentioned in the query...
+tablenameMap = getAllPathsAndNames(rawQuery)
+
+// Create an h2 in-memory db, calling it what you like, here db1
+def sql = Sql.newInstance("jdbc:h2:mem:db1","org.h2.Driver")
+
+// Create tables for each csv file named...
+selstmt = rawQuery
+tablenameMap.each{tablename,pathname->
+	if (pathname.contains(".csv")) sep = ","
+	else sep = "\t"
+	
+  typeString = inferColumnTypes(pathname,20,sep)
+	def stmt
+	if (pathname.contains(".csv")){		
+		stmt = "create table $tablename($typeString) as select * from csvread('$pathname')" as String
+	}else if (pathname.contains(".tab") || pathname.contains(".tsv")){
+		stmt = "create table $tablename($typeString) as select * from csvread('$pathname',null,'UTF-8',chr(9))" as String	
+	}else{
+		err.println "ERROR: File must be one of .csv, .tab, or .tsv"
+		System.exit(1)
+	}
+  sql.execute(stmt)
+	
+	// Replace the path with the tablename in the query
+	selstmt = selstmt.replaceAll(pathname,tablename)
+	
+}
+
+// Remove the .tab, .csv, or .tsv endings to leave just table names in query...
+//selstmt = rawQuery.replaceAll(".csv","")
+//selstmt = selstmt.replaceAll(".tsv","")
+//selstmt = rawQuery.replaceAll(".tab","")
+
+
+// Perform the query... 
+def keyset = null
+sql.eachRow(selstmt){result->
+	
+	if (keyset == null){
+		keyset = result.toRowResult().keySet()
+		println keyset.join(sep) 
+	}
+		
+  meta = result.getMetaData()
+  cols = meta.getColumnCount()
+  vals = (0..<cols).collect{result[it]}
+  println vals.join(sep)
+}
+
+
+/****************************************************************************
+*                              Methods
+****************************************************************************/
+
+
+/****
+* Extracts all the paths from the query along with their root names. 
+* Returns a list of path/root pairs. 
+*/ 
+def getAllPathsAndNames(rawQuery){
+	tokens = rawQuery.tokenize()
+	tableNameMap = [:]
+	tokens.each{
+		if (it.contains(".tab") || it.contains(".csv") || it.contains(".tsv")){
+			//println "Full path: "+it
+			path = it
+		 	slashIdx = it.lastIndexOf("/")
+		 	if (slashIdx == -1) rootname = it
+		 	else rootname = it.substring(slashIdx+1)
+						
+			rootname = rootname.replaceAll(".csv","")
+			rootname = rootname.replaceAll(".tsv","")
+			rootname = rootname.replaceAll(".tab","")			
+			
+			tableNameMap[rootname] = path
+		}
+	}
+	return(tableNameMap)
+}
+
+
+/**
+* Infer the type of each column in the file by sampling the first sampleRows
+* rows of data.  The three types supported are:  INT, DOUBLE, VARCHAR. 
+* It tries to assign types in order INT, DOUBLE, VARCHAR, assigning each 
+* column the strictest type that has uninamous vote in the sample. 
+* 
+* A negative sampleRows indicates to use whole file as sample.  This is 
+* the default, but may want to sample smaller for performance, especially 
+* if you know that first few lines are representative.  
+* 
+* Handling empty fields is a problem that needs to be thought through. 
+* 
+* Ironic that this is the largest part of the code. 
+*/ 
+def inferColumnTypes(fileName,sampleRows = -1,separator){
+  
+  columnType = [:]
+  
+  numLines = countLines(fileName)
+  if (sampleRows < 0) sampleRows = numLines // Use whole file. 
+  if (sampleRows > numLines) sampleRows = numLines
+  
+  new File(fileName).withReader{r->
+    headings = r.readLine().split(separator)
+    intcounts = new int[headings.size()]
+    doublecounts = new int[headings.size()]
+        
+    (0..<sampleRows-1).each{
+      line = r.readLine()
+      fields = line.split(separator,-1) // -1 to handle empty fields. 
+      
+      //Sanity test..
+      if (fields.size() != headings.size()){
+        println "headings: $headings"
+        println "fields: $fields"
+        throw new Exception("ERROR:  headings size ${headings.size()} != fields.size ${fields.size()}." as String)
+        
+      }
+      
+      fields.eachWithIndex{f,i->
+        if (f.isDouble()) doublecounts[i]++
+        if (f.isInteger()) intcounts[i]++
+      }
+    }
+    
+    headings.eachWithIndex{h,i->      
+      if (intcounts[i] == (sampleRows-1)) columnType[h]='INT'
+      else if (doublecounts[i] == (sampleRows -1)) columnType[h] = 'DOUBLE'
+      else columnType[h] = 'VARCHAR'
+    }  
+  }
+  
+  // Convert into a string...
+  pairs = []
+  columnType.each{key,value-> pairs<<"$key $value"}
+  str = pairs.join(",")
+  return(str)
+}  
+
+int countLines(fileName){
+  InputStream bis = new BufferedInputStream(new FileInputStream(fileName));
+  int numRows = fastCountLines(bis);
+  bis.close();
+  return(numRows);
+}
+
+/*****************************************
+* An optimized function to quickly count the number of lines remaining
+* in the given input stream
+*/
+public int fastCountLines(InputStream is) throws IOException {
+	byte[] c = new byte[1024];
+	int count = 0;
+	int readChars = 0;
+	boolean lastCR=true;
+	while ((readChars = is.read(c)) != -1) {
+		for (int i = 0; i < readChars; ++i) {
+			if (c[i] == '\n') ++count;
+		}
+		// If the last thing we read was a CR, note the fact...
+		if (c[(readChars-1)] == '\n') lastCR = true;
+		else lastCR = false; 
+	}
+	
+	// If the very last thing we read wasn't a CR, then the last line doesn't
+	// end in a CR and we've undercounted the lines by one...
+	if (!lastCR) count++;
+	
+	return count;
+}
+

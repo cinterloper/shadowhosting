@@ -1,0 +1,149 @@
+  {
+ "Metadata" : {
+     "BasePath" : "/cgi-bin/SysMaint.sh",
+     "Port": 8090
+ },
+ "commandlist": {
+ 	   "POST":   { 
+			"CMD" :"cat $CONFIG | jq keys", 
+			"CType" :"application/json"
+		      },
+    "GET":    {
+                "CMD" :"cat $CONFIG | jq keys",
+                "CType" :"application/json"  
+              },
+    "SH":     {
+                "CMD" :"cat $CONFIG | jq keys",
+                "CType" :"application/json"  
+              }
+  },
+ "env": {
+ 	   "POST":   { 
+			"CMD" :"env | encodeJson", 
+			"CType" :"text/plain"
+		      },
+    "GET":    {
+                "CMD" :"env | encodeJson ",
+                "CType" :"text/plain"  
+              },
+    "SH":     {
+                "CMD" :"env",
+                "CType" :"text/plain"  
+              }
+  },
+ "saltmaster": {
+ 	   "POST":   { 
+			"CMD" :"/usr/bin/salt-master -ldebug", 
+			"CType" :"text/plain"
+		}
+  },
+ "saltcloudquery": {
+ 	   "POST":   { 
+			"CMD" :"/usr/bin/salt-cloud -Q --output=json", 
+			"CType" :"Application/json"
+		}
+  },
+ "saltminion": {
+ 	   "POST":   { 
+			"CMD" :"/usr/bin/salt-minion -ldebug", 
+			"CType" :"text/plain"
+		}
+  },
+ "git": {
+ 	   "POST":   { 
+			"CMD" :"cd /srv/www/; git pull", 
+			"CType" :"text/plain"
+		      },
+    "GET":    {
+                "CMD" :"cd /srv/www/; git pull ",
+                "CType" :"text/plain"  
+              },
+    "SH":     {
+                "CMD" :"env",
+                "CType" :"text/plain"  
+              }
+  },
+ "testinput": {
+    "OPTIONS": {
+                "CMD" :"echo INPUT1 INPUT2 INPUT3 | tr ' ' '\n' | encodeJson ",
+                "CType" :"application/json"
+              },
+    "POST":{
+                "CMD" : "echo input 1 2 3 $INPUT1 $INPUT2 $INPUT3",
+                "CType" :"text/plain"
+              },
+    "GET": {
+                 "CMD" : "echo input 1 2 3 $INPUT1 $INPUT2 $INPUT3",
+                "CType" :"text/plain"
+              },
+    "SH": {
+                 "CMD" :    "echo input 1 2 3 $INPUT1 $INPUT2 $INPUT3",
+               	"CType" :"text/plain"
+              }
+  },
+  "methods": {
+    "OPTIONS": {
+                "CMD" :"echo cmd | encodeJson",
+                "CType" :"application/json"
+              },
+
+
+    "POST": {
+                 "CMD" :  "cat $CONFIG | jq '.'$cmd'| keys' ",
+               	"CType" :"application/json"
+              },
+
+    "GET": {
+                 "CMD" :  "cat $CONFIG | jq '.'$cmd'| keys' ",
+                "CType" :"application/json"
+              }
+  },
+  "loglist": {
+   "GET" : {
+                 "CMD" : "ls $LOGPATH | cut -d '_' -f 2 | cut -d . -f 1",
+                "CType" :"text/plain"
+              },
+
+   "SH" : {
+                 "CMD" :  "ls $LOGPATH | cut -d '_' -f 2 | cut -d . -f 1",
+                "CType" :"text/plain"
+              }
+  },
+  "mailresults": {
+   "SH" :{
+                 "CMD" :  "sendmail -f $SRCMAILADDR -s 'log' $DSTMAILADDR < $LOGPATH/$RUNUUID ",
+                "CType" :"text/plain"
+              },
+   "GET" :{
+                 "CMD" :  "sendmail -f $SRCMAILADDR -s 'log' $DSTMAILADDR < $LOGPATH/$RUNUUID ",
+                "CType" :"text/plain"
+              },
+    "OPTIONS": {
+                "CMD" :"echo SRCMAILADDR DSTMAILADDR RUNUUID | tr ' ' '\n' | encodeJson",
+                "CType" :"application/json"
+              }
+
+  },
+  "runlog": {
+   "POST"       : {
+                 "CMD" : "cat $LOGPATH/_$RUNPID.log",
+                "CType" :"text/plain"
+              },
+   "GET"        : {
+                 "CMD" : "cat $LOGPATH/_$RUNPID.log",
+                "CType" :"text/plain"
+              },
+   "SH"         : {
+                 "CMD" : "cat $LOGPATH/_$RUNPID.log",
+                "CType" :"text/plain"
+              },
+   "DELETE"     : {
+                 "CMD" : "cat $LOGPATH/_$RUNPID.log",
+                "CType" :"text/plain"
+              },
+    "OPTIONS": {
+                "CMD" :"echo RUNPID | tr ' ' '\n' | encodeJson",
+                "CType" :"application/json"
+              }
+   }
+}

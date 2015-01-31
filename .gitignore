@@ -15,4 +15,7 @@ docker/saltmaster/config/etc/salt/pki/master/minions/*
 *.pem 
 *.crt 
 *.key 
+*.jar
+*.class
+**/logs/
 fedora-vm/

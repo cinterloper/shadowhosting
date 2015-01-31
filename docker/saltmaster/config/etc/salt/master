@@ -5,3 +5,7 @@ rest_tornado:
   ssl_key: /etc/pki/tls/certs/localhost.key
   debug: False
   disable_ssl: False
+
+file_roots:
+  base:
+    - /srv/salt

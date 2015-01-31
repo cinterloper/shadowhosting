@@ -1,0 +1,309 @@
+#!/usr/bin/env groovy 
+
+import groovy.swing.SwingBuilder
+import javax.swing.JTable
+import javax.swing.*
+import javax.swing.table.AbstractTableModel;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+import org.jfree.chart.*
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.*
+import org.jfree.chart.renderer.xy.*;
+import org.jfree.data.xy.*;
+import org.jfree.ui.*
+import org.jfree.data.statistics.*;
+
+import durbin.util.*
+import static durbin.charts.Charts.*
+
+err = System.err
+
+// Enable system specific GUI features...
+if (isOSX()){
+	//err.println "IS OSX"
+	System.setProperty("apple.laf.useScreenMenuBar", "true");
+	System.setProperty("com.apple.mrj.application.apple.menu.about.name", "ViewTable");
+}
+
+options = ParseOptions(args)
+
+// Determine separator to use...
+if (options.separator) sep = options.separator
+else sep = FileUtils.determineSeparator(options.fileName)
+
+if (options.qregex){
+	sep = /,(?=([^\"]|\"[^\"]*\")*$)/
+}
+
+
+// Read the data in as a Table...
+dt = new Table(options.fileName,sep,bFirstColInTable=true)
+
+// Use that Table to back a JTable instance..
+err.print "Creating gui table..."
+dtm = new TableModel(dt)
+
+// Create a swingbuilder...
+swing = new SwingBuilder()
+
+// define some menus...
+def menuItems = {
+		menu(text: "Actions", mnemonic: 'F') {
+			menuItem(text: "Exit", mnemonic: 'X', actionPerformed: { System.exit(0) })
+		}
+}
+
+// Build the frame...
+def thetab
+frame = swing.frame(title:options.fileName,defaultCloseOperation:JFrame.EXIT_ON_CLOSE){
+//	frame = swing.frame(title:options.fileName){
+	menuBar(menuItems)
+		
+	// Add a scroll pane with table inside...
+  scrollpane = scrollPane{						
+		thetab = table(autoResizeMode:JTable.AUTO_RESIZE_OFF, 
+										autoCreateRowSorter:true,
+										cellSelectionEnabled:false,
+										columnSelectionAllowed:true,
+										preferredScrollableViewportSize:[900,400]){
+			tableModel(dtm)										
+		}							
+  }
+}
+err.println "done."
+
+// Set the default selection mode for the table...
+thetab.columnSelectionAllowed = false
+thetab.rowSelectionAllowed = true
+bRowSelection = true
+
+// Add popup menu to table for right-click on cells...
+def popupMenuItems = {
+	menuItem(text:"Select Rows",actionPerformed:{
+		bRowSelection = true;
+		thetab.columnSelectionAllowed = false
+		thetab.rowSelectionAllowed = true})
+	
+	menuItem(text:"Select Columns",actionPerformed:{
+		bRowSelection = false;
+		thetab.columnSelectionAllowed = true
+		thetab.rowSelectionAllowed = false})	
+
+	separator()	
+	menuItem(text:"Histogram of Selection",actionPerformed:{
+		if (bRowSelection){
+			selectedRows = thetab.getSelectedRows()
+			histogramSelectedRows(thetab,selectedRows)
+		}else{
+			selectedCols = thetab.getSelectedColumns()
+			histogramSelectedCols(thetab,selectedCols)
+		}
+	})
+	
+	menuItem(text:"Scatterplot Selection",actionPerformed:{
+		if (bRowSelection){
+			err.println "scatterplot rows not yet implemented"
+			//selectedRows = thetab.getSelectedRows()
+			//scatterPlotSelectedRows(thetab,selectedRows)
+		}else{
+			selectedCols = thetab.getSelectedColumns()
+			scatterPlotSelectedCols(thetab,selectedCols)
+		}
+	})
+}
+
+
+thetab.setComponentPopupMenu(swing.popupMenu(popupMenuItems))
+
+// Show everything...
+frame.pack()
+frame.show()
+
+def isOSX() {
+	String osName = System.getProperty("os.name");
+	return osName.contains("OS X");
+}
+
+def histogramSelectedRows(thetab,selectedRows){	
+	selectedRows.each{rowIdx->	
+		// Get the name of the row...
+		rowName = thetab.getValueAt(rowIdx,0)
+		
+		cols = thetab.getColumnCount();
+		values = []
+		for(int col = 0;col < cols;col++){
+			o = thetab.getValueAt(rowIdx,col)
+			try{
+				v = o as double
+				values.add(v)
+			}catch(Exception e){
+				// Don't do anything...
+				err.println "WARNING: row $rowName contains non-numeric values."
+			}					
+		}
+			
+		hist = hist(rowName,values)
+		showTableChart(hist,"Histogram of $rowName")	
+	}
+}
+
+def histogramSelectedCols(thetab,selectedCols){			
+	selectedCols.each{colIdx->
+		// Get the name of the column...
+		th = thetab.getTableHeader();  
+		tcm = th.getColumnModel(); 
+		tc = tcm.getColumn(colIdx)
+		colName = tc.getHeaderValue()	
+				
+		rows = thetab.getRowCount();
+		values = getRowValues(thetab,colIdx)
+		
+		if (values.size() == 0) return;
+		
+		hist = hist(colName,values)
+		showTableChart(hist,"Histogram of $colName")	
+	}
+}
+
+def scatterPlotSelectedCols(thetab,selectedCols){			
+	
+	if(selectedCols.size() != 2){
+		err.println "ERROR: Can only scatter plot exactly two columns."
+		return;
+	}
+	
+	col0 = selectedCols[0]
+	colName0 = getColName(thetab,col0)
+	
+	col1 = selectedCols[1]
+	colName1 = getColName(thetab,col1)
+
+	values0 = getRowValues(thetab,col0)
+	values1 = getRowValues(thetab,col1)
+
+	if (values0.size() != values1.size()){
+		err.println "ERROR: columns do not contain same number of values."
+	}
+		
+	scatter = xyplot("$colName0 vs $colName1",colName0,colName1,values0,values1)
+	showTableChart(scatter,"Scatterplot of $colName0 vs $colName1")	
+}
+
+
+def getColName(thetab,colIdx){
+	th = thetab.getTableHeader();  
+	tcm = th.getColumnModel(); 
+	tc = tcm.getColumn(colIdx)
+	colName = tc.getHeaderValue()	
+	return(colName)
+}
+
+def getRowValues(thetab,colIdx){
+	def values = []		
+	def rows = thetab.getRowCount();
+	for(int row = 0;row < rows;row++){
+		o = thetab.getValueAt(row,colIdx)
+		try{
+			v = o as double
+			values.add(v)
+		}catch(Exception e){				
+			// Don't do anything...
+			err.println "WARNING: column ${getColName(colIdx)} contains non-numeric values."
+		}			
+	}
+	return(values)
+}
+
+/****
+* Show the chart in a new window.  
+*/ 
+static showTableChart(chart,chartTitle){
+	def swing = new SwingBuilder()
+	def frame = swing.frame(title:chartTitle,
+													pack:true,show:true) {
+		borderLayout()
+		panel(new ChartPanel(chart),preferredSize: new java.awt.Dimension(250,135),mouseWheelEnabled:true)
+	}
+	return(swing)		
+}
+
+
+
+def printSelectedCols(thetab,selectedCols){
+	model = thetab.getSelectionModel();
+	colIdx = selectedCols[0] // OK, just print the first col...
+	println "colIdx:"+colIdx
+	rows = thetab.getRowCount();
+	println "numrows: "+rows
+	for(int row = 0;row < rows;row++){
+		o = thetab.getValueAt(row,colIdx)
+		println o
+	}
+	println "\n\n"
+}
+
+
+
+/****************************************************
+* Parse the command line options, checking validity, printing help if needed. 
+*/ 
+def ParseOptions(args){
+	parser = new Parser(description: '''	
+	Produces a spreedsheet-like display of a table of data (csv, tab).  Works like a regular
+	spreadsheet, columns can be sorted, etc.  Allows the display of tables of data much too 
+	large for normal spreadsheets, though. Auto-detects tab or csv files.  Can overtly specify
+	separator in case of other separator or mixed tab/, headings.   
+	
+	Control-click on table for a pop-up to toggle between selecting columns and selecting rows.  Pop-up
+	also includes option to plot a histogram of the values in selected rows/columns.  
+	
+	Written by: James Durbin (kdurbin@ucsc.edu)
+	
+	Use like:
+	
+	viewtab data.tab
+	
+	viewtab -s "\\t" data.tab
+
+	''');
+
+	try{ 
+		parser.with{
+			optional 's','separator',[description: 'Force separator to be this character.']
+			flag 'q','qregex',[default:false,description: 'Use regex to capture quoted comma lists as single field.']
+	  	flag 'h','help',[default:false,description: 'Print script help.']
+			remainder{			
+				if(!it) throw new Exception("Must specify a file.");
+				it
+			}
+		}
+	
+		options = parser.parse(args); 
+		options.fileName = parser.remainder[0]
+	}catch(Exception e){
+		System.err << parser.usage;
+		System.exit(1)
+	}		
+	return(options)
+}
+
+//*************************************
+// Supporting classes
+//*************************************
+class TableModel extends AbstractTableModel{		
+	Table dt;
+	
+	TableModel(Table table){dt = table;}
+
+	public String getColumnName(int col) {return(dt.colNames[col]);}	
+	public String getRowName(int row){return(dt.rowNames[row]);}	
+	public int getRowCount() { return(dt.rows())}
+	public int getColumnCount() { return(dt.cols())}
+	public String getValueAt(int row, int col) {return(dt.get(row,col))}	
+	public Class getColumnClass(int c) {return(dt.get(0,c).getClass())}  	
+	public boolean isCellEditable(int row, int col){return false;}	
+	public void setValueAt(Object value, int row, int col) {}
+}

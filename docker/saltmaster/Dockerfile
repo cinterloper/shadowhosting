@@ -5,5 +5,5 @@ RUN yum -y install openssl
 
 EXPOSE 4505 4506 8000
 
-CMD ["/usr/bin/supervisord"]
+#CMD ["/usr/bin/supervisord"]
 

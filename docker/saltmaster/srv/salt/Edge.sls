@@ -8,7 +8,9 @@ haproxy:
 docker-io:
   pkg:
     - installed
-
+postfix:
+  pkg:
+    - installed
 jq:
   pkg:
     - installed
@@ -22,7 +24,16 @@ zsh:
 pv:
   pkg:
     - installed
+pdns:
+  pkg:
+    - installed
+pdns-recursor:
+  pkg:
+    - installed
 nmon:
+  pkg:
+    - installed
+mbuffer:
   pkg:
     - installed
 htop:
@@ -64,17 +75,30 @@ java-1.8.0-openjdk-headless:
     - group: root
     - mode: 755
     - makedirs: True
-/etc/openvpn/keys/svr.crt:
+
+
+
+#/etc/openvpn/keys/svr.crt:
+#  file.managed:
+#    - source: salt://edge/svr.crt.jinja
+#/etc/openvpn/keys/ca.crt:
+#  file.managed:
+#    - source: salt://edge/ca.crt.jinja
+#/etc/openvpn/keys/dh.pem:
+#  file.managed:#
+# ##   - source: salt://edge/dh.pem.jinja
+#/etc/openvpn/keys/svr.key:
+#  file.managed:
+#    - source: salt://edge/svr.key.jinja
+
+{% for vpnuser in salt['pillar.get']('openvpn_clients') %}
+/etc/openvpn/ccd/{{ vpnuser }}:
   file.managed:
-    - source: salt://edge/svr.crt
-/etc/openvpn/keys/ca.crt:
-  file.managed:
-    - source: salt://edge/ca.crt
-/etc/openvpn/keys/dh.pem:
-  file.managed:
-    - source: salt://edge/dh.pem
-/etc/openvpn/keys/svr.key:
-  file.managed:
-    - source: salt://edge/svr.key
-systemctl restart openvpn@udp:
-   cmd.run
+    - template: jinja
+    - source: salt://openvpn/ccdtemplate
+    - defaults:
+        vpnuser: {{ vpnuser }}
+{% endfor %}
+
+#systemctl restart openvpn@udp:
+#   cmd.run

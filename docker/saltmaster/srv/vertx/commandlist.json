@@ -1,0 +1,12 @@
+{
+  "actions": {
+    "env": {
+      "EMAIL": "grant@iowntheinter.net",
+      "shizzle": "shazzle"
+    },
+    "commandlist": {
+      "EMAIL": "grant@iowntheinter.net",
+      "shizzle": "shazzle"
+    }
+  }
+}
