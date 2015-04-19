@@ -13,8 +13,9 @@ RUN export HOME=/root/; source /root/.gvm/bin/gvm-init.sh;  gvm i vertx
 RUN echo "source /root/.gvm/bin/gvm-init.sh" >> /etc/bash.bashrc
 ENV HOME /root
 EXPOSE 6666 
-RUN yum -y install perl-JSON perl jq curl
+RUN yum -y install perl-JSON perl jq curl hostname
 RUN /root/.gvm/vertx/current/bin/vertx run stub.groovy 2>&1
-RUN mkdir -p /srv/vertx/
-CMD /srv/vertx/launch.sh 2>/srv/err.log >> /srv/launch.log
+WORKDIR /opt
+ENV PWD /opt
+CMD java -jar /opt/Vert.Xecutor-0.1-fat.jar -conf /opt/conf.json > /srv/vx.log 2> /srv/vx.err
 

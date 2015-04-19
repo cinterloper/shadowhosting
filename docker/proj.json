@@ -1,0 +1,6 @@
+{
+  "ShadowHosting": {
+	"apps": [ "saltmaster", "greylog", "apacheds", "shadowmaster"],
+	"cport": 7777
+  }
+}

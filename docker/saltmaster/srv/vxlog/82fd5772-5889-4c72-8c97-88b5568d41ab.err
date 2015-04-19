@@ -1,0 +1,8 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Creating Cloud VM TESTDRONE6
+Warning: Permanently added '45.33.26.27' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.26.27' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.26.27' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.26.27' (ECDSA) to the list of known hosts.
+Connected to 45.33.26.27.
+/opt/script/cmds/saltup: line 14:   768 Terminated              salt-cloud -p linode_1024 $NAME

@@ -1,0 +1,17 @@
+CTYPE( )
+{
+ echo application/json
+}
+
+
+
+STRATEGY( )
+{
+  echo sync
+}
+
+RUN( )
+{
+ output=$(env)
+ $JQPath -n --arg output "$output" '{env: $output}'
+}

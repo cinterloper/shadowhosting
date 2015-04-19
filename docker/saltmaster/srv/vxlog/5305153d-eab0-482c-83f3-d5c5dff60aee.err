@@ -1,0 +1,5 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Destroying in non-parallel mode.
+[INFO    ] Clearing Salt Mine: moe, False
+[INFO    ] Destroying VM: moe
+[INFO    ] Destroyed VM: moe

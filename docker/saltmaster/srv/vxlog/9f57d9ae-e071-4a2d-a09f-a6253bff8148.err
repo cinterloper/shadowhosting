@@ -1,0 +1,18 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Creating Cloud VM TESTDRONE10
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Connected to 45.33.13.28.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Connected to 45.33.13.28.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Connected to 45.33.13.28.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.13.28' (ECDSA) to the list of known hosts.
+[INFO    ] Salt installed on TESTDRONE10
+[INFO    ] Created Cloud VM 'TESTDRONE10'

@@ -1,0 +1,22 @@
+Generating public/private rsa key pair.
+/etc/ssh/ssh_host_rsa_key already exists.
+Overwrite (y/n)? Generating public/private dsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+The key fingerprint is:
+11:82:4e:c9:3d:af:ed:1d:6b:75:b4:68:c7:76:ec:63 root@deda43463669
+The key's randomart image is:
++--[ DSA 1024]----+
+|   . +. .        |
+|    = o. .       |
+|   o   o.        |
+|    .   ..    .  |
+|       oS    + o |
+|      . . . + * o|
+|       . . = + o |
+|        . +    E.|
+|         .    . .|
++-----------------+
+Generating public/private ecdsa key pair.
+/etc/ssh/ssh_host_ecdsa_key already exists.
+Overwrite (y/n)? 

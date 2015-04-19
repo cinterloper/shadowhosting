@@ -1,3 +1,4 @@
 {
-  "baseimage/srv":"/srv"
+  "baseimage/srv":"/srv",
+  "baseimage/opt":"/opt"
 }

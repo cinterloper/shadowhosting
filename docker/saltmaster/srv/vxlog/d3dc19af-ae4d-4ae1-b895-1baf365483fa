@@ -1,0 +1,384 @@
+root@45.33.115.201's password: 
+Sun Apr 19 09:44:55 UTC 2015
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+sftp> put /tmp/tmpygZS88 /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion.pem
+Uploading /tmp/tmpygZS88 to /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion.pem
+/tmp/tmpygZS88                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmpygZS88                                100% 3247     3.2KB/s   00:00    
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+sftp> put /tmp/tmp1VHCG1 /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion.pub
+Uploading /tmp/tmp1VHCG1 to /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion.pub
+/tmp/tmp1VHCG1                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmp1VHCG1                                100%  800     0.8KB/s   00:00    
+root@45.33.115.201's password: 
+sftp> put /tmp/tmpZNXox9 /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion
+Uploading /tmp/tmpZNXox9 to /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/minion
+/tmp/tmpZNXox9                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmpZNXox9                                100% 3127     3.1KB/s   00:00    
+root@45.33.115.201's password: 
+sftp> put /tmp/tmp4xd4Lx /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/deploy.sh
+Uploading /tmp/tmp4xd4Lx to /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/deploy.sh
+/tmp/tmp4xd4Lx                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmp4xd4Lx                                100%  184KB 184.4KB/s   00:00    
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+ *  INFO:  /tmp/.saltcloud-c7601b4a-fb77-4f41-87a1-101e149f9ee9/deploy.sh -- Version 2015.03.15
+
+ *  INFO: System Information:
+ *  INFO:   CPU:          GenuineIntel
+ *  INFO:   CPU Arch:     x86_64
+ *  INFO:   OS Name:      Linux
+ *  INFO:   OS Version:   3.19.1-x86_64-linode53
+ *  INFO:   Distribution: Fedora 21
+
+ *  INFO: Installing minion
+ *  INFO: Found function install_fedora_deps
+ *  INFO: Found function config_salt
+ *  INFO: Found function install_fedora_stable
+ *  INFO: Found function install_fedora_stable_post
+ *  INFO: Found function install_fedora_restart_daemons
+ *  INFO: Found function daemons_running
+ *  INFO: Found function install_fedora_check_services
+ *  INFO: Running install_fedora_deps()
+Resolving Dependencies
+--> Running transaction check
+---> Package PyYAML.x86_64 0:3.11-7.fc21 will be installed
+---> Package libyaml.x86_64 0:0.1.6-6.fc21 will be installed
+---> Package m2crypto.x86_64 0:0.21.1-18.fc21 will be installed
+---> Package python-crypto.x86_64 0:2.6.1-6.fc21 will be installed
+--> Processing Dependency: libtomcrypt.so.0()(64bit) for package: python-crypto-2.6.1-6.fc21.x86_64
+---> Package python-jinja2.noarch 0:2.7.3-2.fc21 will be installed
+--> Processing Dependency: python-babel >= 0.8 for package: python-jinja2-2.7.3-2.fc21.noarch
+--> Processing Dependency: python-setuptools for package: python-jinja2-2.7.3-2.fc21.noarch
+--> Processing Dependency: python-markupsafe for package: python-jinja2-2.7.3-2.fc21.noarch
+---> Package python-msgpack.x86_64 0:0.4.6-1.fc21 will be installed
+---> Package python-requests.noarch 0:2.5.3-2.fc21 will be installed
+--> Processing Dependency: python-urllib3 >= 1.10 for package: python-requests-2.5.3-2.fc21.noarch
+--> Processing Dependency: python-chardet for package: python-requests-2.5.3-2.fc21.noarch
+---> Package python-zmq.x86_64 0:14.3.1-1.fc21 will be installed
+--> Processing Dependency: libzmq.so.3()(64bit) for package: python-zmq-14.3.1-1.fc21.x86_64
+---> Package yum-utils.noarch 0:1.1.31-27.fc21 will be installed
+--> Processing Dependency: python-kitchen for package: yum-utils-1.1.31-27.fc21.noarch
+--> Running transaction check
+---> Package libtomcrypt.x86_64 0:1.17-24.fc21 will be installed
+--> Processing Dependency: libtommath >= 0.42.0 for package: libtomcrypt-1.17-24.fc21.x86_64
+--> Processing Dependency: libtommath.so.0()(64bit) for package: libtomcrypt-1.17-24.fc21.x86_64
+---> Package python-babel.noarch 0:1.3-7.fc21 will be installed
+--> Processing Dependency: pytz for package: python-babel-1.3-7.fc21.noarch
+---> Package python-chardet.noarch 0:2.2.1-2.fc21 will be installed
+---> Package python-kitchen.noarch 0:1.1.1-7.fc21 will be installed
+---> Package python-markupsafe.x86_64 0:0.23-6.fc21 will be installed
+---> Package python-setuptools.noarch 0:2.0-8.fc21 will be installed
+--> Processing Dependency: python-backports-ssl_match_hostname for package: python-setuptools-2.0-8.fc21.noarch
+---> Package python-urllib3.noarch 0:1.10.2-1.fc21 will be installed
+---> Package zeromq3.x86_64 0:3.2.5-1.fc21 will be installed
+--> Processing Dependency: libpgm-5.2.so.0()(64bit) for package: zeromq3-3.2.5-1.fc21.x86_64
+--> Running transaction check
+---> Package libtommath.x86_64 0:0.42.0-5.fc21 will be installed
+---> Package openpgm.x86_64 0:5.2.122-4.fc21 will be installed
+---> Package python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.fc21 will be installed
+--> Processing Dependency: python-backports for package: python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarch
+---> Package pytz.noarch 0:2012d-7.fc21 will be installed
+--> Running transaction check
+---> Package python-backports.x86_64 0:1.0-5.fc21 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                              Arch    Version            Repository
+                                                                           Size
+================================================================================
+Installing:
+ PyYAML                               x86_64  3.11-7.fc21        updates  172 k
+ libyaml                              x86_64  0.1.6-6.fc21       updates   58 k
+ m2crypto                             x86_64  0.21.1-18.fc21     fedora   431 k
+ python-crypto                        x86_64  2.6.1-6.fc21       fedora   467 k
+ python-jinja2                        noarch  2.7.3-2.fc21       updates  531 k
+ python-msgpack                       x86_64  0.4.6-1.fc21       updates   81 k
+ python-requests                      noarch  2.5.3-2.fc21       updates   98 k
+ python-zmq                           x86_64  14.3.1-1.fc21      fedora   480 k
+ yum-utils                            noarch  1.1.31-27.fc21     updates  118 k
+Installing for dependencies:
+ libtomcrypt                          x86_64  1.17-24.fc21       fedora   227 k
+ libtommath                           x86_64  0.42.0-5.fc21      fedora    39 k
+ openpgm                              x86_64  5.2.122-4.fc21     fedora   176 k
+ python-babel                         noarch  1.3-7.fc21         updates  2.5 M
+ python-backports                     x86_64  1.0-5.fc21         fedora   9.7 k
+ python-backports-ssl_match_hostname  noarch  3.4.0.2-4.fc21     fedora    17 k
+ python-chardet                       noarch  2.2.1-2.fc21       fedora   231 k
+ python-kitchen                       noarch  1.1.1-7.fc21       fedora   113 k
+ python-markupsafe                    x86_64  0.23-6.fc21        fedora    35 k
+ python-setuptools                    noarch  2.0-8.fc21         fedora   393 k
+ python-urllib3                       noarch  1.10.2-1.fc21      updates  113 k
+ pytz                                 noarch  2012d-7.fc21       fedora    39 k
+ zeromq3                              x86_64  3.2.5-1.fc21       updates  349 k
+
+Transaction Summary
+================================================================================
+Install  9 Packages (+13 Dependent packages)
+
+Total download size: 6.5 M
+Installed size: 25 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.3 MB/s | 6.5 MB  00:05     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction (shutdown inhibited)
+  Installing : python-chardet-2.2.1-2.fc21.noarch                          1/22 
+  Installing : python-kitchen-1.1.1-7.fc21.noarch                          2/22 
+  Installing : libtommath-0.42.0-5.fc21.x86_64                             3/22 
+  Installing : libtomcrypt-1.17-24.fc21.x86_64                             4/22 
+  Installing : openpgm-5.2.122-4.fc21.x86_64                               5/22 
+  Installing : zeromq3-3.2.5-1.fc21.x86_64                                 6/22 
+  Installing : python-backports-1.0-5.fc21.x86_64                          7/22 
+  Installing : python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarc    8/22 
+  Installing : python-setuptools-2.0-8.fc21.noarch                         9/22 
+  Installing : python-urllib3-1.10.2-1.fc21.noarch                        10/22 
+  Installing : pytz-2012d-7.fc21.noarch                                   11/22 
+  Installing : python-babel-1.3-7.fc21.noarch                             12/22 
+  Installing : libyaml-0.1.6-6.fc21.x86_64                                13/22 
+  Installing : python-markupsafe-0.23-6.fc21.x86_64                       14/22 
+  Installing : python-jinja2-2.7.3-2.fc21.noarch                          15/22 
+  Installing : PyYAML-3.11-7.fc21.x86_64                                  16/22 
+  Installing : python-requests-2.5.3-2.fc21.noarch                        17/22 
+  Installing : python-zmq-14.3.1-1.fc21.x86_64                            18/22 
+  Installing : python-crypto-2.6.1-6.fc21.x86_64                          19/22 
+  Installing : yum-utils-1.1.31-27.fc21.noarch                            20/22 
+  Installing : python-msgpack-0.4.6-1.fc21.x86_64                         21/22 
+  Installing : m2crypto-0.21.1-18.fc21.x86_64                             22/22 
+  Verifying  : python-markupsafe-0.23-6.fc21.x86_64                        1/22 
+  Verifying  : python-crypto-2.6.1-6.fc21.x86_64                           2/22 
+  Verifying  : python-jinja2-2.7.3-2.fc21.noarch                           3/22 
+  Verifying  : PyYAML-3.11-7.fc21.x86_64                                   4/22 
+  Verifying  : m2crypto-0.21.1-18.fc21.x86_64                              5/22 
+  Verifying  : libyaml-0.1.6-6.fc21.x86_64                                 6/22 
+  Verifying  : python-urllib3-1.10.2-1.fc21.noarch                         7/22 
+  Verifying  : python-backports-ssl_match_hostname-3.4.0.2-4.fc21.noarc    8/22 
+  Verifying  : python-requests-2.5.3-2.fc21.noarch                         9/22 
+  Verifying  : python-zmq-14.3.1-1.fc21.x86_64                            10/22 
+  Verifying  : python-babel-1.3-7.fc21.noarch                             11/22 
+  Verifying  : zeromq3-3.2.5-1.fc21.x86_64                                12/22 
+  Verifying  : libtomcrypt-1.17-24.fc21.x86_64                            13/22 
+  Verifying  : yum-utils-1.1.31-27.fc21.noarch                            14/22 
+  Verifying  : pytz-2012d-7.fc21.noarch                                   15/22 
+  Verifying  : python-setuptools-2.0-8.fc21.noarch                        16/22 
+  Verifying  : python-backports-1.0-5.fc21.x86_64                         17/22 
+  Verifying  : python-kitchen-1.1.1-7.fc21.noarch                         18/22 
+  Verifying  : python-msgpack-0.4.6-1.fc21.x86_64                         19/22 
+  Verifying  : openpgm-5.2.122-4.fc21.x86_64                              20/22 
+  Verifying  : libtommath-0.42.0-5.fc21.x86_64                            21/22 
+  Verifying  : python-chardet-2.2.1-2.fc21.noarch                         22/22 
+
+Installed:
+  PyYAML.x86_64 0:3.11-7.fc21             libyaml.x86_64 0:0.1.6-6.fc21         
+  m2crypto.x86_64 0:0.21.1-18.fc21        python-crypto.x86_64 0:2.6.1-6.fc21   
+  python-jinja2.noarch 0:2.7.3-2.fc21     python-msgpack.x86_64 0:0.4.6-1.fc21  
+  python-requests.noarch 0:2.5.3-2.fc21   python-zmq.x86_64 0:14.3.1-1.fc21     
+  yum-utils.noarch 0:1.1.31-27.fc21      
+
+Dependency Installed:
+  libtomcrypt.x86_64 0:1.17-24.fc21                                             
+  libtommath.x86_64 0:0.42.0-5.fc21                                             
+  openpgm.x86_64 0:5.2.122-4.fc21                                               
+  python-babel.noarch 0:1.3-7.fc21                                              
+  python-backports.x86_64 0:1.0-5.fc21                                          
+  python-backports-ssl_match_hostname.noarch 0:3.4.0.2-4.fc21                   
+  python-chardet.noarch 0:2.2.1-2.fc21                                          
+  python-kitchen.noarch 0:1.1.1-7.fc21                                          
+  python-markupsafe.x86_64 0:0.23-6.fc21                                        
+  python-setuptools.noarch 0:2.0-8.fc21                                         
+  python-urllib3.noarch 0:1.10.2-1.fc21                                         
+  pytz.noarch 0:2012d-7.fc21                                                    
+  zeromq3.x86_64 0:3.2.5-1.fc21                                                 
+
+Complete!
+ *  INFO: Running config_salt()
+ *  INFO: Running install_fedora_stable()
+Resolving Dependencies
+--> Running transaction check
+---> Package salt-minion.noarch 0:2014.7.1-1.fc21 will be installed
+--> Processing Dependency: salt = 2014.7.1-1.fc21 for package: salt-minion-2014.7.1-1.fc21.noarch
+--> Running transaction check
+---> Package salt.noarch 0:2014.7.1-1.fc21 will be installed
+--> Processing Dependency: systemd-python for package: salt-2014.7.1-1.fc21.noarch
+--> Processing Dependency: sshpass for package: salt-2014.7.1-1.fc21.noarch
+--> Processing Dependency: pciutils for package: salt-2014.7.1-1.fc21.noarch
+--> Running transaction check
+---> Package pciutils.x86_64 0:3.3.0-1.fc21 will be installed
+--> Processing Dependency: pciutils-libs = 3.3.0-1.fc21 for package: pciutils-3.3.0-1.fc21.x86_64
+--> Processing Dependency: libpci.so.3(LIBPCI_3.3)(64bit) for package: pciutils-3.3.0-1.fc21.x86_64
+--> Processing Dependency: libpci.so.3(LIBPCI_3.1)(64bit) for package: pciutils-3.3.0-1.fc21.x86_64
+--> Processing Dependency: libpci.so.3(LIBPCI_3.0)(64bit) for package: pciutils-3.3.0-1.fc21.x86_64
+--> Processing Dependency: libpci.so.3()(64bit) for package: pciutils-3.3.0-1.fc21.x86_64
+---> Package sshpass.x86_64 0:1.05-7.fc21 will be installed
+---> Package systemd-python.x86_64 0:216-24.fc21 will be installed
+--> Processing Dependency: systemd = 216-24.fc21 for package: systemd-python-216-24.fc21.x86_64
+--> Running transaction check
+---> Package pciutils-libs.x86_64 0:3.3.0-1.fc21 will be installed
+---> Package systemd.x86_64 0:216-12.fc21 will be updated
+--> Processing Dependency: systemd = 216-12.fc21 for package: libgudev1-216-12.fc21.x86_64
+---> Package systemd.x86_64 0:216-24.fc21 will be an update
+--> Processing Dependency: systemd-libs = 216-24.fc21 for package: systemd-216-24.fc21.x86_64
+--> Running transaction check
+---> Package libgudev1.x86_64 0:216-12.fc21 will be updated
+---> Package libgudev1.x86_64 0:216-24.fc21 will be an update
+---> Package systemd-libs.x86_64 0:216-12.fc21 will be updated
+---> Package systemd-libs.x86_64 0:216-24.fc21 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch         Version                  Repository     Size
+================================================================================
+Installing:
+ salt-minion          noarch       2014.7.1-1.fc21          updates        26 k
+Installing for dependencies:
+ pciutils             x86_64       3.3.0-1.fc21             fedora         96 k
+ pciutils-libs        x86_64       3.3.0-1.fc21             fedora         50 k
+ salt                 noarch       2014.7.1-1.fc21          updates       3.2 M
+ sshpass              x86_64       1.05-7.fc21              fedora         25 k
+ systemd-python       x86_64       216-24.fc21              updates        95 k
+Updating for dependencies:
+ libgudev1            x86_64       216-24.fc21              updates        62 k
+ systemd              x86_64       216-24.fc21              updates       5.1 M
+ systemd-libs         x86_64       216-24.fc21              updates       323 k
+
+Transaction Summary
+================================================================================
+Install  1 Package  (+5 Dependent packages)
+Upgrade             ( 3 Dependent packages)
+
+Total download size: 9.0 M
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+--------------------------------------------------------------------------------
+Total                                              2.6 MB/s | 9.0 MB  00:03     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction (shutdown inhibited)
+  Updating   : systemd-libs-216-24.fc21.x86_64                             1/12 
+  Updating   : systemd-216-24.fc21.x86_64                                  2/12 
+  Installing : systemd-python-216-24.fc21.x86_64                           3/12 
+  Installing : pciutils-libs-3.3.0-1.fc21.x86_64                           4/12 
+  Installing : pciutils-3.3.0-1.fc21.x86_64                                5/12 
+  Installing : sshpass-1.05-7.fc21.x86_64                                  6/12 
+  Installing : salt-2014.7.1-1.fc21.noarch                                 7/12 
+  Installing : salt-minion-2014.7.1-1.fc21.noarch                          8/12 
+warning: /etc/salt/minion created as /etc/salt/minion.rpmnew
+  Updating   : libgudev1-216-24.fc21.x86_64                                9/12 
+  Cleanup    : libgudev1-216-12.fc21.x86_64                               10/12 
+  Cleanup    : systemd-216-12.fc21.x86_64                                 11/12 
+  Cleanup    : systemd-libs-216-12.fc21.x86_64                            12/12 
+  Verifying  : sshpass-1.05-7.fc21.x86_64                                  1/12 
+  Verifying  : systemd-216-24.fc21.x86_64                                  2/12 
+  Verifying  : salt-2014.7.1-1.fc21.noarch                                 3/12 
+  Verifying  : pciutils-libs-3.3.0-1.fc21.x86_64                           4/12 
+  Verifying  : salt-minion-2014.7.1-1.fc21.noarch                          5/12 
+  Verifying  : pciutils-3.3.0-1.fc21.x86_64                                6/12 
+  Verifying  : systemd-python-216-24.fc21.x86_64                           7/12 
+  Verifying  : libgudev1-216-24.fc21.x86_64                                8/12 
+  Verifying  : systemd-libs-216-24.fc21.x86_64                             9/12 
+  Verifying  : libgudev1-216-12.fc21.x86_64                               10/12 
+  Verifying  : systemd-libs-216-12.fc21.x86_64                            11/12 
+  Verifying  : systemd-216-12.fc21.x86_64                                 12/12 
+
+Installed:
+  salt-minion.noarch 0:2014.7.1-1.fc21                                          
+
+Dependency Installed:
+  pciutils.x86_64 0:3.3.0-1.fc21         pciutils-libs.x86_64 0:3.3.0-1.fc21   
+  salt.noarch 0:2014.7.1-1.fc21          sshpass.x86_64 0:1.05-7.fc21          
+  systemd-python.x86_64 0:216-24.fc21   
+
+Dependency Updated:
+  libgudev1.x86_64 0:216-24.fc21            systemd.x86_64 0:216-24.fc21        
+  systemd-libs.x86_64 0:216-24.fc21        
+
+Complete!
+ *  INFO: Running install_fedora_stable_post()
+disabled
+Created symlink from /etc/systemd/system/multi-user.target.wants/salt-minion.service to /usr/lib/systemd/system/salt-minion.service.
+ *  INFO: Running install_fedora_check_services()
+ *  INFO: Running install_fedora_restart_daemons()
+ *  INFO: Running daemons_running()
+ *  INFO: Salt installed!
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+root@45.33.115.201's password: 
+edge-blade:
+    ----------
+    _uuid:
+        None
+    deployed:
+        True
+    driver:
+    extra:
+        ----------
+        ALERT_BWIN_ENABLED:
+            1
+        ALERT_BWIN_THRESHOLD:
+            5
+        ALERT_BWOUT_ENABLED:
+            1
+        ALERT_BWOUT_THRESHOLD:
+            5
+        ALERT_BWQUOTA_ENABLED:
+            1
+        ALERT_BWQUOTA_THRESHOLD:
+            80
+        ALERT_CPU_ENABLED:
+            1
+        ALERT_CPU_THRESHOLD:
+            90
+        ALERT_DISKIO_ENABLED:
+            1
+        ALERT_DISKIO_THRESHOLD:
+            5000
+        BACKUPSENABLED:
+            0
+        BACKUPWEEKLYDAY:
+            0
+        BACKUPWINDOW:
+            0
+        CREATE_DT:
+            2015-04-19 05:44:18.0
+        DATACENTERID:
+            2
+        DISTRIBUTIONVENDOR:
+            Fedora
+        LABEL:
+            edge-blade
+        LINODEID:
+            965191
+        LPM_DISPLAYGROUP:
+        PLANID:
+            1
+        STATUS:
+            0
+        TOTALHD:
+            24576
+        TOTALRAM:
+            1024
+        TOTALXFER:
+            2000
+        WATCHDOG:
+            1
+    id:
+        965191
+    image:
+        None
+    name:
+        edge-blade
+    private_ips:
+    public_ips:
+        - 45.33.115.201
+    size:
+        None
+    state:
+        3

@@ -1,0 +1,15 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ lines=$(ls)
+ $JQPath -n --arg s "$lines" '{ls: ($s|split("\n"))}'
+}

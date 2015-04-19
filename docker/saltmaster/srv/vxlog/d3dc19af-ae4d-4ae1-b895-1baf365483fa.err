@@ -1,0 +1,34 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Creating Cloud VM edge-blade
+[INFO    ] Rendering deploy script: /etc/salt/cloud.deploy.d/bootstrap-salt.sh
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connected to 45.33.115.201.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connected to 45.33.115.201.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connected to 45.33.115.201.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connected to 45.33.115.201.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+Warning: Permanently added '45.33.115.201' (ECDSA) to the list of known hosts.
+Connection to 45.33.115.201 closed.
+[INFO    ] Salt installed on edge-blade
+[INFO    ] Created Cloud VM 'edge-blade'

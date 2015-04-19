@@ -2,5 +2,8 @@ linode_1024:
   provider: my-linode-config
   size: Linode 1024
   image: Fedora 21
-  script: bootstrap-salt
-  script_args: -A iowntheinter.net
+  deploy_command: curl -L https://bootstrap.saltstack.com | sudo sh -- -A iowntheinter.net
+  minion:
+    master: iowntheinter.net
+
+

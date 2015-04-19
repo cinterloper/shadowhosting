@@ -1,0 +1,845 @@
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Configuration file path: /etc/salt/master
+[INFO    ] Setting up the Salt Master
+[DEBUG   ] Loaded master key: /etc/salt/pki/master/master.pem
+[INFO    ] Preparing the root key for local communication
+[DEBUG   ] Created pidfile: /var/run/salt-master.pid
+[INFO    ] salt-master is starting as user 'root'
+[INFO    ] Current values for max open files soft/hard setting: 1048576/1048576
+[DEBUG   ] Started '<bound method Master._clear_old_jobs of <salt.master.Master object at 0x7f6f6a113f90>>'(*[], **{} with pid 80
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Started '<class 'salt.master.Publisher'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60},), **{} with pid 81
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[INFO    ] Starting the Salt Publisher on tcp://0.0.0.0:4505
+[INFO    ] Starting the Salt Puller on ipc:///var/run/salt/master/publish_pull.ipc
+[DEBUG   ] Started '<class 'salt.utils.event.EventPublisher'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60},), **{} with pid 84
+[DEBUG   ] Halite: Unavailable.
+[DEBUG   ] Started '<function run_reqserver at 0x7f6f69edcc08>'(*[], **{} with pid 85
+[DEBUG   ] Started '<class 'salt.master.MWorker'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60}, {}, {'root': 'qVz1RZHDYmIKF+4z5tlAwQdOmRDkPB0KHtcIdmKcP9rfn8ooxcAcevEc0YV7qhwcoxEWiHdgN0Y='}, <salt.crypt.Crypticle object at 0x7f6f6a12f390>), **{} with pid 88
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] Started '<class 'salt.master.MWorker'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60}, {}, {'root': 'qVz1RZHDYmIKF+4z5tlAwQdOmRDkPB0KHtcIdmKcP9rfn8ooxcAcevEc0YV7qhwcoxEWiHdgN0Y='}, <salt.crypt.Crypticle object at 0x7f6f6a12f390>), **{} with pid 89
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] Started '<class 'salt.master.MWorker'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60}, {}, {'root': 'qVz1RZHDYmIKF+4z5tlAwQdOmRDkPB0KHtcIdmKcP9rfn8ooxcAcevEc0YV7qhwcoxEWiHdgN0Y='}, <salt.crypt.Crypticle object at 0x7f6f6a12f390>), **{} with pid 90
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Started '<class 'salt.master.MWorker'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60}, {}, {'root': 'qVz1RZHDYmIKF+4z5tlAwQdOmRDkPB0KHtcIdmKcP9rfn8ooxcAcevEc0YV7qhwcoxEWiHdgN0Y='}, <salt.crypt.Crypticle object at 0x7f6f6a12f390>), **{} with pid 91
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Started '<class 'salt.master.MWorker'>'(*({'reactor': [], 'search_index_interval': 3600, 'token_expire': 43200, 'master_sign_pubkey': False, 'ioflo_verbose': 0, 'show_jid': False, 'svnfs_remotes': [], 'syndic_master': '', 'minion_data_cache': True, 'ioflo_realtime': True, 'max_open_files': 100000, 'fileserver_backend': ['roots'], 'outputter_dirs': [], 'master_pubkey_signature': 'master_pubkey_signature', 'reactor_worker_hwm': 10000, 'extension_modules': '/var/cache/salt/extmods', 'state_auto_order': True, '__role': 'master', 'svnfs_env_blacklist': [], 'cluster_masters': [], 'file_ignore_glob': None, 'auto_accept': False, 'daemon': False, 'open_mode': False, 'win_repo': '/srv/salt/win/repo', 'hgfs_env_whitelist': [], 'state_verbose': True, 'svnfs_env_whitelist': [], 'cluster_mode': 'paranoid', 'sqlite_queue_dir': '/var/cache/salt/master/queues', 'aes': 'Thz2oSKZdhGjWNV0OxF6kg2/Y2oLDJdDb6S5LfWCEcITw2BIIpzaf35dyevgLNlN9kZ2S6jkij8=', 'publish_session': 86400, 'file_recv_max_size': 100, 'ssh_sudo': False, 'keep_jobs': 24, 'fileserver_ignoresymlinks': False, 'minionfs_blacklist': [], 'timeout': 5, 'gitfs_pubkey': '', 'file_roots': {'base': ['/srv/salt']}, 'root_dir': '/', 'runner_dirs': [], 'rest_tornado': {'debug': False, 'ssl_key': '/etc/pki/tls/certs/localhost.key', 'disable_ssl': False, 'port': 8000, 'ssl_crt': '/etc/pki/tls/certs/localhost.crt'}, 'log_granular_levels': {}, 'gitfs_privkey': '', 'svnfs_branches': 'branches', 'log_datefmt_logfile': '%Y-%m-%d %H:%M:%S', 'config_dir': '/etc/salt', 'transport': 'zeromq', 'gitfs_base': 'master', 'gitfs_user': '', 'ssh_passwd': '', 'fileserver_limit_traversal': False, 'ioflo_console_logdir': '', 'conf_file': '/etc/salt/master', 'external_auth': {}, 'syndic_max_event_process_time': 0.5, 'ssh_user': 'root', 'key_logfile': '/var/log/salt/key', 'reactor_worker_threads': 10, 'svnfs_tags': 'tags', 'pidfile': '/var/run/salt-master.pid', 'range_server': 'range:80', 'win_repo_mastercachefile': '/srv/salt/win/repo/winrepo.p', 'raet_mutable': False, 'permissive_pki_access': False, 'file_ignore_regex': None, 'pillar_opts': True, 'svnfs_root': '', 'raet_main': True, 'pub_hwm': 1000, 'cachedir': '/var/cache/salt/master', 'peer': {}, 'default_include': 'master.d/*.conf', 'preserve_minion_cache': False, 'search': '', 'state_events': False, 'gitfs_mountpoint': '', 'master_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/master.flo', 'state_output': 'full', 'jinja_trim_blocks': False, 'svnfs_trunk': 'trunk', 'enable_gpu_grains': False, 'keysize': 4096, 'master_sign_key_name': 'master_sign', 'jinja_lstrip_blocks': False, 'cython_enable': False, 'raet_port': 4506, 'ssh_port': '22', 'ext_job_cache': '', 'hash_type': 'md5', 'cli_summary': False, 'ping_on_rotate': False, 'hgfs_root': '', 'renderer': 'yaml_jinja', 'state_top': 'top.sls', 'gitfs_env_whitelist': [], 'hgfs_branch_method': 'branches', 'max_minions': 0, 'gitfs_insecure_auth': False, 'nodegroups': {}, 'file_recv': False, 'ipv6': False, 'verify_env': True, 'order_masters': False, 'syndic_wait': 5, 'worker_threads': 5, 'pillar_version': 2, 'failhard': False, 'rotate_aes_key': True, 'gitfs_passphrase': '', 'fileserver_followsymlinks': True, 'ioflo_period': 0.01, 'token_dir': '/var/cache/salt/master/tokens', 'worker_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/worker.flo', 'zmq_filtering': False, 'svnfs_mountpoint': '', 'show_timeout': False, 'pillar_source_merging_strategy': 'smart', 'minionfs_env': 'base', 'state_aggregate': False, 'master_tops': {}, 'hgfs_env_blacklist': [], 'hgfs_mountpoint': '', 'master_job_cache': 'local_cache', 'sign_pub_messages': False, 'auth_mode': 1, 'file_buffer_size': 1048576, 'log_fmt_console': '[%(levelname)-8s] %(message)s', 'log_datefmt': '%H:%M:%S', 'serial': 'msgpack', 'rep_hwm': 50000, 'client_acl_blacklist': {}, 'id': '38937deb8670_master', 'minionfs_mountpoint': '', 'loop_interval': 60, 'log_level': 'debug', 'gitfs_env_blacklist': [], 'ret_port': '4506', 'maintenance_floscript': '/usr/lib/python2.7/site-packages/salt/daemons/flo/maint.flo', 'gitfs_root': '', 'gitfs_password': '', 'enumerate_proxy_minions': False, 'syndic_event_forward_timeout': 0.5, 'queue_dirs': [], 'gather_job_timeout': 5, 'pillar_roots': {'base': ['/srv/pillar']}, 'minionfs_whitelist': [], 'user': 'root', 'master_roots': {'base': ['/srv/salt-master']}, 'hgfs_base': 'default', 'hgfs_remotes': [], 'ext_pillar': [], 'client_acl': {}, 'win_gitrepos': ['https://github.com/saltstack/salt-winrepo.git'], 'master_use_pubkey_signature': False, 'gitfs_remotes': [], 'pki_dir': '/etc/salt/pki/master', 'enforce_mine_cache': False, 'max_event_size': 1048576, 'publish_port': '4505', 'job_cache': True, 'sock_dir': '/var/run/salt/master', 'reactor_refresh_interval': 60, 'log_fmt_logfile': '%(asctime)s,%(msecs)03.0f [%(name)-17s][%(levelname)-8s] %(message)s', 'log_file': '/var/log/salt/master', 'interface': '0.0.0.0', 'ssh_timeout': 60}, {}, {'root': 'qVz1RZHDYmIKF+4z5tlAwQdOmRDkPB0KHtcIdmKcP9rfn8ooxcAcevEc0YV7qhwcoxEWiHdgN0Y='}, <salt.crypt.Crypticle object at 0x7f6f6a12f390>), **{} with pid 92
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] Started '<bound method ReqServer.zmq_device of <salt.master.ReqServer object at 0x7f6f6d837dd0>>'(*[], **{} with pid 93
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[INFO    ] Setting up the master communication server
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] Mako not available
+[DEBUG   ] Mako not available
+[DEBUG   ] Mako not available
+[DEBUG   ] Mako not available
+[DEBUG   ] Mako not available
+[DEBUG   ] Mako not available
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Missing configuration file: ~/.saltrc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] MasterEvent PUB socket URI: ipc:///var/run/salt/master/master_event_pub.ipc
+[DEBUG   ] MasterEvent PULL socket URI: ipc:///var/run/salt/master/master_event_pull.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[INFO    ] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+[INFO    ] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+[INFO    ] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+[INFO    ] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+[INFO    ] Worker binding to socket ipc:///var/run/salt/master/workers.ipc
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T06:44:25.733360', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316024425732970', 'tgt': '*', '_stamp': '2015-03-16T06:44:25.733742', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316024425732970', 'tgt': '*', '_stamp': '2015-03-16T06:44:25.734185', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[INFO    ] User root Published command test.ping with jid 20150316024425732970
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316024425732970', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'test.ping'}
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T06:44:30.768451', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316024430768061', 'tgt': '*', '_stamp': '2015-03-16T06:44:30.768796', 'user': 'root', 'arg': ['20150316024425732970'], 'fun': 'saltutil.find_job', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316024430768061', 'tgt': '*', '_stamp': '2015-03-16T06:44:30.769379', 'user': 'root', 'arg': ['20150316024425732970'], 'fun': 'saltutil.find_job', 'minions': ['edge1', '38937deb8670', 'Desktop.iowntheinter.net']}
+[INFO    ] User root Published command saltutil.find_job with jid 20150316024430768061
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316024430768061', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20150316024425732970'], 'fun': 'saltutil.find_job'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[INFO    ] Clear payload received with command _auth
+[INFO    ] Authentication request from 38937deb8670
+[INFO    ] Authentication accepted from 38937deb8670
+[DEBUG   ] Sending event - data = {'id': '38937deb8670', '_stamp': '2015-03-16T06:47:22.238251', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuaAl2f/aob0VujIpLDxw\nomEnWtIg7IGqBPFh3HhOlafyTN0fJXxLxZdWLLzts+lIrnbc+jUJCLhYGuZjGY7k\nqIvl+8M7q8X6aSSuj9HQNfCSDWewi+4h5CmvHk4czCmdoz8zzZG2y/gUu8dSNCkq\n9Okj00xKBV4YfeM3qfpzufdTTZ3JEMeBZ0lMSsA7XhImdvS+ljStW9XN2VfTxb5q\nZuGlUYcJsmif8M6fkRXFddriI12NEfLb8+0ezmDWqPlXei3Re2ucccyUMY4eyCUW\niCVAUD+WWKp3OxJM1Dnv1J9d+KGhcsRfgP+FNZNuK8qOszpxzMToqWwa5ne+fGve\naglBkgQQtxi0o2ATQJaJd3H+feNTccMBE71BO3agQo6M0R3iecUr0OnEjIo24u2y\n7zl/E3HvBq/3KguGgiXxZA+pb5Icwm8k3fQ0UWC+ZqSvnmyEo0qqNY3lTIyPqvt2\nHogjU2QYIx+dB44nqo97JTY2SbWcpHHChnSYVYMUQmYeONoxELrrExhfl6DE48yv\nhK8/Of0knS14dqQ0F8P+P9yxnBtb19euRzMbMbUHptCN2LA9NudubM8PYktM76cX\neg3o6UhmvUl4TnYh1iPAdB1yOoASVAcqJ1B/pCRl4FVZdIAmDn5V1YS4Ik0GxMEN\ntdcYdu4+s23N7UYOyuNoYfMCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+[INFO    ] AES payload received with command _pillar
+[INFO    ] Clear payload received with command _auth
+[INFO    ] Authentication request from 38937deb8670
+[INFO    ] Authentication accepted from 38937deb8670
+[DEBUG   ] Sending event - data = {'id': '38937deb8670', '_stamp': '2015-03-16T06:47:22.694536', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuaAl2f/aob0VujIpLDxw\nomEnWtIg7IGqBPFh3HhOlafyTN0fJXxLxZdWLLzts+lIrnbc+jUJCLhYGuZjGY7k\nqIvl+8M7q8X6aSSuj9HQNfCSDWewi+4h5CmvHk4czCmdoz8zzZG2y/gUu8dSNCkq\n9Okj00xKBV4YfeM3qfpzufdTTZ3JEMeBZ0lMSsA7XhImdvS+ljStW9XN2VfTxb5q\nZuGlUYcJsmif8M6fkRXFddriI12NEfLb8+0ezmDWqPlXei3Re2ucccyUMY4eyCUW\niCVAUD+WWKp3OxJM1Dnv1J9d+KGhcsRfgP+FNZNuK8qOszpxzMToqWwa5ne+fGve\naglBkgQQtxi0o2ATQJaJd3H+feNTccMBE71BO3agQo6M0R3iecUr0OnEjIo24u2y\n7zl/E3HvBq/3KguGgiXxZA+pb5Icwm8k3fQ0UWC+ZqSvnmyEo0qqNY3lTIyPqvt2\nHogjU2QYIx+dB44nqo97JTY2SbWcpHHChnSYVYMUQmYeONoxELrrExhfl6DE48yv\nhK8/Of0knS14dqQ0F8P+P9yxnBtb19euRzMbMbUHptCN2LA9NudubM8PYktM76cX\neg3o6UhmvUl4TnYh1iPAdB1yOoASVAcqJ1B/pCRl4FVZdIAmDn5V1YS4Ik0GxMEN\ntdcYdu4+s23N7UYOyuNoYfMCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+[INFO    ] AES payload received with command _return
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[INFO    ] Got return from 38937deb8670 for job 20150316024722762169
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'fun_args': [], 'jid': '20150316024722762169', 'return': ['SSDs', 'cpu_flags', 'cpu_model', 'cpuarch', 'domain', 'fqdn', 'fqdn_ip4', 'fqdn_ip6', 'gpus', 'host', 'hwaddr_interfaces', 'id', 'ip4_interfaces', 'ip6_interfaces', 'ip_interfaces', 'ipv4', 'ipv6', 'kernel', 'kernelrelease', 'locale_info', 'localhost', 'lsb_distrib_id', 'machine_id', 'master', 'mem_total', 'nodename', 'num_cpus', 'num_gpus', 'os', 'os_family', 'osarch', 'oscodename', 'osfinger', 'osfullname', 'osmajorrelease', 'osrelease', 'osrelease_info', 'path', 'ps', 'pythonexecutable', 'pythonpath', 'pythonversion', 'saltpath', 'saltversion', 'saltversioninfo', 'server_id', 'shell', 'virtual', 'zmqversion'], 'retcode': 0, 'success': True, 'tgt': '38937deb8670', 'cmd': '_return', '_stamp': '2015-03-16T06:47:22.762868', 'arg': [], 'fun': 'grains.ls', 'id': '38937deb8670'}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'fun_args': [], 'jid': '20150316024722762169', 'return': ['SSDs', 'cpu_flags', 'cpu_model', 'cpuarch', 'domain', 'fqdn', 'fqdn_ip4', 'fqdn_ip6', 'gpus', 'host', 'hwaddr_interfaces', 'id', 'ip4_interfaces', 'ip6_interfaces', 'ip_interfaces', 'ipv4', 'ipv6', 'kernel', 'kernelrelease', 'locale_info', 'localhost', 'lsb_distrib_id', 'machine_id', 'master', 'mem_total', 'nodename', 'num_cpus', 'num_gpus', 'os', 'os_family', 'osarch', 'oscodename', 'osfinger', 'osfullname', 'osmajorrelease', 'osrelease', 'osrelease_info', 'path', 'ps', 'pythonexecutable', 'pythonpath', 'pythonversion', 'saltpath', 'saltversion', 'saltversioninfo', 'server_id', 'shell', 'virtual', 'zmqversion'], 'retcode': 0, 'success': True, 'tgt': '38937deb8670', 'cmd': '_return', '_stamp': '2015-03-16T06:47:22.763564', 'arg': [], 'fun': 'grains.ls', 'id': '38937deb8670'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 3 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[INFO    ] Clear payload received with command _auth
+[INFO    ] Authentication request from 38937deb8670
+[INFO    ] Authentication accepted from 38937deb8670
+[DEBUG   ] Sending event - data = {'id': '38937deb8670', '_stamp': '2015-03-16T07:00:38.433538', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuaAl2f/aob0VujIpLDxw\nomEnWtIg7IGqBPFh3HhOlafyTN0fJXxLxZdWLLzts+lIrnbc+jUJCLhYGuZjGY7k\nqIvl+8M7q8X6aSSuj9HQNfCSDWewi+4h5CmvHk4czCmdoz8zzZG2y/gUu8dSNCkq\n9Okj00xKBV4YfeM3qfpzufdTTZ3JEMeBZ0lMSsA7XhImdvS+ljStW9XN2VfTxb5q\nZuGlUYcJsmif8M6fkRXFddriI12NEfLb8+0ezmDWqPlXei3Re2ucccyUMY4eyCUW\niCVAUD+WWKp3OxJM1Dnv1J9d+KGhcsRfgP+FNZNuK8qOszpxzMToqWwa5ne+fGve\naglBkgQQtxi0o2ATQJaJd3H+feNTccMBE71BO3agQo6M0R3iecUr0OnEjIo24u2y\n7zl/E3HvBq/3KguGgiXxZA+pb5Icwm8k3fQ0UWC+ZqSvnmyEo0qqNY3lTIyPqvt2\nHogjU2QYIx+dB44nqo97JTY2SbWcpHHChnSYVYMUQmYeONoxELrrExhfl6DE48yv\nhK8/Of0knS14dqQ0F8P+P9yxnBtb19euRzMbMbUHptCN2LA9NudubM8PYktM76cX\neg3o6UhmvUl4TnYh1iPAdB1yOoASVAcqJ1B/pCRl4FVZdIAmDn5V1YS4Ik0GxMEN\ntdcYdu4+s23N7UYOyuNoYfMCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+[INFO    ] AES payload received with command _pillar
+[INFO    ] Clear payload received with command _auth
+[INFO    ] Authentication request from 38937deb8670
+[INFO    ] Authentication accepted from 38937deb8670
+[DEBUG   ] Sending event - data = {'id': '38937deb8670', '_stamp': '2015-03-16T07:00:38.828301', 'result': True, 'pub': '-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAuaAl2f/aob0VujIpLDxw\nomEnWtIg7IGqBPFh3HhOlafyTN0fJXxLxZdWLLzts+lIrnbc+jUJCLhYGuZjGY7k\nqIvl+8M7q8X6aSSuj9HQNfCSDWewi+4h5CmvHk4czCmdoz8zzZG2y/gUu8dSNCkq\n9Okj00xKBV4YfeM3qfpzufdTTZ3JEMeBZ0lMSsA7XhImdvS+ljStW9XN2VfTxb5q\nZuGlUYcJsmif8M6fkRXFddriI12NEfLb8+0ezmDWqPlXei3Re2ucccyUMY4eyCUW\niCVAUD+WWKp3OxJM1Dnv1J9d+KGhcsRfgP+FNZNuK8qOszpxzMToqWwa5ne+fGve\naglBkgQQtxi0o2ATQJaJd3H+feNTccMBE71BO3agQo6M0R3iecUr0OnEjIo24u2y\n7zl/E3HvBq/3KguGgiXxZA+pb5Icwm8k3fQ0UWC+ZqSvnmyEo0qqNY3lTIyPqvt2\nHogjU2QYIx+dB44nqo97JTY2SbWcpHHChnSYVYMUQmYeONoxELrrExhfl6DE48yv\nhK8/Of0knS14dqQ0F8P+P9yxnBtb19euRzMbMbUHptCN2LA9NudubM8PYktM76cX\neg3o6UhmvUl4TnYh1iPAdB1yOoASVAcqJ1B/pCRl4FVZdIAmDn5V1YS4Ik0GxMEN\ntdcYdu4+s23N7UYOyuNoYfMCAwEAAQ==\n-----END PUBLIC KEY-----\n', 'act': 'accept'}
+[INFO    ] AES payload received with command _return
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[INFO    ] Got return from 38937deb8670 for job 20150316030038896091
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'fun_args': [], 'jid': '20150316030038896091', 'return': ['SSDs', 'cpu_flags', 'cpu_model', 'cpuarch', 'domain', 'fqdn', 'fqdn_ip4', 'fqdn_ip6', 'gpus', 'host', 'hwaddr_interfaces', 'id', 'ip4_interfaces', 'ip6_interfaces', 'ip_interfaces', 'ipv4', 'ipv6', 'kernel', 'kernelrelease', 'locale_info', 'localhost', 'lsb_distrib_id', 'machine_id', 'master', 'mem_total', 'nodename', 'num_cpus', 'num_gpus', 'os', 'os_family', 'osarch', 'oscodename', 'osfinger', 'osfullname', 'osmajorrelease', 'osrelease', 'osrelease_info', 'path', 'ps', 'pythonexecutable', 'pythonpath', 'pythonversion', 'saltpath', 'saltversion', 'saltversioninfo', 'server_id', 'shell', 'virtual', 'zmqversion'], 'retcode': 0, 'success': True, 'tgt': '38937deb8670', 'cmd': '_return', '_stamp': '2015-03-16T07:00:38.896815', 'arg': [], 'fun': 'grains.ls', 'id': '38937deb8670'}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'fun_args': [], 'jid': '20150316030038896091', 'return': ['SSDs', 'cpu_flags', 'cpu_model', 'cpuarch', 'domain', 'fqdn', 'fqdn_ip4', 'fqdn_ip6', 'gpus', 'host', 'hwaddr_interfaces', 'id', 'ip4_interfaces', 'ip6_interfaces', 'ip_interfaces', 'ipv4', 'ipv6', 'kernel', 'kernelrelease', 'locale_info', 'localhost', 'lsb_distrib_id', 'machine_id', 'master', 'mem_total', 'nodename', 'num_cpus', 'num_gpus', 'os', 'os_family', 'osarch', 'oscodename', 'osfinger', 'osfullname', 'osmajorrelease', 'osrelease', 'osrelease_info', 'path', 'ps', 'pythonexecutable', 'pythonpath', 'pythonversion', 'saltpath', 'saltversion', 'saltversioninfo', 'server_id', 'shell', 'virtual', 'zmqversion'], 'retcode': 0, 'success': True, 'tgt': '38937deb8670', 'cmd': '_return', '_stamp': '2015-03-16T07:00:38.897516', 'arg': [], 'fun': 'grains.ls', 'id': '38937deb8670'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:01:48.935385', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316030148935168', 'tgt': '*', '_stamp': '2015-03-16T07:01:48.935629', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316030148935168', 'tgt': '*', '_stamp': '2015-03-16T07:01:48.935881', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command test.ping with jid 20150316030148935168
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316030148935168', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'test.ping'}
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:01:53.949903', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316030153949591', 'tgt': '*', '_stamp': '2015-03-16T07:01:53.950308', 'user': 'root', 'arg': ['20150316030148935168'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316030153949591', 'tgt': '*', '_stamp': '2015-03-16T07:01:53.951104', 'user': 'root', 'arg': ['20150316030148935168'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command saltutil.find_job with jid 20150316030153949591
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316030153949591', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20150316030148935168'], 'fun': 'saltutil.find_job'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:54:29.497396', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035429497197', 'tgt': '*', '_stamp': '2015-03-16T07:54:29.497644', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035429497197', 'tgt': '*', '_stamp': '2015-03-16T07:54:29.497973', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command test.ping with jid 20150316035429497197
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316035429497197', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'test.ping'}
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:54:34.504657', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035434504435', 'tgt': '*', '_stamp': '2015-03-16T07:54:34.504965', 'user': 'root', 'arg': ['20150316035429497197'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035434504435', 'tgt': '*', '_stamp': '2015-03-16T07:54:34.505533', 'user': 'root', 'arg': ['20150316035429497197'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command saltutil.find_job with jid 20150316035434504435
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316035434504435', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20150316035429497197'], 'fun': 'saltutil.find_job'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] LazyLoaded local_cache.prep_jid
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:55:11.276719', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035511276492', 'tgt': '*', '_stamp': '2015-03-16T07:55:11.277009', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035511276492', 'tgt': '*', '_stamp': '2015-03-16T07:55:11.277517', 'user': 'root', 'arg': [], 'fun': 'test.ping', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command test.ping with jid 20150316035511276492
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316035511276492', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': [], 'fun': 'test.ping'}
+[INFO    ] Clear payload received with command publish
+[DEBUG   ] Sending event - data = {'_stamp': '2015-03-16T07:55:16.283124', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035516282911', 'tgt': '*', '_stamp': '2015-03-16T07:55:16.283374', 'user': 'root', 'arg': ['20150316035511276492'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[DEBUG   ] Sending event - data = {'tgt_type': 'glob', 'jid': '20150316035516282911', 'tgt': '*', '_stamp': '2015-03-16T07:55:16.283637', 'user': 'root', 'arg': ['20150316035511276492'], 'fun': 'saltutil.find_job', 'minions': ['Desktop.iowntheinter.net', '38937deb8670', 'TestDrone', 'edge1']}
+[INFO    ] User root Published command saltutil.find_job with jid 20150316035516282911
+[DEBUG   ] Published command details {'tgt_type': 'glob', 'jid': '20150316035516282911', 'tgt': '*', 'ret': '', 'user': 'root', 'arg': ['20150316035511276492'], 'fun': 'saltutil.find_job'}
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
+[DEBUG   ] Reading configuration from /etc/salt/master
+[DEBUG   ] The `dmidecode` binary is not available on the system. GPU grains will not be available.
+[DEBUG   ] LazyLoaded local_cache.clean_old_jobs
+[DEBUG   ] Updating fileserver cache
+[DEBUG   ] This salt-master instance has accepted 4 minion keys.

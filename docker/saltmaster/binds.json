@@ -4,7 +4,8 @@
   "saltmaster/config/etc/pki/tls/certs/localhost.key":"/etc/pki/tls/certs/localhost.key",
   "saltmaster/config/etc/pki/tls/certs/localhost.crt":"/etc/pki/tls/certs/localhost.crt",
   "saltmaster/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
-  "id.pub":"/home/user/.ssh/authorized_keys",
+  "saltmaster/config/ssh":"/root/.ssh",
   "saltmaster/srv":"/srv",
+  "saltmaster/opt":"/opt",
   "saltmaster/log/supervisor":"/var/log/supervisor"
 }

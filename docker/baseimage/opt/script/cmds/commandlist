@@ -1,0 +1,16 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+
+STRATEGY( )
+{
+  echo sync
+}
+
+RUN( )
+{
+ ls=$(ls $ScriptsPath/cmds/)
+ $JQPath -n --arg s "$ls" '{cmds: ($s|split("\n"))}'
+}

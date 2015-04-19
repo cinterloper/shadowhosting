@@ -1,0 +1,397 @@
+edge-blade:
+----------
+          ID: screen
+    Function: pkg.installed
+      Result: True
+     Comment: Package screen is already installed.
+     Started: 09:53:31.461074
+    Duration: 636.585 ms
+     Changes:   
+----------
+          ID: haproxy
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: haproxy.
+     Started: 09:53:32.098307
+    Duration: 12968.113 ms
+     Changes:   
+              ----------
+              haproxy:
+                  ----------
+                  new:
+                      1.5.11-4.fc21
+                  old:
+----------
+          ID: docker-io
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: docker-io.
+     Started: 09:53:45.066910
+    Duration: 12369.486 ms
+     Changes:   
+              ----------
+              docker-io:
+                  ----------
+                  new:
+                      1.5.0-2.fc21
+                  old:
+----------
+          ID: postfix
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: postfix.
+     Started: 09:53:57.436918
+    Duration: 14002.689 ms
+     Changes:   
+              ----------
+              mariadb-common:
+                  ----------
+                  new:
+                      10.0.17-1.fc21
+                  old:
+              mariadb-config:
+                  ----------
+                  new:
+                      10.0.17-1.fc21
+                  old:
+              mariadb-libs:
+                  ----------
+                  new:
+                      10.0.17-1.fc21
+                  old:
+              postfix:
+                  ----------
+                  new:
+                      2.11.3-1.fc21
+                  old:
+----------
+          ID: jq
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: jq.
+     Started: 09:54:11.440188
+    Duration: 8516.207 ms
+     Changes:   
+              ----------
+              jq:
+                  ----------
+                  new:
+                      1.3-4.fc21
+                  old:
+----------
+          ID: git
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: git.
+     Started: 09:54:19.956783
+    Duration: 12969.755 ms
+     Changes:   
+              ----------
+              git:
+                  ----------
+                  new:
+                      2.1.0-4.fc21
+                  old:
+              libgnome-keyring:
+                  ----------
+                  new:
+                      3.12.0-4.fc21
+                  old:
+              perl-Error:
+                  ----------
+                  new:
+                      0.17022-2.fc21
+                  old:
+              perl-Git:
+                  ----------
+                  new:
+                      2.1.0-4.fc21
+                  old:
+              perl-TermReadKey:
+                  ----------
+                  new:
+                      2.32-2.fc21
+                  old:
+----------
+          ID: zsh
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: zsh.
+     Started: 09:54:32.927012
+    Duration: 11089.417 ms
+     Changes:   
+              ----------
+              zsh:
+                  ----------
+                  new:
+                      5.0.7-6.fc21
+                  old:
+----------
+          ID: pv
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: pv.
+     Started: 09:54:44.016971
+    Duration: 8389.494 ms
+     Changes:   
+              ----------
+              pv:
+                  ----------
+                  new:
+                      1.5.7-1.fc21
+                  old:
+----------
+          ID: pdns
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: pdns.
+     Started: 09:54:52.406976
+    Duration: 12526.177 ms
+     Changes:   
+              ----------
+              boost-program-options:
+                  ----------
+                  new:
+                      1.55.0-8.fc21
+                  old:
+              boost-serialization:
+                  ----------
+                  new:
+                      1.55.0-8.fc21
+                  old:
+              cryptopp:
+                  ----------
+                  new:
+                      5.6.2-5.fc21
+                  old:
+              lmdb-libs:
+                  ----------
+                  new:
+                      0.9.14-1.fc21
+                  old:
+              pdns:
+                  ----------
+                  new:
+                      3.4.3-1.fc21
+                  old:
+              polarssl:
+                  ----------
+                  new:
+                      1.3.9-3.fc21
+                  old:
+----------
+          ID: pdns-recursor
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: pdns-recursor.
+     Started: 09:55:04.933642
+    Duration: 10029.445 ms
+     Changes:   
+              ----------
+              pdns-recursor:
+                  ----------
+                  new:
+                      3.7.1-1.fc21
+                  old:
+----------
+          ID: nmon
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: nmon.
+     Started: 09:55:14.963571
+    Duration: 8322.806 ms
+     Changes:   
+              ----------
+              nmon:
+                  ----------
+                  new:
+                      14i-8.fc21
+                  old:
+----------
+          ID: mbuffer
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: mbuffer.
+     Started: 09:55:23.286844
+    Duration: 9629.54 ms
+     Changes:   
+              ----------
+              mbuffer:
+                  ----------
+                  new:
+                      20141227-1.fc21
+                  old:
+              mhash:
+                  ----------
+                  new:
+                      0.9.9.9-10.fc21
+                  old:
+----------
+          ID: htop
+    Function: pkg.installed
+      Result: True
+     Comment: Package htop is already installed.
+     Started: 09:55:32.916832
+    Duration: 0.838 ms
+     Changes:   
+----------
+          ID: pigz
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: pigz.
+     Started: 09:55:32.917926
+    Duration: 8598.472 ms
+     Changes:   
+              ----------
+              pigz:
+                  ----------
+                  new:
+                      2.3.3-1.fc21
+                  old:
+----------
+          ID: nano
+    Function: pkg.installed
+      Result: True
+     Comment: Package nano is already installed.
+     Started: 09:55:41.516994
+    Duration: 1.119 ms
+     Changes:   
+----------
+          ID: openvpn
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: openvpn.
+     Started: 09:55:41.518317
+    Duration: 10108.055 ms
+     Changes:   
+              ----------
+              openvpn:
+                  ----------
+                  new:
+                      2.3.6-1.fc21
+                  old:
+              pkcs11-helper:
+                  ----------
+                  new:
+                      1.11-4.fc21
+                  old:
+----------
+          ID: python-pip
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: python-pip.
+     Started: 09:55:51.626807
+    Duration: 10482.91 ms
+     Changes:   
+              ----------
+              python-pip:
+                  ----------
+                  new:
+                      1.5.6-3.fc21
+                  old:
+----------
+          ID: java-1.8.0-openjdk-headless
+    Function: pkg.installed
+      Result: True
+     Comment: 1 targeted package was installed/updated.
+     Started: 09:56:02.110163
+    Duration: 24336.239 ms
+     Changes:   
+              ----------
+              PyXB:
+                  ----------
+                  new:
+                      1.2.3-3.fc21
+                  old:
+              freetype:
+                  ----------
+                  new:
+                      2.5.3-16.fc21
+                  old:
+              java-1.8.0-openjdk-headless:
+                  ----------
+                  new:
+                      1.8.0.40-25.b25.fc21
+                  old:
+              javapackages-tools:
+                  ----------
+                  new:
+                      4.1.0-7.fc21
+                  old:
+              lcms2:
+                  ----------
+                  new:
+                      2.6-4.fc21
+                  old:
+              libjpeg-turbo:
+                  ----------
+                  new:
+                      1.3.1-5.fc21
+                  old:
+              libpng:
+                  ----------
+                  new:
+                      1.6.10-3.fc21
+                  old:
+              libxslt:
+                  ----------
+                  new:
+                      1.1.28-8.fc21
+                  old:
+              python-cssselect:
+                  ----------
+                  new:
+                      0.9.1-4.fc21
+                  old:
+              python-javapackages:
+                  ----------
+                  new:
+                      4.1.0-7.fc21
+                  old:
+              python-lxml:
+                  ----------
+                  new:
+                      3.3.6-1.fc21
+                  old:
+              tzdata-java:
+                  ----------
+                  new:
+                      2015b-1.fc21
+                  old:
+----------
+          ID: /etc/openvpn/udp.conf
+    Function: file.managed
+      Result: False
+     Comment: Source file salt://edge/openvpn.svr.conf.jinja not found
+     Started: 09:56:26.446780
+    Duration: 71.62 ms
+     Changes:   
+----------
+          ID: /etc/openvpn/ccd
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/openvpn/ccd updated
+     Started: 09:56:26.518645
+    Duration: 1.652 ms
+     Changes:   
+              ----------
+              /etc/openvpn/ccd:
+                  New Dir
+----------
+          ID: /etc/openvpn/keys
+    Function: file.directory
+      Result: True
+     Comment: Directory /etc/openvpn/keys updated
+     Started: 09:56:26.520496
+    Duration: 4.811 ms
+     Changes:   
+              ----------
+              /etc/openvpn/keys:
+                  New Dir
+
+Summary
+-------------
+Succeeded: 20 (changed=17)
+Failed:     1
+-------------
+Total states run:     21

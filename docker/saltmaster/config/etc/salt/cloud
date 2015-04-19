@@ -1,0 +1,4 @@
+provider: do
+# Set the location of the Salt master
+minion:
+  master: iowntheinter.net

@@ -1,0 +1,34 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Creating Cloud VM moe
+[INFO    ] Rendering deploy script: /etc/salt/cloud.deploy.d/bootstrap-salt.sh
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connected to 45.33.19.112.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connected to 45.33.19.112.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connected to 45.33.19.112.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connected to 45.33.19.112.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+Warning: Permanently added '45.33.19.112' (ECDSA) to the list of known hosts.
+Connection to 45.33.19.112 closed.
+[INFO    ] Salt installed on moe
+[INFO    ] Created Cloud VM 'moe'

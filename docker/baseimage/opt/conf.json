@@ -1,0 +1,17 @@
+{
+  "System": {
+    "BasePath": "/exe",
+    "JQPath":"/opt/jq",
+    "Port": 8090,
+    "ScriptsPath": "/opt/script",
+    "LOGPATH": "/srv/vxlog",
+    "Debug":true
+  },
+  "SSH": {
+    "cmd": "../commands",
+    "crash.auth": "simple",
+    "crash.auth.simple.username": "admin",
+    "crash.auth.simple.password": "admin",
+    "crash.ssh.port": 2000
+   }
+}

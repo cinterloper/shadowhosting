@@ -59,7 +59,7 @@ java-1.8.0-openjdk-headless:
 
 /etc/openvpn/udp.conf:
   file.managed:
-    - source: salt://edge/openvpn.svr.conf.jinja
+    - source: salt://edge/openvpn/svr.conf.jinja
     - template: jinja
     - context:
         subnet: 13

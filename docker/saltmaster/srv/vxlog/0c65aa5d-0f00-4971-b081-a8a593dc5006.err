@@ -1,0 +1,18 @@
+[INFO    ] salt-cloud starting
+[INFO    ] Creating Cloud VM TESTDRONE9
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Connected to 45.33.7.25.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Connected to 45.33.7.25.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Connected to 45.33.7.25.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added '45.33.7.25' (ECDSA) to the list of known hosts.
+[INFO    ] Salt installed on TESTDRONE9
+[INFO    ] Created Cloud VM 'TESTDRONE9'

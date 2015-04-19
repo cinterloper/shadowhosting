@@ -1,0 +1,92 @@
+root@45.33.7.25's password: 
+Sat Mar 28 07:42:43 UTC 2015
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+sftp> put /tmp/tmpdJL6Uq /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion.pem
+Uploading /tmp/tmpdJL6Uq to /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion.pem
+/tmp/tmpdJL6Uq                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmpdJL6Uq                                100% 3243     3.2KB/s   00:01    
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+sftp> put /tmp/tmpEmITeV /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion.pub
+Uploading /tmp/tmpEmITeV to /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion.pub
+/tmp/tmpEmITeV                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmpEmITeV                                100%  800     0.8KB/s   00:00    
+root@45.33.7.25's password: 
+sftp> put /tmp/tmp_V4zsv /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion
+Uploading /tmp/tmp_V4zsv to /tmp/.saltcloud-e05a2748-96dd-4ddc-a339-dd8782b36520/minion
+/tmp/tmp_V4zsv                                  0%    0     0.0KB/s   --:-- ETA/tmp/tmp_V4zsv                                100% 3127     3.1KB/s   00:00    
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+root@45.33.7.25's password: 
+TESTDRONE9:
+    ----------
+    _uuid:
+        None
+    driver:
+    extra:
+        ----------
+        ALERT_BWIN_ENABLED:
+            1
+        ALERT_BWIN_THRESHOLD:
+            5
+        ALERT_BWOUT_ENABLED:
+            1
+        ALERT_BWOUT_THRESHOLD:
+            5
+        ALERT_BWQUOTA_ENABLED:
+            1
+        ALERT_BWQUOTA_THRESHOLD:
+            80
+        ALERT_CPU_ENABLED:
+            1
+        ALERT_CPU_THRESHOLD:
+            90
+        ALERT_DISKIO_ENABLED:
+            1
+        ALERT_DISKIO_THRESHOLD:
+            5000
+        BACKUPSENABLED:
+            0
+        BACKUPWEEKLYDAY:
+            0
+        BACKUPWINDOW:
+            0
+        CREATE_DT:
+            2015-03-28 03:42:06.0
+        DATACENTERID:
+            2
+        DISTRIBUTIONVENDOR:
+            Fedora
+        LABEL:
+            TESTDRONE9
+        LINODEID:
+            933060
+        LPM_DISPLAYGROUP:
+            
+        PLANID:
+            1
+        STATUS:
+            0
+        TOTALHD:
+            24576
+        TOTALRAM:
+            1024
+        TOTALXFER:
+            2000
+        WATCHDOG:
+            1
+    id:
+        933060
+    image:
+        None
+    name:
+        TESTDRONE9
+    private_ips:
+    public_ips:
+        - 45.33.7.25
+    size:
+        None
+    state:
+        3
+
