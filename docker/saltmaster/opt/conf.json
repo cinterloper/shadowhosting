@@ -2,13 +2,17 @@
   "System": {
     "BasePath": "/exe",
     "JQPath":"/opt/jq",
-    "Port": 8091,
+    "Port": 8999,
     "ScriptsPath": "/opt/script",
     "LOGPATH": "/srv/vxlog",
-    "RegExRule": "[^a-zA-Z0-9\\_\\.\\-\\/\\:]",
-    "CBURL": "http://localhost:8999/cb",
+    "RegExRule": "[^a-zA-Z0-9\\_\\.\\-\\/\\:\\{\\}\\,\\\"]",
+    "CBHOST": "10.12.1.221",
+    "CBPROTO": "http",
+    "CBPORT": "8085",
+    "CBPATH": "cb",
     "LBURL": "http://localhost:8999/lb",
-    "Debug":true,
+
+    "debug":true,
     "eb" : {
 	"bridge":{
 		"inbound":  [{ "address":"executions" },{ "address":"node" }],

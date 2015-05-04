@@ -1,0 +1,4 @@
+{
+ "some-luks-uuid":"a-luks-keyslot-passphrase",
+ "another-luks-uuid":"another-luks-keyslot-passphrase"
+}

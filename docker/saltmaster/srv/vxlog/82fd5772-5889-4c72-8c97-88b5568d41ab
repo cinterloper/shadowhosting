@@ -1,8 +1,0 @@
-root@45.33.26.27's password: 
-Sat Mar 28 07:38:51 UTC 2015
-root@45.33.26.27's password: 
-root@45.33.26.27's password: 
-root@45.33.26.27's password: 
-sftp> put /tmp/tmpbe_aZo /tmp/.saltcloud-73e89c04-916d-4955-9d75-7b61dadeb88a/minion.pem
-Uploading /tmp/tmpbe_aZo to /tmp/.saltcloud-73e89c04-916d-4955-9d75-7b61dadeb88a/minion.pem
-/tmp/tmpbe_aZo                                  0%    0     0.0KB/s   --:-- ETA

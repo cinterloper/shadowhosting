@@ -1,6 +1,0 @@
-my-linode-config:
-    ----------
-    linode:
-        ----------
-        moe:
-            True

@@ -1,0 +1,16 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ zpool scrub $POOL
+ CALLBACK $CBDATA
+}

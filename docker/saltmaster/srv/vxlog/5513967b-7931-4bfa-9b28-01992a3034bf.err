@@ -1,6 +1,0 @@
-[DEBUG   ] Reading configuration from /etc/salt/master
-[DEBUG   ] Using cached minion ID from /etc/salt/minion_id: 38937deb8670
-[DEBUG   ] Configuration file path: /etc/salt/master
-[INFO    ] Setting up the Salt Master
-[WARNING ] Unable to bind socket, error: [Errno 98] Address already in use
-The ports are not available to bind

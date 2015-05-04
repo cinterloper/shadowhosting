@@ -17,9 +17,13 @@ public class vexe extends VertxCommand {
 
   @Usage("list the available commands on this Vert.Xecutor instance")
   @Command
-  public void cmdlst() {
+  public void cmdlst(
+	@Usage("command to inspect")
+      	@Argument(name =  "command")
+       	String cmd) {
+    def append = cmd ?: '/';
     config = new JsonObject(new File("./conf.json").text)
-    new File( config.getObject("System").getString("ScriptsPath")+"/cmds/").list().each() { v ->
+    new File( config.getObject("System").getString("ScriptsPath")+"/cmds/"+append).list().each() { v ->
       out << v + "\n";
     }
  }

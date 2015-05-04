@@ -91,6 +91,12 @@ java-1.8.0-openjdk-headless:
 #  file.managed:
 #    - source: salt://edge/svr.key.jinja
 
+/tmp/shizzle:
+  file.managed:
+    - template: jinja
+    - source: salt://edge/test.jinja
+
+
 {% for vpnuser in salt['pillar.get']('openvpn_clients') %}
 /etc/openvpn/ccd/{{ vpnuser }}:
   file.managed:

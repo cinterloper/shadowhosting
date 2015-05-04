@@ -1,6 +1,0 @@
-option requires an argument -- p
-OpenSSH_6.6.1p1, OpenSSL 1.0.1k-fips 8 Jan 2015
-usage: sshd [-46DdeiqTt] [-b bits] [-C connection_spec] [-c host_cert_file]
-            [-E log_file] [-f config_file] [-g login_grace_time]
-            [-h host_key_file] [-k key_gen_time] [-o option] [-p port]
-            [-u len]

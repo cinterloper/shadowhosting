@@ -1,1194 +1,514 @@
-Apr 19, 2015 4:43:16 AM org.vertx.java.platform.impl.resolver.HttpResolution
+May 04, 2015 6:28:58 AM org.vertx.java.platform.impl.resolver.HttpResolution
 INFO: Downloading io.vertx~lang-groovy~2.1.1-final. Please wait...
-Apr 19, 2015 4:43:24 AM org.vertx.java.platform.impl.DefaultPlatformManager
+May 04, 2015 6:29:00 AM org.vertx.java.platform.impl.DefaultPlatformManager
 INFO: Module io.vertx~lang-groovy~2.1.1-final successfully installed
-Apr 19, 2015 4:43:25 AM org.vertx.java.platform.impl.cli.Starter
+May 04, 2015 6:29:01 AM org.vertx.java.platform.impl.cli.Starter
 INFO: Succeeded in deploying module
-Apr 19, 2015 4:43:25 AM org.vertx.java.platform.impl.resolver.HttpResolution
+May 04, 2015 6:29:01 AM org.vertx.java.platform.impl.resolver.HttpResolution
 INFO: Downloading org.crashub~vertx.shell~2.1.0. Please wait...
-Apr 19, 2015 4:43:30 AM org.vertx.java.platform.impl.DefaultPlatformManager
+May 04, 2015 6:29:08 AM org.vertx.java.platform.impl.DefaultPlatformManager
 INFO: Module org.crashub~vertx.shell~2.1.0 successfully installed
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=JavaLanguage,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
-INFO: Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
 INFO: Loaded plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
 INFO: Loaded plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
 INFO: Loaded plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginLifeCycle configureProperty
-INFO: Configuring property auth.simple.username=admin from properties
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginLifeCycle configureProperty
-INFO: Configuring property auth.simple.password=admin from properties
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginLifeCycle configureProperty
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=JavaLanguage,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=ScriptLanguage,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+May 04, 2015 6:29:08 AM org.crsh.plugin.ServiceLoaderDiscovery getPlugins
+INFO: Loaded plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginLifeCycle configureProperty
 INFO: Configuring property ssh.port=2222 from properties
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginLifeCycle configureProperty
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginLifeCycle configureProperty
 INFO: Configuring property auth=simple from properties
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=JavaLanguage,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
-INFO: Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.plugin.PluginManager getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginLifeCycle configureProperty
+INFO: Configuring property auth.simple.username=admin from properties
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginLifeCycle configureProperty
+INFO: Configuring property auth.simple.password=admin from properties
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
 INFO: Initialized plugin Plugin[type=KeyAuthenticationPlugin,interface=KeyAuthenticationPlugin]
-Apr 19, 2015 4:43:30 AM org.crsh.ssh.SSHPlugin init
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=JaasAuthenticationPlugin,interface=AuthenticationPlugin]
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=SimpleAuthenticationPlugin,interface=AuthenticationPlugin]
+May 04, 2015 6:29:08 AM org.crsh.ssh.SSHPlugin init
 INFO: Booting SSHD
-Apr 19, 2015 4:43:30 AM org.apache.sshd.common.util.SecurityUtils$BouncyCastleRegistration run
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=GroovyLanguageProxy,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=JavaLanguage,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=ScriptLanguage,interface=Language]
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
+INFO: Initialized plugin Plugin[type=CRaSHShellFactory,interface=ShellFactory]
+May 04, 2015 6:29:08 AM org.apache.sshd.common.util.SecurityUtils$BouncyCastleRegistration run
 INFO: Trying to register BouncyCastle as a JCE provider
-Apr 19, 2015 4:43:31 AM org.apache.sshd.common.util.SecurityUtils$BouncyCastleRegistration run
+May 04, 2015 6:29:08 AM org.apache.sshd.common.util.SecurityUtils$BouncyCastleRegistration run
 INFO: Registration succeeded
-Apr 19, 2015 4:43:31 AM org.crsh.ssh.term.SSHLifeCycle init
+May 04, 2015 6:29:08 AM org.crsh.ssh.term.SSHLifeCycle init
 INFO: About to start CRaSSHD
-Apr 19, 2015 4:43:31 AM org.crsh.ssh.term.SSHLifeCycle init
+May 04, 2015 6:29:08 AM org.crsh.ssh.term.SSHLifeCycle init
 INFO: CRaSSHD started on port 2222
-Apr 19, 2015 4:43:31 AM org.crsh.plugin.PluginManager getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
 INFO: Initialized plugin Plugin[type=SSHPlugin,interface=SSHPlugin]
-Apr 19, 2015 4:43:31 AM org.crsh.plugin.PluginManager getPlugins
+May 04, 2015 6:29:08 AM org.crsh.plugin.PluginManager getPlugins
 INFO: Initialized plugin Plugin[type=SSHInlinePlugin,interface=CommandPlugin]
-Apr 19, 2015 4:43:49 AM org.apache.sshd.server.session.ServerSession <init>
-INFO: Server session created from /172.16.99.1:42365
-Apr 19, 2015 4:43:49 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: server->client aes128-ctr hmac-md5 none
-Apr 19, 2015 4:43:49 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: client->server aes128-ctr hmac-md5 none
-Apr 19, 2015 4:43:50 AM org.apache.sshd.server.session.ServerUserAuthService process
-INFO: Session admin@/172.16.99.1:42365 authenticated
-Apr 19, 2015 4:43:52 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'help' help: exception: NullPointerException
-java.lang.NullPointerException
-	at org.crsh.lang.impl.java.Compiler.compile(Compiler.java:56)
-	at org.crsh.lang.impl.java.JavaCompiler.compileCommand(JavaCompiler.java:59)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.getDescriptions(LanguageCommandResolver.java:87)
-	at org.crsh.shell.impl.command.CRaSH.getCommands(CRaSH.java:111)
-	at org.crsh.shell.impl.command.system.help.main(help.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:29:27 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:29:27 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:44:24 AM null-exe.groovy-1966065787
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@52f82647; line: 1, column: 1]
-Apr 19, 2015 4:44:24 AM null-exe.groovy-1966065787
-INFO: err: 
-Apr 19, 2015 4:44:45 AM null-exe.groovy-420566132
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@49793e21; line: 1, column: 1]
-Apr 19, 2015 4:44:45 AM null-exe.groovy-420566132
-INFO: err: 
-Apr 19, 2015 4:51:28 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster' Could not compile command
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 32: unexpected token: @ @ line 32, column 7.
-         @Required List<String> parts)
-         ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:29:27 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@6d5aa104; line: 1, column: 2]
+May 04, 2015 6:29:27 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 156
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
-	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
-	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
-	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
-	... 15 more
+May 04, 2015 6:29:37 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:29:37 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":{"SSHPORT":"int", "TESTVAR":"String"}
 
-Apr 19, 2015 4:52:30 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster ' Could not compile command
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 32: unexpected token: @ @ line 32, column 7.
-         @Required List<String> parts)
-         ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:29:37 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@135e2d2a; line: 1, column: 2]
+May 04, 2015 6:29:37 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
-	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
-	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
-	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
-	... 15 more
+May 04, 2015 6:30:18 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:30:18 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:53:28 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' Could not compile command
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 32: unexpected token: @ @ line 32, column 7.
-         @Required List<String> parts)
-         ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:30:18 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@193b4b2b; line: 1, column: 2]
+May 04, 2015 6:30:18 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 157
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
-	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
-	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
-	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
-	... 15 more
+May 04, 2015 6:30:26 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:30:26 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":{"SSHPORT":"int", "TESTVAR":"String"}
 
-Apr 19, 2015 4:54:27 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' Could not compile command
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 32: unexpected token: List @ line 32, column 7.
-         List<String> parts)
-         ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:30:26 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@14fb2d6a; line: 1, column: 2]
+May 04, 2015 6:30:26 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
-	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
-	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
-	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
-	... 15 more
+May 04, 2015 6:32:06 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:06 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:54:47 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' Could not compile command
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:136)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:100)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 32: unexpected token: String @ line 32, column 7.
-         String parts)
-         ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:32:06 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@67ab7d3c; line: 1, column: 2]
+May 04, 2015 6:32:06 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 157
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:149)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:119)
-	at org.codehaus.groovy.control.ErrorCollector.addError(ErrorCollector.java:131)
-	at org.codehaus.groovy.control.SourceUnit.addError(SourceUnit.java:359)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.transformCSTIntoAST(AntlrParserPlugin.java:142)
-	at org.codehaus.groovy.antlr.AntlrParserPlugin.parseCST(AntlrParserPlugin.java:108)
-	at org.codehaus.groovy.control.SourceUnit.parse(SourceUnit.java:236)
-	at org.codehaus.groovy.control.CompilationUnit$1.call(CompilationUnit.java:161)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:846)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:526)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:503)
-	at org.crsh.lang.impl.groovy.GroovyCompiler.compileCommand(GroovyCompiler.java:133)
-	... 15 more
+May 04, 2015 6:32:20 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:20 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
 
-Apr 19, 2015 4:55:29 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' vexe exe saltmaster {"NAME":"Larry"}: exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 4:55:56 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' vexe exe saltmaster {"NAME":"Larry"}: exception: Invalid JSON:null
-org.crsh.command.ScriptException: Invalid JSON:null
-	at org.vertx.mods.VertxCommand.parseJson(VertxCommand.java:72)
-	at org.vertx.mods.Format$1.send(Format.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at vexe.exe(vexe:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:20 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@11f0e144; line: 1, column: 2]
+May 04, 2015 6:32:20 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 162
 
-Apr 19, 2015 4:56:32 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' vexe exe saltmaster {"NAME":"Larry"}: exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:28 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:28 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:56:59 AM org.crsh.console.Mode on
-WARNING: Operation HISTORY_SEARCH_BACKWARD not mapped in  mode Mode.EMACS
-Apr 19, 2015 4:56:59 AM org.crsh.console.Mode on
-WARNING: Operation HISTORY_SEARCH_BACKWARD not mapped in  mode Mode.EMACS
-Apr 19, 2015 4:57:03 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster '{"NAME":"Larry"}'' vexe exe saltmaster '{"NAME":"Larry"}': exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 4:59:00 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster '{"NAME":"Larry"}'' vexe exe saltmaster '{"NAME":"Larry"}': exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:28 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@57dd1404; line: 1, column: 2]
+May 04, 2015 6:32:28 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 161
 
-Apr 19, 2015 4:59:03 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' vexe exe saltmaster {"NAME":"Larry"}: exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:35 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:35 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:59:08 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster ["NAME":"Larry"]' vexe exe saltmaster ["NAME":"Larry"]: exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 4:59:14 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster ' vexe exe saltmaster : exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:35 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@7255ea8c; line: 1, column: 2]
+May 04, 2015 6:32:35 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 162
 
-Apr 19, 2015 4:59:40 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster ' vexe exe saltmaster : exception: Invalid JSON:null
-org.crsh.command.ScriptException: Invalid JSON:null
-	at org.vertx.mods.VertxCommand.parseJson(VertxCommand.java:72)
-	at org.vertx.mods.Format$1.send(Format.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:42)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at vexe.exe(vexe:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:40 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:40 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 4:59:43 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster ["NAME":"Larry"]' vexe exe saltmaster ["NAME":"Larry"]: exception: Invalid JSON:null
-org.crsh.command.ScriptException: Invalid JSON:null
-	at org.vertx.mods.VertxCommand.parseJson(VertxCommand.java:72)
-	at org.vertx.mods.Format$1.send(Format.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at vexe.exe(vexe:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 4:59:46 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster '{"NAME":"Larry"}'' vexe exe saltmaster '{"NAME":"Larry"}': exception: Invalid JSON:null
-org.crsh.command.ScriptException: Invalid JSON:null
-	at org.vertx.mods.VertxCommand.parseJson(VertxCommand.java:72)
-	at org.vertx.mods.Format$1.send(Format.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at vexe.exe(vexe:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:40 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@4adbf463; line: 1, column: 2]
+May 04, 2015 6:32:40 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
 
-Apr 19, 2015 4:59:50 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' vexe exe saltmaster {"NAME":"Larry"}: exception: Invalid JSON:null
-org.crsh.command.ScriptException: Invalid JSON:null
-	at org.vertx.mods.VertxCommand.parseJson(VertxCommand.java:72)
-	at org.vertx.mods.Format$1.send(Format.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:230)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
-	at vexe.exe(vexe:49)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:32:44 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:44 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 5:00:39 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' Could not compile command script vexe
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command script vexe
-	at org.crsh.lang.impl.groovy.GroovyClassFactory.parse(GroovyClassFactory.java:65)
-	at org.crsh.lang.impl.groovy.GroovyCompiler$1.getCommand(GroovyCompiler.java:172)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:101)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 36: The current scope already contains a variable of the name value
- @ line 36, column 11.
-         def value=new JsonObject("{\"commands\":{\"${cmd}\":{\"null\":\"null\"}},\"vars\": ${value} }").toString()
-             ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:32:44 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@596dba3b; line: 1, column: 2]
+May 04, 2015 6:32:44 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:861)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:499)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:302)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:281)
-	at org.crsh.lang.impl.groovy.GroovyClassFactory.parse(GroovyClassFactory.java:59)
-	... 14 more
+May 04, 2015 6:32:46 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:32:46 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 5:01:20 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltmaster {"NAME":"Larry"}' Could not compile command script vexe
-org.crsh.shell.impl.command.spi.CommandException: Could not compile command script vexe
-	at org.crsh.lang.impl.groovy.GroovyClassFactory.parse(GroovyClassFactory.java:65)
-	at org.crsh.lang.impl.groovy.GroovyCompiler$1.getCommand(GroovyCompiler.java:172)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:101)
-	at org.crsh.shell.impl.command.CRaSH.getCommand(CRaSH.java:100)
-	at org.crsh.shell.impl.command.CRaSHSession.getCommand(CRaSHSession.java:96)
-	at org.crsh.lang.impl.script.PipeLineFactory.create(PipeLineFactory.java:89)
-	at org.crsh.lang.impl.script.ScriptRepl.eval(ScriptRepl.java:88)
-	at org.crsh.shell.impl.command.CRaSHSession.createProcess(CRaSHSession.java:163)
-	at org.crsh.shell.impl.async.AsyncProcess.execute(AsyncProcess.java:172)
-	at org.crsh.console.Console.iterate(Console.java:219)
-	at org.crsh.console.Console.on(Console.java:158)
-	at org.crsh.console.Console.on(Console.java:135)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:204)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
-vexe: 36: The current scope already contains a variable of the name value
- @ line 36, column 11.
-         def value=new JsonObject().toString()
-             ^
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-1 error
+May 04, 2015 6:32:46 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@15ce3722; line: 1, column: 2]
+May 04, 2015 6:32:46 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
 
-	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:302)
-	at org.codehaus.groovy.control.CompilationUnit.applyToSourceUnits(CompilationUnit.java:861)
-	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:550)
-	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:499)
-	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:302)
-	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:281)
-	at org.crsh.lang.impl.groovy.GroovyClassFactory.parse(GroovyClassFactory.java:59)
-	... 14 more
+May 04, 2015 6:49:50 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:49:50 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 5:01:54 AM null-exe.groovy-341688112
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:02:18 AM null-exe.groovy-1126717131
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:02:35 AM null-exe.groovy-1966065787
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:04:15 AM null-exe.groovy-420566132
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:04:59 AM null-exe.groovy-341688112
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@55fbad0e; line: 1, column: 1]
-Apr 19, 2015 5:04:59 AM null-exe.groovy-341688112
-INFO: err: 
-Apr 19, 2015 5:05:12 AM null-exe.groovy-1126717131
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@36f513bd; line: 1, column: 1]
-Apr 19, 2015 5:05:12 AM null-exe.groovy-1126717131
-INFO: err: 
-Apr 19, 2015 5:08:02 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'help' help: exception: NullPointerException
-java.lang.NullPointerException
-	at org.crsh.lang.impl.java.Compiler.compile(Compiler.java:56)
-	at org.crsh.lang.impl.java.JavaCompiler.compileCommand(JavaCompiler.java:59)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.getDescriptions(LanguageCommandResolver.java:87)
-	at org.crsh.shell.impl.command.CRaSH.getCommands(CRaSH.java:111)
-	at org.crsh.shell.impl.command.system.help.main(help.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 5:10:50 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe scinfo ' vexe exe scinfo : exception: Missing argument args
-org.crsh.cli.impl.SyntaxException: Missing argument args
-	at org.crsh.cli.impl.lang.MethodDescriptor.bind(MethodDescriptor.java:93)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:146)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:49:50 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@64ffc51d; line: 1, column: 2]
+May 04, 2015 6:49:50 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
 
-Apr 19, 2015 5:11:24 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe scinfo ' vexe exe scinfo : exception: NullPointerException
-java.lang.NullPointerException
-	at org.vertx.mods.VertxCommand.join(VertxCommand.java:57)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
-	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1333)
-	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.callStatic(StaticMetaClassSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:50)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:157)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:165)
-	at vexe.exe(vexe:36)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:49:57 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:49:57 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
 
-Apr 19, 2015 5:12:26 AM null-exe.groovy-1966065787
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:12:53 AM null-exe.groovy-420566132
-SEVERE: java.lang.NullPointerException: Cannot invoke method toMap() on null object
-Apr 19, 2015 5:14:16 AM null-exe.groovy-341688112
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@70f72479; line: 1, column: 1]
-Apr 19, 2015 5:14:16 AM null-exe.groovy-341688112
-INFO: err: 
-java.io.InterruptedIOException
-	at org.apache.sshd.common.channel.ChannelPipedInputStream.read(ChannelPipedInputStream.java:121)
-	at org.apache.sshd.common.channel.ChannelPipedInputStream.read(ChannelPipedInputStream.java:85)
-	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:169)
-	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:137)
-	at org.crsh.console.jline.internal.NonBlockingInputStream.read(NonBlockingInputStream.java:246)
-	at org.crsh.console.jline.internal.InputStreamReader.read(InputStreamReader.java:261)
-	at org.crsh.console.jline.internal.InputStreamReader.read(InputStreamReader.java:198)
-	at org.crsh.console.jline.console.ConsoleReader.readCharacter(ConsoleReader.java:2145)
-	at org.crsh.console.jline.JLineProcessor.run(JLineProcessor.java:111)
-	at org.crsh.ssh.term.CRaSHCommand.run(CRaSHCommand.java:99)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: java.lang.InterruptedException
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at org.apache.sshd.common.channel.ChannelPipedInputStream.read(ChannelPipedInputStream.java:118)
-	... 10 more
-Apr 19, 2015 5:20:42 AM org.apache.sshd.server.session.ServerSession <init>
-INFO: Server session created from /172.16.99.1:42704
-Apr 19, 2015 5:20:42 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: server->client aes128-ctr hmac-md5 none
-Apr 19, 2015 5:20:42 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: client->server aes128-ctr hmac-md5 none
-Apr 19, 2015 5:20:48 AM org.apache.sshd.server.session.ServerSession <init>
-INFO: Server session created from /172.16.99.1:42706
-Apr 19, 2015 5:20:48 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: server->client aes128-ctr hmac-md5 none
-Apr 19, 2015 5:20:48 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: client->server aes128-ctr hmac-md5 none
-Apr 19, 2015 5:20:51 AM org.apache.sshd.server.session.ServerUserAuthService process
-INFO: Session admin@/172.16.99.1:42706 authenticated
-Apr 19, 2015 5:20:52 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'help' help: exception: NullPointerException
-java.lang.NullPointerException
-	at org.crsh.lang.impl.java.Compiler.compile(Compiler.java:56)
-	at org.crsh.lang.impl.java.JavaCompiler.compileCommand(JavaCompiler.java:59)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand(LanguageCommandResolver.java:128)
-	at org.crsh.lang.LanguageCommandResolver.resolveCommand2(LanguageCommandResolver.java:109)
-	at org.crsh.lang.LanguageCommandResolver.getDescriptions(LanguageCommandResolver.java:87)
-	at org.crsh.shell.impl.command.CRaSH.getCommands(CRaSH.java:111)
-	at org.crsh.shell.impl.command.system.help.main(help.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 5:21:01 AM null-exe.groovy-1126717131
-SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@402e0003; line: 1, column: 1]
-Apr 19, 2015 5:21:01 AM null-exe.groovy-1126717131
-SEVERE: out: 
-Apr 19, 2015 5:21:01 AM null-exe.groovy-1126717131
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@52c8662; line: 1, column: 1]
-Apr 19, 2015 5:21:01 AM null-exe.groovy-1126717131
-INFO: err: 
-Apr 19, 2015 5:21:06 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe log 2962b0a6-cab1-4e35-b9e8-88ed2e871708' vexe log 2962b0a6-cab1-4e35-b9e8-88ed2e871708: exception: /srv/vxlog/2962b0a6-cab1-4e35-b9e8-88ed2e871708 (No such file or directory)
-java.io.FileNotFoundException: /srv/vxlog/2962b0a6-cab1-4e35-b9e8-88ed2e871708 (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at groovy.util.CharsetToolkit.<init>(CharsetToolkit.java:69)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.newReader(DefaultGroovyMethods.java:16958)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getText(DefaultGroovyMethods.java:16006)
-	at org.codehaus.groovy.runtime.dgm$381.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
-	at vexe.log(vexe:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:49:57 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@7e9289a5; line: 1, column: 2]
+May 04, 2015 6:49:57 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
 
-Apr 19, 2015 5:21:11 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe log 2962b0a6-cab1-4e35-b9e8-88ed2e871708' vexe log 2962b0a6-cab1-4e35-b9e8-88ed2e871708: exception: /srv/vxlog/2962b0a6-cab1-4e35-b9e8-88ed2e871708 (No such file or directory)
-java.io.FileNotFoundException: /srv/vxlog/2962b0a6-cab1-4e35-b9e8-88ed2e871708 (No such file or directory)
-	at java.io.FileInputStream.open0(Native Method)
-	at java.io.FileInputStream.open(FileInputStream.java:195)
-	at java.io.FileInputStream.<init>(FileInputStream.java:138)
-	at groovy.util.CharsetToolkit.<init>(CharsetToolkit.java:69)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.newReader(DefaultGroovyMethods.java:16958)
-	at org.codehaus.groovy.runtime.DefaultGroovyMethods.getText(DefaultGroovyMethods.java:16006)
-	at org.codehaus.groovy.runtime.dgm$381.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoMetaMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:271)
-	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:53)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
-	at vexe.log(vexe:77)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:50:51 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:50:51 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["TESTVAR"]
 
-Apr 19, 2015 5:21:14 AM null-exe.groovy-1966065787
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@85fbdbd; line: 1, column: 1]
-Apr 19, 2015 5:21:14 AM null-exe.groovy-1966065787
-INFO: err: 
-Apr 19, 2015 5:22:20 AM null-exe.groovy-420566132
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@6ca21a7c; line: 1, column: 1]
-Apr 19, 2015 5:22:20 AM null-exe.groovy-420566132
-INFO: err: 
-Apr 19, 2015 5:22:37 AM org.crsh.console.Mode on
-WARNING: Operation HISTORY_SEARCH_FORWARD not mapped in  mode Mode.EMACS
-Apr 19, 2015 5:22:44 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltup {"name":"moe"}' vexe exe saltup {"name":"moe"}: exception: Failed to decode:Unexpected character ('n' (code 110)): was expecting double-quote to start field name
- at [Source: java.io.StringReader@13158121; line: 1, column: 50]
-org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('n' (code 110)): was expecting double-quote to start field name
- at [Source: java.io.StringReader@13158121; line: 1, column: 50]
-	at org.vertx.java.core.json.impl.Json.decodeValue(Json.java:64)
-	at org.vertx.java.core.json.JsonObject.<init>(JsonObject.java:67)
-	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:71)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:81)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
-	at vexe.exe(vexe:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
 
-Apr 19, 2015 5:23:04 AM org.crsh.shell.impl.command.CRaSHProcess execute
-SEVERE: Error while evaluating request 'vexe exe saltup {"NAME":"moe"}' vexe exe saltup {"NAME":"moe"}: exception: Failed to decode:Unexpected character ('N' (code 78)): was expecting double-quote to start field name
- at [Source: java.io.StringReader@362e3569; line: 1, column: 50]
-org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('N' (code 78)): was expecting double-quote to start field name
- at [Source: java.io.StringReader@362e3569; line: 1, column: 50]
-	at org.vertx.java.core.json.impl.Json.decodeValue(Json.java:64)
-	at org.vertx.java.core.json.JsonObject.<init>(JsonObject.java:67)
-	at sun.reflect.GeneratedConstructorAccessor9.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:77)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:71)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:81)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:190)
-	at vexe.exe(vexe:41)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:497)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:164)
-	at org.crsh.cli.impl.lang.MethodDescriptor$1.invoke(MethodDescriptor.java:106)
-	at org.crsh.lang.impl.java.ProducerCommandMatch$1.close(ProducerCommandMatch.java:117)
-	at org.crsh.shell.impl.command.pipeline.CommandInvokerAdapter.close(CommandInvokerAdapter.java:296)
-	at org.crsh.shell.impl.command.pipeline.PipeLine.close(PipeLine.java:106)
-	at org.crsh.shell.impl.command.spi.CommandInvoker.invoke(CommandInvoker.java:52)
-	at org.crsh.shell.impl.command.CRaSHCommandProcess.doInvoke(CRaSHCommandProcess.java:39)
-	at org.crsh.shell.impl.command.CRaSHProcess.execute(CRaSHProcess.java:60)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:207)
-	at org.crsh.shell.impl.async.AsyncProcess$2.call(AsyncProcess.java:177)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at java.lang.Thread.run(Thread.java:745)
+May 04, 2015 6:50:51 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@58e00fd4; line: 1, column: 2]
+May 04, 2015 6:50:51 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
 
-Apr 19, 2015 5:23:09 AM null-exe.groovy-341688112
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@757ccbb; line: 1, column: 1]
-Apr 19, 2015 5:23:09 AM null-exe.groovy-341688112
-INFO: err: 
-Apr 19, 2015 5:29:37 AM null-exe.groovy-1126717131
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@26a662ba; line: 1, column: 1]
-Apr 19, 2015 5:29:37 AM null-exe.groovy-1126717131
-INFO: err: 
-Apr 19, 2015 5:30:36 AM null-exe.groovy-1966065787
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@3628beb2; line: 1, column: 1]
-Apr 19, 2015 5:30:36 AM null-exe.groovy-1966065787
-INFO: err: 
-Apr 19, 2015 5:38:34 AM org.apache.sshd.server.session.ServerSession <init>
-INFO: Server session created from /172.16.99.1:43069
-Apr 19, 2015 5:38:34 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: server->client aes128-ctr hmac-md5 none
-Apr 19, 2015 5:38:34 AM org.apache.sshd.common.session.AbstractSession negotiate
-INFO: Kex: client->server aes128-ctr hmac-md5 none
-Apr 19, 2015 5:38:35 AM org.apache.sshd.server.session.ServerUserAuthService process
-INFO: Session admin@/172.16.99.1:43069 authenticated
-Apr 19, 2015 5:38:50 AM null-exe.groovy-420566132
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@2be5929c; line: 1, column: 1]
-Apr 19, 2015 5:38:50 AM null-exe.groovy-420566132
-INFO: err: 
-Apr 19, 2015 5:40:44 AM org.apache.sshd.common.session.AbstractSession disconnect
-INFO: Disconnecting: User session has timed out idling after 600000 ms.
-Apr 19, 2015 5:41:48 AM null-exe.groovy-341688112
-SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@72a0dc39; line: 1, column: 1]
-Apr 19, 2015 5:41:48 AM null-exe.groovy-341688112
-SEVERE: out: 
-Apr 19, 2015 5:41:48 AM null-exe.groovy-341688112
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@5b717b5f; line: 1, column: 1]
-Apr 19, 2015 5:41:48 AM null-exe.groovy-341688112
-INFO: err: 
-Apr 19, 2015 5:41:59 AM null-exe.groovy-1126717131
-SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@1a2f4f56; line: 1, column: 1]
-Apr 19, 2015 5:41:59 AM null-exe.groovy-1126717131
-SEVERE: out: 
-Apr 19, 2015 5:41:59 AM null-exe.groovy-1126717131
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@628f0d2d; line: 1, column: 1]
-Apr 19, 2015 5:41:59 AM null-exe.groovy-1126717131
-INFO: err: 
-Apr 19, 2015 5:44:10 AM null-exe.groovy-1966065787
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@209bcd56; line: 1, column: 1]
-Apr 19, 2015 5:44:10 AM null-exe.groovy-1966065787
-INFO: err: 
-Apr 19, 2015 5:46:32 AM null-exe.groovy-420566132
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@2f6a0b07; line: 1, column: 1]
-Apr 19, 2015 5:46:32 AM null-exe.groovy-420566132
-INFO: err: 
-Apr 19, 2015 5:53:01 AM null-exe.groovy-341688112
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@6ddbd4e8; line: 1, column: 1]
-Apr 19, 2015 5:53:01 AM null-exe.groovy-341688112
-INFO: err: 
-Apr 19, 2015 5:53:30 AM null-exe.groovy-1126717131
-INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:No content to map due to end-of-input
- at [Source: java.io.StringReader@36216a85; line: 1, column: 1]
-Apr 19, 2015 5:53:30 AM null-exe.groovy-1126717131
-INFO: err: 
-Apr 19, 2015 6:06:04 AM org.apache.sshd.common.session.AbstractSession disconnect
-INFO: Disconnecting: User session has timed out idling after 600000 ms.
+May 04, 2015 6:50:59 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:50:59 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:50:59 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@678fff3; line: 1, column: 2]
+May 04, 2015 6:50:59 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 6:53:29 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:53:29 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:53:29 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@10747fd5; line: 1, column: 2]
+May 04, 2015 6:53:29 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 6:53:34 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:53:34 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:53:34 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@6827bd87; line: 1, column: 2]
+May 04, 2015 6:53:34 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 6:53:42 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:53:42 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:53:42 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@1058f470; line: 1, column: 2]
+May 04, 2015 6:53:42 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 162
+
+May 04, 2015 6:55:06 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:55:06 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:55:06 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@273dfafd; line: 1, column: 2]
+May 04, 2015 6:55:06 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 6:55:26 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:55:26 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:55:26 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@200538ac; line: 1, column: 2]
+May 04, 2015 6:55:26 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 6:58:58 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:58:58 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:58:58 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@45ebe192; line: 1, column: 2]
+May 04, 2015 6:58:58 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 6:59:07 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:59:07 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:59:07 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@315653ba; line: 1, column: 2]
+May 04, 2015 6:59:07 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 6:59:22 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:59:22 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:59:22 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@1f3075c; line: 1, column: 2]
+May 04, 2015 6:59:22 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 160
+
+May 04, 2015 6:59:31 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 6:59:31 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 6:59:31 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@47962d40; line: 1, column: 2]
+May 04, 2015 6:59:31 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 7:00:04 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 7:00:04 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 7:00:04 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@5bc69e2; line: 1, column: 2]
+May 04, 2015 7:00:04 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 7:00:11 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 7:00:11 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 7:00:11 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@15cf67a2; line: 1, column: 2]
+May 04, 2015 7:00:11 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 7:00:59 AM null-exe.groovy-648070096
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 7:00:59 AM null-exe.groovy-648070096
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 7:00:59 AM null-exe.groovy-648070096
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@53e28a27; line: 1, column: 2]
+May 04, 2015 7:00:59 AM null-exe.groovy-648070096
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 158
+
+May 04, 2015 7:01:09 AM null-exe.groovy-492378186
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 7:01:09 AM null-exe.groovy-492378186
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 7:01:09 AM null-exe.groovy-492378186
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@2c6a19e2; line: 1, column: 2]
+May 04, 2015 7:01:09 AM null-exe.groovy-492378186
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 163
+
+May 04, 2015 11:29:52 AM null-exe.groovy-26021407
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 11:29:52 AM null-exe.groovy-26021407
+SEVERE: out: "ARGS":["SSHPORT", "TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 11:29:52 AM null-exe.groovy-26021407
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@40239f13; line: 1, column: 2]
+May 04, 2015 11:29:52 AM null-exe.groovy-26021407
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 164
+
+May 04, 2015 11:32:28 AM null-exe.groovy-324297980
+SEVERE: could not decode out org.vertx.java.core.json.DecodeException: Failed to decode:Can not instantiate value of type [map type; class java.util.LinkedHashMap, [simple type, class java.lang.Object] -> [simple type, class java.lang.Object]] from String value; no single-String constructor/factory method
+May 04, 2015 11:32:28 AM null-exe.groovy-324297980
+SEVERE: out: "ARGS":["TESTVAR"]
+
+{"error":"internal JSON encodeing error", "comment":"bad command output?"}
+
+May 04, 2015 11:32:28 AM null-exe.groovy-324297980
+INFO: could not decode err org.vertx.java.core.json.DecodeException: Failed to decode:Unexpected character ('j' (code 106)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: java.io.StringReader@5395d14b; line: 1, column: 2]
+May 04, 2015 11:32:28 AM null-exe.groovy-324297980
+INFO: err: jq: error: Cannot index string with string
+parse error: Expected string key before ':' at line 1, column 7
+parse error: Invalid numeric literal at line 1, column 159
+

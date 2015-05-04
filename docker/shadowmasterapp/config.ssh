@@ -1,0 +1,4 @@
+Host            gitserv
+    Hostname        github.com
+    IdentityFile    ~/.ssh/id_user
+    IdentitiesOnly yes # see NOTES below

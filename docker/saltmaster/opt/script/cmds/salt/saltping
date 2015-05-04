@@ -1,0 +1,14 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ $SALT '*' test.ping
+}

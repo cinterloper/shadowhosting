@@ -1,0 +1,15 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ echo "not yet implemented"
+ CALLBACK $CBDATA
+}

@@ -1,0 +1,15 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ postqueue -f
+ CALLBACK $CBDATA
+}

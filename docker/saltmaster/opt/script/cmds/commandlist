@@ -6,11 +6,17 @@ CTYPE( )
 
 STRATEGY( )
 {
-  echo sync
+  echo async
 }
 
 RUN( )
 {
- ls=$(ls $ScriptsPath/cmds/)
- $JQPath -n --arg s "$ls" '{cmds: ($s|split("\n"))}'
+ list=$( cd $ScriptsPath/cmds/; for f in $(find * -type f | grep -v '.sh' | grep -v README | grep -v .json); do echo $(source $f; echo {\"$f\":\{$ARGS\}} | $JQPath -c .); done; )
+
+ #list=$(cd $ScriptsPath/cmds/; find * -type f | grep -v '.sh' | grep -v README | grep -v .json )
+ 
+ CBDATA=$($JQPath -n --arg s "$list" '{cmds: ($s|split("\n"))}')
+ echo $CBDATA
+ CALLBACK $(echo $CBDATA | jq -c .)
 }
+

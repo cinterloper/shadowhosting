@@ -1,0 +1,16 @@
+CTYPE( )
+{
+ echo application/json
+}
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ cd "$( dirname "${BASH_SOURCE[0]}" )"
+ lib/list2json.sh $ZFS
+ CALLBACK $CBDATA
+}

@@ -1,0 +1,16 @@
+CTYPE( )
+{
+ echo text/plain
+}
+
+
+
+STRATEGY( )
+{
+  echo async
+}
+
+RUN( )
+{
+ $SALT $NAME state.highstate pillar="$(echo $PILLARDATA | jq -c .)"
+}

@@ -7,5 +7,6 @@
   "saltmaster/config/ssh":"/root/.ssh",
   "saltmaster/srv":"/srv",
   "saltmaster/opt":"/opt",
+  "saltmaster/opt/conf.json":"/conf.json",
   "saltmaster/log/supervisor":"/var/log/supervisor"
 }

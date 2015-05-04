@@ -1,7 +1,0 @@
-[INFO    ] salt-cloud starting
-[INFO    ] Creating Cloud VM TestDrone
-[ERROR   ] Error creating TestDrone on LINODE
-
-The following exception was thrown by libcloud when trying to run the initial deployment: 
-(30) Your credit card was declined.  Please contact your bank for more information.
-Error: There was a profile error: Failed to deploy VM
