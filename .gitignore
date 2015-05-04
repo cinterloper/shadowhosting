@@ -19,3 +19,6 @@ docker/saltmaster/config/etc/salt/pki/master/minions/*
 *.class
 **/logs/
 fedora-vm/
+docker/saltmaster/srv/vxlog/*
+id_rsa
+id_dsa
