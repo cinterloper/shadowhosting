@@ -14,7 +14,8 @@ RUN( )
 {
  for num in $(seq 1 100)
  do
-   prox=$(uptime | cut -d ':' -f 5 | cut -d ',' -f 1 | sed 's/ //g')
+#   prox=$(uptime | cut -d ':' -f 5 | cut -d ',' -f 1 | sed 's/ //g')
+   prox=$(ps aux | wc -l )
    output=$($JQPath -n -c --arg d "$num" --arg p "$prox" '{x:$d,y:$p}')
    echo $output
    CALLBACK $output
