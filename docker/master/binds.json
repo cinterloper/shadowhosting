@@ -1,12 +1,12 @@
 {
-  "saltmaster/config/etc/supervisord.conf":"/etc/supervisord.conf",
-  "saltmaster/config/etc/salt":"/etc/salt",
-  "saltmaster/config/etc/pki/tls/certs/localhost.key":"/etc/pki/tls/certs/localhost.key",
-  "saltmaster/config/etc/pki/tls/certs/localhost.crt":"/etc/pki/tls/certs/localhost.crt",
-  "saltmaster/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
-  "saltmaster/config/ssh":"/root/.ssh",
-  "saltmaster/srv":"/srv",
-  "saltmaster/opt":"/opt",
-  "saltmaster/opt/conf.json":"/conf.json",
-  "saltmaster/log/supervisor":"/var/log/supervisor"
+  "master/config/etc/supervisord.conf":"/etc/supervisord.conf",
+  "master/config/etc/salt":"/etc/salt",
+  "master/config/etc/pki/tls/certs/localhost.key":"/etc/pki/tls/certs/localhost.key",
+  "master/config/etc/pki/tls/certs/localhost.crt":"/etc/pki/tls/certs/localhost.crt",
+  "master/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
+  "master/config/ssh":"/root/.ssh",
+  "master/srv":"/srv",
+  "master/opt/":"/opt",
+  "master/opt/conf.json":"/conf.json",
+  "master/log/supervisor":"/var/log/supervisor"
 }

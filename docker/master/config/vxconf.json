@@ -5,7 +5,7 @@
     "Port": 8999,
     "ScriptsPath": "/opt/script",
     "LOGPATH": "/srv/vxlog",
-    "RegExRule": "[^a-zA-Z0-9\\_\\.\\-\\/\\:\\{\\}\\,\\\"]",
+    "RegExRule": "(.*?)",
     "CBHOST": "10.12.1.221",
     "CBPROTO": "http",
     "CBPORT": "8085",

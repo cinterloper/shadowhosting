@@ -1,5 +1,5 @@
-docker/saltmaster/config/etc/salt/minion_id
-docker/saltmaster/config/etc/salt/pki/master/minions/*
+docker/master/config/etc/salt/minion_id
+docker/master/config/etc/salt/pki/master/minions/*
 *.log
 *.pem
 *.crt
@@ -19,6 +19,7 @@ docker/saltmaster/config/etc/salt/pki/master/minions/*
 *.class
 **/logs/
 fedora-vm/
-docker/saltmaster/srv/vxlog/*
+docker/master/srv/vxlog/*
+docker/master/srv/vxlog/*
 id_rsa
 id_dsa
