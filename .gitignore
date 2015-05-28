@@ -19,7 +19,7 @@ docker/master/config/etc/salt/pki/master/minions/*
 *.class
 **/logs/
 fedora-vm/
-docker/master/CommandSets
+docker/master/cmdsets
 docker/master/srv/vxlog/*
 docker/master/srv/vxlog/*
 id_rsa
