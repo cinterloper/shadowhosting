@@ -113,13 +113,13 @@ java-1.8.0-openjdk-headless:
     - source: salt://edge/test.jinja
 
 
-{% for vpnuser in salt['pillar.get']('openvpn_clients') %}
-/etc/openvpn/ccd/{{ vpnuser }}:
+{% for shdwsvr, data in  salt['pillar.get']('gcfg:svrs', {}).iteritems() %}
+/etc/openvpn/ccd/{{ shdwsvr }}:
   file.managed:
     - template: jinja
-    - source: salt://openvpn/ccdtemplate
-    - defaults:
-        vpnuser: {{ vpnuser }}
+    - source: salt://edge/openvpn/ccd.jinja
+    - context:
+        ip: {{data['ip']}}
 {% endfor %}
 
 #systemctl restart openvpn@udp:
