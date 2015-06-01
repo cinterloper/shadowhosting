@@ -6,6 +6,12 @@ rest_tornado:
   debug: False
   disable_ssl: False
 
+ext_pillar:
+  - file_tree:
+      root_dir: /srv/pillar/tree
+      follow_dir_links: False
+      raw_data: False
+
 file_roots:
   base:
     - /srv/salt

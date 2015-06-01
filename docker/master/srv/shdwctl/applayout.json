@@ -1,0 +1,15 @@
+{
+    "base": {
+        "*": [
+            "shadowmaster",
+            "HelloApp"
+        ],
+        "edge-*": [
+            "KVDN"
+        ],
+        "shdw-*": [
+            "backup"
+        ]
+
+    }
+}

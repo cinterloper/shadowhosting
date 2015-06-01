@@ -63,6 +63,22 @@ java-1.8.0-openjdk-headless:
     - template: jinja
     - context:
         subnet: 13
+/etc/openvpn/dh.pem:
+  file.managed:
+    - source: salt://edge/openvpn/dh.pem.jinja
+    - template: jinja
+/etc/openvpn/server.key:
+  file.managed:
+    - source: salt://edge/openvpn/server.key.jinja
+    - template: jinja
+/etc/openvpn/server.crt:
+  file.managed:
+    - source: salt://edge/openvpn/server.crt.jinja
+    - template: jinja
+/etc/openvpn/ca.crt:
+  file.managed:
+    - source: salt://edge/openvpn/ca.crt.jinja
+    - template: jinja
 /etc/openvpn/ccd:
   file.directory:
     - user: root

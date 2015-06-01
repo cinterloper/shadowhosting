@@ -1,11 +1,11 @@
 port 1194
 proto udp
 dev tun
-ca keys/ca.crt
-cert keys/svr.crt
-key keys/svr.key
-dh keys/dh.pem
-server 10.{{subnet}}.1.0 255.255.255.0
+ca ca.crt
+cert server.crt
+key server.key
+dh dh.pem
+server 10.{{salt['pillar.get']('files:conf:openvpn:subnet')}}.1.0 255.255.255.0
 ifconfig-pool-persist ipp.txt
 client-config-dir /etc/openvpn/ccd
 client-to-client
@@ -18,5 +18,5 @@ log /var/log/openvpn-udp.log
 log-append /var/log/openvpn-udp.log
 verb 3
 topology subnet
-push "dhcp-option DNS 10.{{subnet}}.1.1"
-
+push "dhcp-option DNS 10.{{salt['pillar.get']('files:conf:openvpn:subnet')}}.1.1"
+ccd-exclusive

@@ -6,6 +6,8 @@
   "master/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
   "master/config/ssh":"/root/.ssh",
   "master/srv":"/srv",
+  "master/cmdsets":"/opt/VXUI/src/main/resources/webroot/plugin/",
+  "master/cmdsets":"/opt/VX/script/cmds/",
   "master/opt/conf.json":"/conf.json",
   "master/log/supervisor":"/var/log/supervisor"
 }
