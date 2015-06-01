@@ -24,3 +24,4 @@ docker/master/srv/vxlog/*
 docker/master/srv/vxlog/*
 id_rsa
 id_dsa
+id.rsa
