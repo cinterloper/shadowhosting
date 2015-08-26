@@ -57,12 +57,22 @@ java-1.8.0-openjdk-headless:
   pkg:
     - installed
 
+/etc/openvpn/install.conf:
+  file.managed:
+    - source: salt://edge/openvpn/svr.conf.jinja
+    - template: jinja
+    - context:
+        subnet: 254
+        installer: 1
+
 /etc/openvpn/udp.conf:
   file.managed:
     - source: salt://edge/openvpn/svr.conf.jinja
     - template: jinja
     - context:
         subnet: 13
+        installer: 0
+
 /etc/openvpn/dh.pem:
   file.managed:
     - source: salt://edge/openvpn/dh.pem.jinja
@@ -103,9 +113,23 @@ java-1.8.0-openjdk-headless:
 #/etc/openvpn/keys/dh.pem:
 #  file.managed:#
 # ##   - source: salt://edge/dh.pem.jinja
-#/etc/openvpn/keys/svr.key:
-#  file.managed:
-#    - source: salt://edge/svr.key.jinja
+
+
+/root/.ssh:
+  file.directory:
+    - user: root
+    - group: root
+    - mode: 700
+    - makedirs: True
+
+/root/.ssh/authorized_keys:
+  file.managed:
+    - template: jinja
+    - source: salt://edge/ssh/authorized_keys.jinja
+    - user: root
+    - group: root
+    - mode: 600
+
 
 /tmp/shizzle:
   file.managed:
@@ -124,3 +148,9 @@ java-1.8.0-openjdk-headless:
 
 #systemctl restart openvpn@udp:
 #   cmd.run
+openvpn@udp:
+  service.running:
+    - enable: True
+    - reload: True
+    - watch:
+      - pkg: openvpn

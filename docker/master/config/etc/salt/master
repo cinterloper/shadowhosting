@@ -6,6 +6,8 @@ rest_tornado:
   debug: False
   disable_ssl: False
 
+file_recv: True
+
 ext_pillar:
   - file_tree:
       root_dir: /srv/pillar/tree

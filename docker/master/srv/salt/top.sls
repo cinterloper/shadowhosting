@@ -3,3 +3,7 @@ base:
   - Desktop
  'edge*':
   - Edge
+ 'spcl*':
+  - Spcl
+ 'server*':
+  - Server

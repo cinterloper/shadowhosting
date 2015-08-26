@@ -1,4 +1,5 @@
 gcfg:
+  sysdomain: iowntheinter.net
   edges:
     edge-alpha:
       subnet: 17
@@ -9,3 +10,7 @@ gcfg:
        ip: 10
     shdw-desk:
        ip: 11
+    home:
+       ip: 12
+    tablet:
+       ip: 13

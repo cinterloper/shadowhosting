@@ -1,13 +1,12 @@
 {
   "master/config/etc/supervisord.conf":"/etc/supervisord.conf",
   "master/config/etc/salt":"/etc/salt",
+  "master/config/etc/openvpn":"/etc/openvpn",
   "master/config/etc/pki/tls/certs/localhost.key":"/etc/pki/tls/certs/localhost.key",
   "master/config/etc/pki/tls/certs/localhost.crt":"/etc/pki/tls/certs/localhost.crt",
   "master/config/etc/ssh/sshd_config":"/etc/ssh/sshd_config",
-  "master/config/ssh":"/root/.ssh",
+  "master/config/ssh/":"/home/user/.ssh",
   "master/srv":"/srv",
-  "master/cmdsets":"/opt/VXUI/src/main/resources/webroot/plugin/",
-  "master/cmdsets":"/opt/VX/script/cmds/",
-  "master/opt/conf.json":"/conf.json",
+  "master/opt":"/opt",
   "master/log/supervisor":"/var/log/supervisor"
 }

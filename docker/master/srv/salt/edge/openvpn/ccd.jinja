@@ -1,2 +1,5 @@
 ifconfig-push 10.{{salt['pillar.get']('files:conf:openvpn:subnet')}}.1.{{ip}} 255.255.255.0
+{% if ip == 13 %}
+push "redirect-gateway def1 bypass-dhcp"
+{% endif %}
 

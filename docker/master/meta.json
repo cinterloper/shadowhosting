@@ -1,4 +1,4 @@
 {
  "tag":"master",
- "extra":"--add-host='salt:127.1.1.1'"
+ "extra":"--add-host='salt:127.1.1.1' --privileged "
 }

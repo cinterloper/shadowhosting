@@ -1,0 +1,12 @@
+#!ipxe
+echo Boot menu
+menu Selection
+item shadow ShadowHosting Server
+
+choose os && goto ${os}
+
+# :something is a 'goto' label.
+:shadow
+sanboot http://192.168.7.115:32771/boot.iso
+
+
