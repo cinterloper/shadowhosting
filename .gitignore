@@ -13,6 +13,8 @@ id.rsa
 *.so
 *.providers 
 *.pub 
+.vertx
+.gradle
 *.pem 
 *.crt 
 *.key 
