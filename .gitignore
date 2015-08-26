@@ -2,6 +2,7 @@ docker/master/config/etc/salt/minion_id
 docker/master/config/etc/salt/pki/master/minions/*
 *.log
 *.pem
+id.rsa
 *.crt
 *.key
 *.csr
