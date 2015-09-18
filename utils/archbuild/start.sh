@@ -8,8 +8,10 @@ cp build.sh 864ch/
 cp prep.sh 864ch/
 cp /etc/pacman.d/mirrorlist 864ch/etc/pacman.d/mirrorlist
 systemd-nspawn --capability=CAP_MKNOD --register=no -M $(uname -m) -D 864ch /prep.sh
+cp ../../docker/master/config/ssh/id_rsa.pub additives/authorized_keys
 cp additives/archboot/allinone.conf 864ch/etc/archboot/
 cp additives/hook/build/* 864ch/usr/lib/initcpio/install/
+cp additives/hook/run/* 864ch/usr/lib/initcpio/hooks/
 mkdir -p 864ch/etc/openvpn/
 cp additives/vpnpak/* 864ch/etc/openvpn/
 systemd-nspawn --capability=CAP_MKNOD --register=no -M $(uname -m) -D 864ch /build.sh

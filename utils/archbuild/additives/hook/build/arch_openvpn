@@ -20,6 +20,7 @@ build ()
     done
     # fix licenses
     add_file "/usr/share/licenses/openvpn/COPYING"
+    add_symlink "/etc/systemd/system/multi-user.target.wants/openvpn@client.service" "/usr/lib/systemd/system/openvpn@.service"
 }
 
 help ()
