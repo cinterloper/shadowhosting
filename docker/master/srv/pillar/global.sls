@@ -14,3 +14,5 @@ gcfg:
        ip: 12
     tablet:
        ip: 13
+    silversaucer:
+       ip: 14

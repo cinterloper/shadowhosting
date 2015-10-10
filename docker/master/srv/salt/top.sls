@@ -7,3 +7,5 @@ base:
   - Spcl
  'server*':
   - Server
+ 'saucer':
+  - Workstation
