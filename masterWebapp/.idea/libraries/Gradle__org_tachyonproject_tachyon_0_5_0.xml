@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.tachyonproject:tachyon:0.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tachyonproject/tachyon/0.5.0/27ddddf84724c7de76b5153cc682110686e81d55/tachyon-0.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tachyonproject/tachyon/0.5.0/c5cd3f4223ca3218304851ebf9e55c332e077b8c/tachyon-0.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

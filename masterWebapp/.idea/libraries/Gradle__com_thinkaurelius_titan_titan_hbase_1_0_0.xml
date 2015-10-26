@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.thinkaurelius.titan:titan-hbase:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thinkaurelius.titan/titan-hbase/1.0.0/dbfeaf44dea0cccdb5a13879f68be90ab26a39f9/titan-hbase-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thinkaurelius.titan/titan-hbase/1.0.0/6480cea68b9d544afc91fda15904f08cf2938453/titan-hbase-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

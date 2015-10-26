@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.spark-project.akka:akka-slf4j_2.10:2.3.4-spark">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spark-project.akka/akka-slf4j_2.10/2.3.4-spark/d71537a052fd3728c61f534628f4264ddf7184a5/akka-slf4j_2.10-2.3.4-spark.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spark-project.akka/akka-slf4j_2.10/2.3.4-spark/d262b72fd1599d94f4e2e125e272da56d23df7d3/akka-slf4j_2.10-2.3.4-spark-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

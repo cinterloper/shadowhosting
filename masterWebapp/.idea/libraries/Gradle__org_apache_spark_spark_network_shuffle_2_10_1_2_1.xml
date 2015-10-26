@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.spark:spark-network-shuffle_2.10:1.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-network-shuffle_2.10/1.2.1/83e36f6107c40003a4b4e74a464d0ca562960a2d/spark-network-shuffle_2.10-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-network-shuffle_2.10/1.2.1/91beeb7dee105221e761ffb605158e129ba50173/spark-network-shuffle_2.10-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

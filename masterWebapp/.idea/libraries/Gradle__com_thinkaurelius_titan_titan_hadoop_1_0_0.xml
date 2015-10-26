@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.thinkaurelius.titan:titan-hadoop:1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thinkaurelius.titan/titan-hadoop/1.0.0/2cc3b368ce369d0ef5354878fd4e5763462e4b8b/titan-hadoop-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thinkaurelius.titan/titan-hadoop/1.0.0/8d1c566a26758dd1e6a15a03636d240aef1d98d3/titan-hadoop-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

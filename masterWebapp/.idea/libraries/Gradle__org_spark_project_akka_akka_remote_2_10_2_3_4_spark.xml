@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.spark-project.akka:akka-remote_2.10:2.3.4-spark">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spark-project.akka/akka-remote_2.10/2.3.4-spark/d600a6de2eac88944d3896efd5e4914230029c7a/akka-remote_2.10-2.3.4-spark.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spark-project.akka/akka-remote_2.10/2.3.4-spark/b3ced6d5124426c4c3612fe07c099d586984b2ae/akka-remote_2.10-2.3.4-spark-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

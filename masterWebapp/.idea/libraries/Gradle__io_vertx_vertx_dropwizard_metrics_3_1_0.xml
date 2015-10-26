@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.vertx:vertx-dropwizard-metrics:3.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-dropwizard-metrics/3.1.0/cdf8a413a32cdb979e890133266f591436bfe419/vertx-dropwizard-metrics-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-dropwizard-metrics/3.1.0/7d4bb8af801a9519442ef7a0986afdc20d0b162d/vertx-dropwizard-metrics-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

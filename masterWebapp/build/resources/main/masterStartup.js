@@ -11,5 +11,5 @@ console.log("startup config: " + JSON.stringify(config));
 var options = {
  "config" : config
 };
-vertx.deployVerticle("masterServer.js",options);
+vertx.deployVerticle("saltTest.groovy",options);
 

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.antlr:antlr4-runtime:4.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.2/bceca6c6c5a45280745e42e4bb72ae51f2777657/antlr4-runtime-4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4-runtime/4.2/6a00f476e1ea29f462d70532ceb1ac8f31470b28/antlr4-runtime-4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

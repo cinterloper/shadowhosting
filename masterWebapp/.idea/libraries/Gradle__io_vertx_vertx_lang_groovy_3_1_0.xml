@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.vertx:vertx-lang-groovy:3.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-lang-groovy/3.1.0/245e11859ee0eec2439ed80ee54338c49b6b8c66/vertx-lang-groovy-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-lang-groovy/3.1.0/25b16a8544f8ef76d9cea8df206df3d3cefb34b5/vertx-lang-groovy-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
