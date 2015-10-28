@@ -1,11 +1,12 @@
-rest_tornado:
+rest_cherrypy:
   # can be any port
   port: 8000
-  ssl_crt: /etc/pki/tls/certs/localhost.crt
-  ssl_key: /etc/pki/tls/certs/localhost.key
-  debug: False
-  disable_ssl: False
-
+  debug: True
+  disable_ssl: True
+  #ssl_crt: /etc/pki/tls/certs/localhost.crt
+  #ssl_key: /etc/pki/tls/certs/localhost.key
+  expire_responses: False
+  
 file_recv: True
 
 ext_pillar:
@@ -17,3 +18,15 @@ ext_pillar:
 file_roots:
   base:
     - /srv/salt
+client_acl:
+  user:
+    - test.ping
+external_auth:
+  pam:
+    user:
+      - .*
+      - '@runner'
+      - '@wheel'
+      - '@jobs'
+
+log_level: debug

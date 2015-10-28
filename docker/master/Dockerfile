@@ -1,9 +1,5 @@
 FROM shadowhosting/baseimage
-RUN yum -y --enablerepo=updates-testing install python-libcloud pyOpenSSL python-tornado
-RUN yum -y install openssl
-RUN sshd-keygen -y -A
-RUN curl -o install_salt.sh -L https://bootstrap.saltstack.com
-RUN sudo sh install_salt.sh -X -M git v2015.5
-RUN yum -y install python-pip gcc python-devel openvpn
-RUN pip install -U tornado
+RUN pacman -S --noconfirm python2-pyopenssl python2-tornado python2-pip openssl salt-zmq python2 gcc make openvpn grep procps-ng
+RUN pip2 install -U ws4py cherrypy
 EXPOSE 4505 4506 8000
+RUN ssh-keygen -A

@@ -1,7 +1,16 @@
-linode_1024:
+edge_fedora:
   provider: my-linode-config
   size: Linode 1024
+  disk_size: 20000
   image: Fedora 21
+  deploy_command: curl -L https://bootstrap.saltstack.com | sudo sh -- -A iowntheinter.net 
+  minion:
+    master: iowntheinter.net
+edge_arch:
+  provider: my-linode-config
+  size: Linode 1024
+  disk_size: 20000
+  image: Arch Linux 2015.08
   deploy_command: curl -L https://bootstrap.saltstack.com | sudo sh -- -A iowntheinter.net 
   minion:
     master: iowntheinter.net

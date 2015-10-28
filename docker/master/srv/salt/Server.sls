@@ -1,10 +1,19 @@
 screen:
   pkg:
     - installed
+util-linux:
+  pkg:
+    - installed
+parted:
+  pkg:
+    - installed
+openssh:
+  pkg:
+    - installed
 haproxy:
   pkg:
     - installed 
-docker-io:
+docker:
   pkg:
     - installed
 postfix:
@@ -62,6 +71,16 @@ jdk8-openjdk:
 {% endfor %}
 
 
+#/root/.ssh/authorized_keys:
+#  file.managed:
+#    - template: jinja
+#    - source: salt://server/ssh/authorized_keys.jinja
+#    - user: root
+#    - group: root
+#    - mode: 600
+
+
+
 /etc/openvpn/dh.pem:
   file.managed:
     - source: salt://server/openvpn/dh.pem.jinja
@@ -85,3 +104,35 @@ jdk8-openjdk:
     - template: jinja
     - source: salt://server/test.jinja
 
+dirmngr:
+  cmd.run:
+    - unless: ls /root/.gnupg/S.dirmngr
+
+pacman-key -r 5E1ABF240EE7A126:
+  cmd.run
+pacman-key -f 5E1ABF240EE7A126:
+  cmd.run
+pacman-key --lsign-key 5E1ABF240EE7A126:
+  cmd.run
+
+/etc/pacman.conf:
+  file.managed:
+    - source: salt://server/etc/pacman.conf
+
+
+
+spl-git:
+  pkg:
+    - installed
+zfs-git:
+  pkg:
+    - installed
+
+sshd:
+  service.running:
+    - enable: True
+
+modprobe spl:
+  cmd.run
+modprobe zfs:
+  cmd.run

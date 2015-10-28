@@ -5,6 +5,8 @@ base:
   - Edge
  'spcl*':
   - Spcl
+ '*Server':
+  - Server
  'server*':
   - Server
  'saucer':
