@@ -19,10 +19,10 @@ class graphSystemTracker implements systemTracker {
     graphSystemTracker(){
         g = TinkerGraph.open()
     }
-    boolean addServer(){
-
+    boolean addServer(String id){
+        g.addVertex(id)
     }
-    boolean removeServer(){
+    boolean removeServer(String id){
 
     }
     List getServersFromDeployment(UUID did){

@@ -1,4 +1,8 @@
 package net.iowntheinter.shadow.controller
+
+import com.suse.saltstack.netapi.calls.Client
+import com.suse.saltstack.netapi.client.SaltStackClient
+
 /**
  * Created by grant on 10/20/15.
  */
@@ -7,6 +11,7 @@ import io.vertx.core.logging.Logger
 import io.vertx.core.logging.LoggerFactory
 import io.vertx.groovy.core.eventbus.EventBus
 import io.vertx.groovy.core.shareddata.AsyncMap
+import io.vertx.groovy.core.shareddata.LocalMap
 import io.vertx.groovy.core.shareddata.SharedData
 
 import javax.websocket.CloseReason;
@@ -20,12 +25,14 @@ class saltReactor implements EventListener {
     private EventBus eb
     private JsonObject config
     private Logger log
+    private SaltStackClient saltClient
     def mgr
 
-    saltReactor(Vertx v, JsonObject c) {
+    saltReactor(Vertx v, JsonObject c, SaltStackClient sc) {
         vx = v;
-        sd = v.sharedData();
-        config = c;
+        saltClient=sc
+        sd = v.sharedData()
+        config = c
         eb = v.eventBus()
         log = LoggerFactory.getLogger("saltReactor")
         mgr = new subscriptionManager(sd, eb)
@@ -56,8 +63,8 @@ class saltReactor implements EventListener {
         private EventBus eb
         private Logger log
         private subscriptionChannel
-        def cmap
-        def lmap
+        def AsyncMap cmap
+        def LocalMap lmap
 
         subscriptionManager(SharedData s, EventBus e) {
             sd = s
@@ -126,6 +133,21 @@ class saltReactor implements EventListener {
         }
 
 
+
+        private boolean sendToVertxBus(channel,pkg,cb){
+            cb(eb.send(channel,pkg))
+        }
+        private boolean sendToSaltBus(tag, data, cb){
+            cb(saltClient.sendEvent(tag,data))
+        }
+        //start listening for subscription requests on the salt event bus, mapping them to vertx eb channels
+        /*  { "match" : { "ident":"blah", "verb":"rah", "result": "nah", "type":"ska" }, "forward" : "some-vxeb-channel"}
+            //returns subscription id
+            //remove by
+            { "remove" : "subscriptionid" }
+            { "saltPush" : { "tag" : data } }
+            maybe this should have a ttl / expire time option?
+        * */
         public boolean manage() {
             subscriptionChannel = eb.consumer("saltEventManger")
             subscriptionChannel.handler({ message ->
@@ -138,8 +160,10 @@ class saltReactor implements EventListener {
                     log.error("saltEventManger eb Registration failed!")
                 }
             })
-
-
+        }
+        private boolean parseEBReq(JsonObject req,cb){
+            def matchRule = req.getJsonObject("match")
+            def fwChannel = req.getString("forward")
         }
 
         boolean getSubscriptions() {

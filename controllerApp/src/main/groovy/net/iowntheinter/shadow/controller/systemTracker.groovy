@@ -7,8 +7,8 @@ import org.apache.tinkerpop.gremlin.util.Gremlin;
  */
 interface systemTracker {
 
-    boolean addServer()
-    boolean removeServer()
+    boolean addServer(sid)
+    boolean removeServer(sid)
     List getServersFromDeployment(UUID did)
 
 }
