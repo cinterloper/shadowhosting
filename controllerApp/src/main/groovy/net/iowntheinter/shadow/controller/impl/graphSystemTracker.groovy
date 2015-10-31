@@ -15,16 +15,22 @@ import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph
  *   - what the max resource commit should be for these deployments
  */
 class graphSystemTracker implements systemTracker {
-    Graph g
-    graphSystemTracker(){
+    TinkerGraph g
+    graphSystemTracker() {
         g = TinkerGraph.open()
     }
-    boolean addServer(String id){
+    @Override
+    boolean addServer(Object sid) {
         g.addVertex(id)
+        return true
     }
-    boolean removeServer(String id){
 
+    @Override
+    boolean removeServer(Object sid) {
+        g.vertices(id).remove()
+        return true
     }
+
     List getServersFromDeployment(UUID did){
 
     }
