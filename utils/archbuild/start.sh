@@ -12,6 +12,7 @@ cp ../../docker/master/config/ssh/id_rsa.pub additives/authorized_keys
 cp additives/archboot/allinone.conf 864ch/etc/archboot/
 cp additives/hook/build/* 864ch/usr/lib/initcpio/install/
 cp additives/hook/run/* 864ch/usr/lib/initcpio/hooks/
+cp additives/archboot/profile 864ch/usr/share/archboot/base/etc/profile
 mkdir -p 864ch/etc/openvpn/
 cp additives/vpnpak/* 864ch/etc/openvpn/
 systemd-nspawn --capability=CAP_MKNOD --register=no -M $(uname -m) -D 864ch /build.sh
