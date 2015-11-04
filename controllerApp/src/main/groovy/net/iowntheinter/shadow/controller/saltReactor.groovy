@@ -145,7 +145,7 @@ class saltReactor implements EventListener {
             //returns subscription id
             //remove by
             { "remove" : "subscriptionid" }
-            { "saltPush" : { "tag" : data } } // push a msg onto the salt bus (from vxbus)
+            { "saltPush" : { "tag" : data } }
             maybe this should have a ttl / expire time option?
         * */
         public boolean manage() {

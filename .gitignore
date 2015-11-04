@@ -1,7 +1,6 @@
 docker/master/config/etc/salt/minion_id
 docker/master/config/etc/salt/pki/master/minions/*
 *.log
-.idea/*
 *.pem
 id.rsa
 *.crt
@@ -30,4 +29,3 @@ id_rsa
 id_dsa
 id.rsa
 /resources
-vxlog/*
