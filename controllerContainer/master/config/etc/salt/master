@@ -30,3 +30,6 @@ external_auth:
       - '@jobs'
 
 log_level: debug
+
+include: cloud.providers.d/*
+include: cloud.profiles.d/*

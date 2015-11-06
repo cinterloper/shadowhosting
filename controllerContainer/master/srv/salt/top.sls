@@ -1,4 +1,6 @@
 base:
+ 'master*':
+  - Master
  'bigdog': 
   - Desktop
  'edge*':
