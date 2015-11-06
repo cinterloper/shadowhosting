@@ -12,4 +12,6 @@ var options = {
  "config" : config
 };
 vertx.deployVerticle("saltConnection.groovy",options);
+vertx.deployVerticle("directoryConnection.groovy",options);
+vertx.deployVerticle("userInterface.groovy",options);
 

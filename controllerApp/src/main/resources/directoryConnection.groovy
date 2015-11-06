@@ -1,9 +1,8 @@
+import io.vertx.core.logging.LoggerFactory
 import net.iowntheinter.shadow.controller.auth.impl.EmbeddedADS
 import org.apache.directory.api.ldap.model.name.Dn
+def logger = LoggerFactory.getLogger("directoryConnection")
 
-r/**
- * Created by grant on 11/5/15.
- */
 
 
 try {

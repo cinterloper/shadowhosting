@@ -10,6 +10,7 @@ import com.suse.saltstack.netapi.client.SaltStackClient
 import com.suse.saltstack.netapi.AuthModule
 import com.suse.saltstack.netapi.datatypes.target.MinionList
 import io.vertx.core.json.JsonObject
+import io.vertx.core.logging.LoggerFactory
 import net.iowntheinter.shadow.controller.salt.impl.saltReactor
 
 println("hello slt")
@@ -21,6 +22,7 @@ cfg.put(ClientConfig.SOCKET_TIMEOUT , 0)
 def UN = "user"
 def pass = "changeme"
 def token;
+
 def returnMap = [
         "zfs.list":new TypeToken<Map<String,List>>(){},
         "test.ping":new TypeToken<Boolean>(){},
@@ -31,7 +33,7 @@ def returnMap = [
      token = client.login(UN, pass, AuthModule.PAM);
      println("salt auth token: " + token.token + " Until: " + token.expire + " Perms : " + token.getPerms() )
 
-     EventListener sr = new saltReactor(vertx,new JsonObject())
+     EventListener sr = new saltReactor(vertx,new JsonObject(), client)
 
      es = new EventStream(cfg)
      es.addEventListener(sr)
@@ -61,7 +63,7 @@ this dosnet work?
 
      ri = client.callSync( new LocalCall(cmd, Optional.empty() ,Optional.empty(), returnMap[cmd] ),t)
 
-    println("returnd : ${ri}")
+    println("sync call returned : ${ri}")
 
 
 

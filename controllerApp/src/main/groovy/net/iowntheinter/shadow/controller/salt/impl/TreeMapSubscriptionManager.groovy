@@ -12,7 +12,6 @@ import net.iowntheinter.shadow.controller.salt.SVXSubscriptionManager
  * Created by grant on 11/5/15.
  */
 class TreeMapSubscriptionManager implements SVXSubscriptionManager {
-    private boolean cluster = vx.isClustered()
     private SharedData sd
     private EventBus eb
     private Logger log
@@ -82,7 +81,7 @@ class TreeMapSubscriptionManager implements SVXSubscriptionManager {
                 break;
 
         }
-        log.info("type ${type} data : ${data}")
+        log.info("event: ${["type":type,"data":data,"ident":ident,"verb":verb]}")
         return (true)
     }
 
