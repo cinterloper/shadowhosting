@@ -1,4 +1,6 @@
-package net.iowntheinter.shadow.controller
+package net.iowntheinter.shadow.controller.core
+
+import net.iowntheinter.shadow.controller.core.deploymentManager
 
 /**
  * Created by grant on 10/27/15.

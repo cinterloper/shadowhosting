@@ -11,5 +11,7 @@ console.log("startup config: " + JSON.stringify(config));
 var options = {
  "config" : config
 };
-vertx.deployVerticle("saltTest.groovy",options);
+vertx.deployVerticle("saltConnection.groovy",options);
+vertx.deployVerticle("directoryConnection.groovy",options);
+vertx.deployVerticle("userInterface.groovy",options);
 
