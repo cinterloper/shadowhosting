@@ -1,8 +1,7 @@
-package net.iowntheinter.shadow.controller.impl
+package net.iowntheinter.shadow.controller.core.impl
 
-import net.iowntheinter.shadow.controller.serviceGroupSpec
-import net.iowntheinter.shadow.controller.systemTracker
-import org.apache.tinkerpop.gremlin.structure.Graph
+import net.iowntheinter.shadow.controller.core.serviceGroupSpec
+import net.iowntheinter.shadow.controller.core.systemTracker
 import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph
 
 /**

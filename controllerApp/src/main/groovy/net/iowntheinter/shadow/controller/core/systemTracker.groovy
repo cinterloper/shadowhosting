@@ -1,4 +1,4 @@
-package net.iowntheinter.shadow.controller
+package net.iowntheinter.shadow.controller.core
 import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph;
 import org.apache.tinkerpop.gremlin.structure.Graph
 import org.apache.tinkerpop.gremlin.util.Gremlin;
@@ -10,5 +10,6 @@ interface systemTracker {
     boolean addServer(sid)
     boolean removeServer(sid)
     List getServersFromDeployment(UUID did)
+
 
 }
