@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.xpp3:1.1.4c_6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_6/816bae41640a7d4621cdbfa90b9e6058f7d6ad9e/org.apache.servicemix.bundles.xpp3-1.1.4c_6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_6/463ac1b8dfe08c09acaf2a57c781950241cbf5d0/org.apache.servicemix.bundles.xpp3-1.1.4c_6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

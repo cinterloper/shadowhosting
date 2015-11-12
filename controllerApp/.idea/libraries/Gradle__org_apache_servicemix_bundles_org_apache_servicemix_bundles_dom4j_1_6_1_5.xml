@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.servicemix.bundles:org.apache.servicemix.bundles.dom4j:1.6.1_5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/f5da21ae9508008f7b28001983adc143cb310ad7/org.apache.servicemix.bundles.dom4j-1.6.1_5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.servicemix.bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5/a9a9f18ac9e34ac144b92c357ef34fb8577ae82d/org.apache.servicemix.bundles.dom4j-1.6.1_5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

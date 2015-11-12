@@ -1,7 +1,5 @@
 package net.iowntheinter.shadow.controller.auth.impl
 
-import org.apache.directory.server.core.DefaultDirectoryService
-import org.apache.directory.api.ldap.model.name.Dn;
 import org.apache.directory.api.ldap.model.schema.SchemaManager;
 import org.apache.directory.api.ldap.model.schema.registries.SchemaLoader;
 import org.apache.directory.api.ldap.schema.extractor.SchemaLdifExtractor;
@@ -35,12 +33,6 @@ public class EmbeddedADS {
 
 
 
-    public static EmbeddedADS getInstance(){
-        if(instance == null){
-            instance= new EmbeddedADS();
-        }
-        return instance;
-    }
     private void initSchemaPartition() throws Exception {
         final InstanceLayout instanceLayout = this.service.getInstanceLayout();
 

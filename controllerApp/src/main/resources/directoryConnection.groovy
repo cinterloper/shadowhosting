@@ -1,6 +1,10 @@
 import io.vertx.core.logging.LoggerFactory
 import net.iowntheinter.shadow.controller.auth.impl.EmbeddedADS
+import org.apache.directory.api.ldap.model.cursor.EntryCursor
 import org.apache.directory.api.ldap.model.name.Dn
+import org.apache.directory.ldap.client.api.LdapConnection
+import org.apache.directory.ldap.client.api.LdapNetworkConnection
+
 def logger = LoggerFactory.getLogger("directoryConnection")
 
 
@@ -13,9 +17,16 @@ try {
     EmbeddedADS ads = new EmbeddedADS(workDir);
 
     // optionally we can start a server too
-    ads.startServer();
-    lookup = ads.service.getAdminSession().lookup(new Dn("uid=admin,ou=system"))
-    logger.info("lookup results: ${lookup.toString()}")
+    int port = 10389
+    ads.startServer(port);
+    LdapConnection connection = new LdapNetworkConnection( "localhost", port );
+    connection.bind( "uid=admin,ou=system", "secret" );
+    entry = connection.lookup(new Dn("uid=admin,ou=system"));
+
+    adminlookup = ads.service.getAdminSession().lookup(new Dn("uid=admin,ou=system"))
+    logger.info("" +
+            "admin lookup results: ${adminlookup.toString()} \n" +
+            "ldap lookup results:  ${entry.toString()}")
 } catch (final Exception e) {
     // Ok, we have something wrong going on ...
     e.printStackTrace();

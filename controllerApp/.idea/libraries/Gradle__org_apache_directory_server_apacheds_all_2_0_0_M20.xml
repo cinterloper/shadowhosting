@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.directory.server:apacheds-all:2.0.0-M20">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-all/2.0.0-M20/3cb959523105506c2dbbe62be50f9656d2ed91ee/apacheds-all-2.0.0-M20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.directory.server/apacheds-all/2.0.0-M20/2420b389e21c72a4744699296285d01e8a67b581/apacheds-all-2.0.0-M20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

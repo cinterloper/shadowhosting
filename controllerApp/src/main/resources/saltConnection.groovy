@@ -29,7 +29,6 @@ def returnMap = [
         "cmd.run":new TypeToken<String>(){}
 ]
 
-// try {
      token = client.login(UN, pass, AuthModule.PAM);
      println("salt auth token: " + token.token + " Until: " + token.expire + " Perms : " + token.getPerms() )
 
@@ -38,8 +37,15 @@ def returnMap = [
      es = new EventStream(cfg)
      es.addEventListener(sr)
 
-     t = new MinionList("balthazarServer")
-     cmd="zfs.list"
+  //   t = new MinionList("balthazarServer")
+  //   cmd="zfs.list"
+
+
+  //   ri = client.callSync( new LocalCall(cmd, Optional.empty() ,Optional.empty(), returnMap[cmd] ),t)
+//
+   //  println("sync call returned : ${ri}")
+
+
 
 
 /* **************************async************************************
@@ -59,12 +65,6 @@ this dosnet work?
      }
      ******************async****************************
      */
-
-
-     ri = client.callSync( new LocalCall(cmd, Optional.empty() ,Optional.empty(), returnMap[cmd] ),t)
-
-    println("sync call returned : ${ri}")
-
 
 
      //println("jid: ${ar.getJid()} mins: ${ar.getMinions()}")
