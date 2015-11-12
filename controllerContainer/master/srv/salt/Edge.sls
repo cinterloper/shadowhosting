@@ -5,7 +5,7 @@ haproxy:
   pkg:
     - installed
  
-docker-io:
+docker:
   pkg:
     - installed
 postfix:
@@ -24,18 +24,18 @@ zsh:
 pv:
   pkg:
     - installed
-pdns:
+powerdns:
   pkg:
     - installed
-pdns-recursor:
+powerdns-recursor:
   pkg:
     - installed
 nmon:
   pkg:
     - installed
-mbuffer:
-  pkg:
-    - installed
+#mbuffer:
+#  pkg:
+#    - installed
 htop:
   pkg:
     - installed
@@ -53,7 +53,7 @@ python-pip:
   pkg:
     - installed
 
-java-1.8.0-openjdk-headless:
+extra/jre8-openjdk-headless:
   pkg:
     - installed
 
