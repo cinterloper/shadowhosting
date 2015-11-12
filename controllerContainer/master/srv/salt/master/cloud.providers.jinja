@@ -1,6 +1,0 @@
- {% for providercfg in salt['pillar.get']('salt-cloud-creds').iteritems() %}
-{{ providercfg }}
-   {% for cfgkey, value in providercfg.iteritems() %}
-  {{ cfgkey }}:{{ value }} 
-   {% endfor %}
- {% endfor %}

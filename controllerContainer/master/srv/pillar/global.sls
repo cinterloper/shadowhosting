@@ -5,14 +5,16 @@ gcfg:
       subnet: 17
     edge-beta:
       subnet:  18
+    edge-gamma:
+      subnet:  19
   svrs:
     shdw-bigdog:
        ip: 10
     shdw-desk:
        ip: 11
-    home:
+    nighthawk:
        ip: 12
     tablet:
        ip: 13
-    silversaucer:
+    saucer:
        ip: 14
