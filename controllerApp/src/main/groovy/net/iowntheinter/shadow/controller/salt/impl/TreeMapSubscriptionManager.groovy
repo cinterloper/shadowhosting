@@ -38,6 +38,9 @@ class TreeMapSubscriptionManager implements SVXSubscriptionManager {
 
     }
     /*examples:
+    //perhaps subscribe to sub-tag based address truncated at 2nd level, containing the full tag in the msg
+      ex salt/cloud (all)
+
     got event: salt/cloud/edge-gamma/requesting
     got event: salt/job/20151028033249814239/ret/saucer
     got event: salt/key
