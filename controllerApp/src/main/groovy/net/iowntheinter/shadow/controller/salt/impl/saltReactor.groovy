@@ -22,17 +22,17 @@ class saltReactor implements EventListener {
     private EventBus eb
     private JsonObject config
     private Logger log
-    private SaltStackClient saltClient
+    private SaltStackClient sc
     def mgr
 
-    saltReactor(Vertx v, JsonObject c, SaltStackClient sc) {
+    saltReactor(Vertx v, JsonObject c, SaltStackClient s) {
         vx = v;
-        saltClient = sc
+        sc = s
         sd = v.sharedData()
         config = c
         eb = v.eventBus()
         log = LoggerFactory.getLogger("saltReactor")
-        mgr = new SimplePipeSubscriptionManager(sd, eb)
+        mgr = new SimplePipeSubscriptionManager(sd, eb, sc)
     }
     CloseReason closeReason;
 

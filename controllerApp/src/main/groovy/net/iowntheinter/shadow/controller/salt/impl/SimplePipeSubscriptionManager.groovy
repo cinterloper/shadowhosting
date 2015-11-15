@@ -1,5 +1,6 @@
 package net.iowntheinter.shadow.controller.salt.impl
 
+import com.suse.saltstack.netapi.client.SaltStackClient
 import com.suse.saltstack.netapi.datatypes.Event
 import io.vertx.core.json.JsonObject
 import io.vertx.core.logging.Logger
@@ -16,13 +17,13 @@ class SimplePipeSubscriptionManager implements SVXSubscriptionManager {
     private EventBus eb
     private Logger log
     private subscriptionChannel
+    private SaltStackClient saltClient
 
-
-    SimplePipeSubscriptionManager(SharedData s, EventBus e) {
+    SimplePipeSubscriptionManager(SharedData s, EventBus e, SaltStackClient c) {
         sd = s
         eb = e
         log = LoggerFactory.getLogger("saltReactor:subscriptionManager")
-
+        saltClient = c
     }
     /*examples:
     //perhaps subscribe to sub-tag based address truncated at 2nd level, containing the full tag in the msg
@@ -53,7 +54,7 @@ class SimplePipeSubscriptionManager implements SVXSubscriptionManager {
             type = fields[0]
             log.debug("data for this oddball: ${data}")
         }
-
+        //do the vulcan mind meld
         sendToVertxBus(dstAddr, ['tags': fields, 'data': data], { res ->
             log.info('result of vxbus send for ' + fields + " : " + res)
             return (true)
@@ -65,11 +66,28 @@ class SimplePipeSubscriptionManager implements SVXSubscriptionManager {
 
 
     private boolean sendToVertxBus(channel, pkg, cb) {
-        cb(eb.send(channel, pkg))
+        def ret = true
+        try {
+            eb.send(channel, pkg)
+        } catch (e) {
+            ret = false
+            cb([status:ret, error:e.getMessage()])
+        }
+        if (ret)
+            cb([status:ret, error:null])
     }
 
     private boolean sendToSaltBus(tag, data, cb) {
-        cb(saltClient.sendEvent(tag, data))
+        def ret = true
+        try {
+
+            saltClient.sendEvent(tag, data) //we should switch this to sendEventAsync
+        } catch (e) {
+            ret = false
+            cb([status:ret, error:e.getMessage()])
+        }
+        if (ret)
+            cb([status:ret, error:null])
     }
 
     @Override
