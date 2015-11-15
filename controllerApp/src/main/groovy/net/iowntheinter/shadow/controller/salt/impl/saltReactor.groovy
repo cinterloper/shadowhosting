@@ -32,7 +32,7 @@ class saltReactor implements EventListener {
         config = c
         eb = v.eventBus()
         log = LoggerFactory.getLogger("saltReactor")
-        mgr = new TreeMapSubscriptionManager(sd, eb)
+        mgr = new SimplePipeSubscriptionManager(sd, eb)
     }
     CloseReason closeReason;
 
@@ -55,17 +55,6 @@ class saltReactor implements EventListener {
     }
 
 
-
-        boolean getSubscriptions() {
-
-
-        }
-
-        boolean notifySubscriber(event) {
-
-        }
-
-
-    }
+}
 
 
