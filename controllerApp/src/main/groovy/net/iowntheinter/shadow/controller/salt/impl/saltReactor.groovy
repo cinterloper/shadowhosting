@@ -39,9 +39,13 @@ class saltReactor implements EventListener {
 
     @Override
     void notify(Event event) {
-        def d = event.getData()
-        def t = event.getTag()
-        mgr.process(event)
+
+       try{
+           mgr.process(event)
+       } catch(e){
+           log.error("there was an error processing the salt event: " +
+                   "${event.getTag()} : err : ${e.getStackTrace()}")
+       }
     }
 
     /**

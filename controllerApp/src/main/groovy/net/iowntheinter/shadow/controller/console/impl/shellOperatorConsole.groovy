@@ -1,4 +1,4 @@
-package net.iowntheinter.shadow.controller.core.impl
+package net.iowntheinter.shadow.controller.console.impl
 
 import io.vertx.core.DeploymentOptions
 import io.vertx.core.json.JsonObject

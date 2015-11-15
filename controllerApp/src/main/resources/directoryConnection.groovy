@@ -25,8 +25,8 @@ try {
 
     adminlookup = ads.service.getAdminSession().lookup(new Dn("uid=admin,ou=system"))
     logger.info("" +
-            "admin lookup results: ${adminlookup.toString()} \n" +
-            "ldap lookup results:  ${entry.toString()}")
+            "java/admin direct lookup :\n ${adminlookup.toString()} \n" +
+            "remote/ldap api lookup :\n  ${entry.toString()}\n")
 } catch (final Exception e) {
     // Ok, we have something wrong going on ...
     e.printStackTrace();

@@ -10,7 +10,7 @@ var StaticHandler = require("vertx-web-js/static_handler");
 var FormLoginHandler = require("vertx-web-js/form_login_handler");
 var HandlebarsTemplateEngine = require("vertx-web-js/handlebars_template_engine");
 var engine = HandlebarsTemplateEngine.create();
-
+var wok = Java.type("net.iowntheinter.shadow.controller.console.impl.webOperatorConsole")
 var router = Router.router(vertx);
 
 // We need cookies, sessions and request bodies
