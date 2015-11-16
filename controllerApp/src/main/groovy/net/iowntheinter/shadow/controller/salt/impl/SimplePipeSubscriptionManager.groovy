@@ -68,7 +68,7 @@ class SimplePipeSubscriptionManager implements SVXSubscriptionManager {
     private boolean sendToVertxBus(channel, pkg, cb) {
         def ret = true
         try {
-            eb.send(channel, pkg)
+            eb.publish(channel, pkg)
         } catch (e) {
             ret = false
             cb([status:ret, error:e.getMessage()])

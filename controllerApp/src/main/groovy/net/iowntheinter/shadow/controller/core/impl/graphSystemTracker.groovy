@@ -3,7 +3,6 @@ package net.iowntheinter.shadow.controller.core.impl
 import net.iowntheinter.shadow.controller.core.serviceGroupSpec
 import net.iowntheinter.shadow.controller.core.systemTracker
 import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph
-
 /**
  * Created by grant on 10/27/15.
  * should keep track of
@@ -15,20 +14,26 @@ import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph
  */
 class graphSystemTracker implements systemTracker {
     TinkerGraph g
+
     graphSystemTracker() {
+        g= TinkerGraphFactory
         g = TinkerGraph.open()
     }
     @Override
-    boolean addServer(Object sid) {
+    boolean addServer(String sid) {
         g.addVertex(id)
         return true
     }
 
     @Override
-    boolean removeServer(Object sid) {
-        g.vertices(id).remove()
+    boolean removeServer(String sid) {
+        g.vertices(sid).remove()
         return true
     }
+    boolean setServerProperty(sid, String k, val){
+
+    }
+
 
     List getServersFromDeployment(UUID did){
 
