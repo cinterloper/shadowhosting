@@ -1,6 +1,6 @@
 package net.iowntheinter.shadow.controller.console.util
 
-import io.vertx.core.Vertx
+import io.vertx.groovy.core.Vertx
 import io.vertx.core.buffer.Buffer
 import io.vertx.core.logging.Logger
 import io.vertx.core.logging.LoggerFactory
@@ -32,7 +32,7 @@ class commandDialouge {
     //answer lamdas?
     //Final compleation lambda?
 
-
+    def vertx
     def qst
     Map qstReacions;
     def ansAr = [:];
@@ -40,8 +40,8 @@ class commandDialouge {
     Logger log
     Set qks
 
-    commandDialouge(vertx, String name, Map questions, respHdl = [], finishAction) {
-        def v = vertx as Vertx
+    commandDialouge(v, String name, Map questions, respHdl = [], finishAction) {
+        vertx = v as Vertx
         qst = questions
         finish = finishAction;
         qks = qst.keySet()
@@ -70,7 +70,7 @@ class commandDialouge {
                 Closure chk = qstReacions[qks[s.get('dctr') as int]]
                 s.put('resp', buff.toString())
                 buff = Buffer.buffer()
-                chk([process:process], { ctx ->
+                chk([process: process], { ctx ->
                     def ip = ctx.process as CommandProcess
                     def is = ip.session() as Session
                     def iar = is.get('ansAr') as Map
@@ -83,10 +83,10 @@ class commandDialouge {
                         log.info(ANSI_WHITE + "\nReceived ${iar[iqks[ictr]]}" + ANSI_RESET)
 
                         ictr++
-                        is.put('dctr',ictr)
+                        is.put('dctr', ictr)
                         if (ictr > iqst.size() - 1) {
                             ip.write('\n collected: ' + is.get('ansAr'))
-                            finish(is.get('ansAr'))
+                            finish([v: vertx, p: ip, d: is.get('ansAr')])
                             ctx.process.end()
                         } else {
                             ctx.process.write('\n' + ANSI_CYAN + iqst[iqks[ictr]] + ANSI_RESET)
