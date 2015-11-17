@@ -1,0 +1,17 @@
+{
+
+ "apps": {
+	"iotin-site": {
+		"hostname":"mig.iowntheinter.net",
+		"version":"latest",
+		"components":{
+			"back":{
+				"VXmugen": {  "http" : { "public":true, "subdomain":"api" }}
+			},
+			"front":{
+				"static": {  "http" : { "public":true }}
+			}
+		}
+	}
+   }
+}

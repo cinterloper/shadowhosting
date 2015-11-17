@@ -1,0 +1,5 @@
+#returns output on stderr
+RUN( )
+{
+ echo "this is a test of the error handleing system"
+}

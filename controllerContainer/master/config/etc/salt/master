@@ -1,0 +1,35 @@
+rest_cherrypy:
+  # can be any port
+  port: 8000
+  debug: True
+  disable_ssl: True
+  #ssl_crt: /etc/pki/tls/certs/localhost.crt
+  #ssl_key: /etc/pki/tls/certs/localhost.key
+  expire_responses: False
+  
+file_recv: True
+
+ext_pillar:
+  - file_tree:
+      root_dir: /srv/pillar/tree
+      follow_dir_links: False
+      raw_data: False
+
+file_roots:
+  base:
+    - /srv/salt
+client_acl:
+  user:
+    - test.ping
+external_auth:
+  pam:
+    user:
+      - .*
+      - '@runner'
+      - '@wheel'
+      - '@jobs'
+
+log_level: debug
+
+include: cloud.providers.d/*
+include: cloud.profiles.d/*

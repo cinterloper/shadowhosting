@@ -1,0 +1,61 @@
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+
+
+# Debian specific:  Specifying a file name will cause the first
+# line of that file to be used as the name.  The Debian default
+# is /etc/mailname.
+#myorigin = /etc/mailname
+
+smtpd_banner = $myhostname ESMTP $mail_name (Debian/GNU)
+biff = no
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+# Uncomment the next line to generate "delayed mail" warnings
+delay_warning_time = 40w
+     
+bounce_queue_lifetime = 60d
+readme_directory = /usr/share/doc/postfix/README_FILES
+
+# TLS parameters
+smtpd_tls_cert_file=/etc/ssl/keys/tex.pem
+smtpd_tls_key_file=$smtpd_tls_cert_file
+smtpd_tls_CApath=/etc/ssl/keys/
+smtpd_use_tls=yes
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+# See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
+# information on enabling SSL in the smtp client.
+
+myhostname = webhost.iowntheinter.net
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+myorigin = /etc/mailname
+mydestination = webhost.iowntheinter.net, localhost.iowntheinter.net, localhost, inev.us
+relayhost = 
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+mailbox_size_limit = 0
+message_size_limit = 102400000
+recipient_delimiter = +
+inet_interfaces = all
+home_mailbox = Maildir/
+relay_domains = {{ relay_domains }}
+transport_maps = hash:/etc/postfix/transport	
+#smtpd_recipient_restrictions =  check_recipient_access hash:/etc/postfix/hold
+
+sample_directory = /usr/share/doc/postfix/samples
+sendmail_path = /usr/sbin/sendmail
+html_directory = no
+setgid_group = postdrop
+command_directory = /usr/sbin
+manpage_directory = /usr/share/man
+daemon_directory = /usr/libexec/postfix
+newaliases_path = /usr/bin/newaliases
+mailq_path = /usr/bin/mailq
+queue_directory = /var/spool/postfix
+mail_owner = postfix
+data_directory = /var/lib/postfix
+inet_protocols = ipv4

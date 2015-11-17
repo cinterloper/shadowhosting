@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Created by Tobias Powalowski <tpowa@archlinux.org>
+
+build ()
+{
+    add_binary "openvpn"
+    for i in $(find /etc/openvpn -type d); do
+        add_dir "$i"
+    done
+    for i in $(find /etc/openvpn -type f); do
+        add_file "$i"
+    done
+    # add examples
+    for i in /usr/share/openvpn/examples/*; do
+        add_file "$i"
+    done
+    # add plugins
+    for i in /usr/lib/openvpn/plugins/*; do
+        add_file "$i"
+    done
+    # fix licenses
+    add_file "/usr/share/licenses/openvpn/COPYING"
+    add_symlink "/etc/systemd/system/multi-user.target.wants/openvpn@client.service" "/usr/lib/systemd/system/openvpn@.service"
+}
+
+help ()
+{
+cat<<HELPEOF
+  This hook includes openvpn on an arch boot image.
+HELPEOF
+} 

@@ -1,0 +1,6 @@
+May 27, 2015 3:16:14 PM org.vertx.java.platform.impl.resolver.HttpResolution
+INFO: Downloading io.vertx~lang-groovy~2.1.1-final. Please wait...
+May 27, 2015 3:16:18 PM org.vertx.java.platform.impl.DefaultPlatformManager
+INFO: Module io.vertx~lang-groovy~2.1.1-final successfully installed
+May 27, 2015 3:16:19 PM org.vertx.java.platform.impl.cli.Starter
+INFO: Succeeded in deploying module
