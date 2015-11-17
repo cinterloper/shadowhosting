@@ -125,6 +125,7 @@ public class EmbeddedADS {
         // And start the service
         this.service.startup();
 
+
         // We are all done !
     }
 
@@ -166,7 +167,6 @@ public class EmbeddedADS {
         final int serverPort = port;
         this.server.setTransports(new TcpTransport(serverPort));
         this.server.setDirectoryService(this.service);
-
         this.server.start();
 
         System.out.println("The LDAP server is running on port ${port}");
