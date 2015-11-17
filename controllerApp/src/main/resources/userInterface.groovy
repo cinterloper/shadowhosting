@@ -18,5 +18,4 @@ v = vertx as Vertx
 eb = v.eventBus();
 
 
-def sn = new commandDialouge(vertx, 'Shadow2',
-        TestCMD.QUESTIONS, TestCMD.REACTIONS, TestCMD.FINISH)
+def sn = new commandDialouge(vertx, 'Shadow2', TestCMD.INTRO, TestCMD.QUESTIONS, TestCMD.REACTIONS, TestCMD.FINISH)

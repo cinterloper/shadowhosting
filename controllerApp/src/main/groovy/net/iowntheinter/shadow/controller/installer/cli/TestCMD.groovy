@@ -8,12 +8,20 @@ import io.vertx.groovy.ext.shell.command.CommandProcess
  * Created by grant on 11/17/15.
  */
 class TestCMD {
-    def static QUESTIONS = [
-            "username" : "what is your username? ",
-            "pubkey"   : "what is your public key? ",
-            "sysdomain": "what is the system domain? "
-    ]
-    def static REACTIONS = [
+
+    static def INTRO = new String(" this is a sample command \n\n")
+    //you can actually rewrite the reactions through the process handle when questions is processed
+
+
+    public static Closure QUESTIONS = { process, cb ->
+        cb([process:process,  questions:
+
+                      [ "username" : "what is your username? ",
+                        "pubkey"   : "what is your public key? ",
+                        "sysdomain": "what is the system domain? "]
+        ])
+    }
+    public static Map REACTIONS = [
             "username" : { ctx, cb ->
                 ctx['valid'] = true
                 cb(ctx)
@@ -28,7 +36,7 @@ class TestCMD {
             }
     ]
 
-    static Closure FINISH = { ctx ->
+    public static Closure FINISH = { ctx ->
         def v = ctx.v as Vertx
         def p = ctx.p as CommandProcess
         def d = ctx.d as Map
