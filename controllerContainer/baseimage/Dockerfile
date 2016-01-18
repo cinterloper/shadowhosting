@@ -18,4 +18,4 @@ ADD id.rsa /root/.ssh/id_rsa
 RUN chmod 600 /root/.ssh/id_rsa
 RUN echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 ADD supervisord.conf /etc/supervisord.conf
-CMD supervisord -n
+CMD ["supervisord", "-n"]

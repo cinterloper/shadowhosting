@@ -1,5 +1,10 @@
 #!/bin/bash
-for line in $(cat $1 | grep : | cut -d ',' -f 1 ); 
+for mnt in $(cat $1 | jq -r 'keys[]' ); 
 do
-	eval "echo -n \ -v  $PWD/$line  "
+	if [[ $mnt =~ ^/ ]]
+	then
+	  eval 'echo -n \ -v  $mnt:$(cat $1 | jq -r .[\"$mnt\"])  '
+	else
+	  eval "echo -n \ -v  $PWD/$mnt:$(cat $1 | jq -r .[\"$mnt\"])  "
+	fi
 done

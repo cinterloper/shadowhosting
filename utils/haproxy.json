@@ -1,0 +1,106 @@
+{
+    "haproxy": {
+        "resolvers": {
+            "local_dns": {
+                "options": [
+                    "nameserver resolvconf 4.2.2.2:53", 
+                    "resolve_retries 3", 
+                    "timeout retry 1s", 
+                    "hold valid 10s"
+                ]
+            }
+        }, 
+        "global": {
+            "daemon": true, 
+            "chroot": {
+                "path": "/var/lib/haproxy", 
+                "enable": true
+            }, 
+            "group": "haproxy", 
+            "user": "haproxy"
+        }, 
+        "enabled": true, 
+        "userlists": {
+            "userlist1": {
+                "users": {
+                    "john": "insecure-password doe", 
+                    "sam": "insecure-password frodo"
+                }
+            }
+        }, 
+        "backends": {
+            "backend1": {
+                "balance": "roundrobin", 
+                "name": "4505-backend", 
+                "servers": {
+                    "server1": {
+                        "port": 4505, 
+                        "host": "10.17.1.10", 
+                        "check": "check", 
+                        "name": "net"
+                    }
+                }
+            }
+            "backend2": {
+                "balance": "roundrobin", 
+                "name": "4506-backend", 
+                "servers": {
+                    "server1": {
+                        "port": 4506, 
+                        "host": "10.17.1.10", 
+                        "check": "check", 
+                        "name": "net"
+                    }
+                }
+            }
+        }, 
+        "defaults": {
+            "retries": 3, 
+            "logformat": "%ci:%cp\\ [%t]\\ %ft\\ %b/%s\\ %Tq/%Tw/%Tc/%Tr/%Tt\\ %ST\\ %B\\ %CC\\ %CS\\ %tsc\\ %ac/%fc/%bc/%sc/%rc\\ %sq/%bq\\ %hr\\ %hs\\ %{+Q}r", 
+            "stats": [
+                "enable", 
+                {
+                    "uri": "/admin?stats"
+                }, 
+                {
+                    "realm": "Haproxy\\ Statistics"
+                }, 
+                {
+                    "auth": "admin1:AdMiN123"
+                }
+            ], 
+            "log": "global", 
+            "timeouts": [
+                "http-request    10s", 
+                "queue           10m", 
+                "connect         10s", 
+                "client          1m", 
+                "server          1m", 
+                "http-keep-alive 10s", 
+                "check           10s"
+            ], 
+            "options": [
+                "httplog", 
+                "dontlognull", 
+                "forwardfor", 
+                "http-server-close"
+            ], 
+            "mode": "http"
+        }, 
+        "frontends": {
+            "frontend1": {
+		"mode": "tcp",
+                "bind": "*:4505", 
+                "name": "4505tcp", 
+                "default_backend": "4505-backend"
+            }
+            "frontend2": {
+		"mode": "tcp",
+                "bind": "*:4506", 
+                "name": "4506tcp", 
+                "default_backend": "4506-backend"
+            }
+        }, 
+        "config_file_path": "/etc/haproxy/haproxy.cfg"
+    }
+}

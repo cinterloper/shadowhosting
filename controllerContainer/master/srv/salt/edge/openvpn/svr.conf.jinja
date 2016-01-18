@@ -14,10 +14,10 @@ dh dh.pem
 server 10.254.1.0 255.255.255.0
 	{% else %}
 server 10.{{salt['pillar.get']('files:conf:openvpn:subnet')}}.1.0 255.255.255.0
-	{% endif %}
-ifconfig-pool-persist ipp.txt
 client-config-dir /etc/openvpn/ccd
+	{% endif %}
 client-to-client
+ifconfig-pool-persist ipp.txt
 keepalive 10 120
 comp-lzo
 persist-key

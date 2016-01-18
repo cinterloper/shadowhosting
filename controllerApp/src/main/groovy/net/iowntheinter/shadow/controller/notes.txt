@@ -1,0 +1,4 @@
+catch the 'salt/key' event when a new server joins 
+ - match it to something we ran installer on
+ - trigger accepting it 
+ - run highstate 

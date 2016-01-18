@@ -8,6 +8,8 @@ haproxy:
 docker:
   pkg:
     - installed
+  service:
+    - running
 postfix:
   pkg:
     - installed
@@ -53,9 +55,6 @@ python-pip:
   pkg:
     - installed
 
-extra/jre8-openjdk-headless:
-  pkg:
-    - installed
 
 /etc/openvpn/install.conf:
   file.managed:
@@ -154,3 +153,13 @@ openvpn@udp:
     - reload: True
     - watch:
       - pkg: openvpn
+openvpn@install:
+  service.running:
+    - enable: True
+    - reload: True
+    - watch:
+      - pkg: openvpn
+salt:
+  host.present:
+    - ip:  10.{{salt['pillar.get']('files:conf:openvpn:subnet')}}.1.10
+
