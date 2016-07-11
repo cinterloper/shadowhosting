@@ -1,0 +1,20 @@
+{
+ "commandlist": {
+    "EB":  {
+             "CMD"   :"export OUTPUT=$(get_config | jq keys)",
+             "CType" :"application/json"
+            }
+  },
+  "init_vault" : {
+    "EB":  {
+      "CMD"   :"/opt/vault/vault init",
+      "CType" :"text/plain"
+    }
+  },
+  "insert_key" : {
+    "EB": {
+      "CMD":"/opt/vault/vault unseal $KEY_SHARD; ",
+      "CType":"text/plain"
+    }
+  }
+}

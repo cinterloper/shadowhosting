@@ -1,0 +1,12 @@
+[Unit]
+Description=vault server
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+EnvironmentFile=-/etc/sysconfig/vault
+Restart=on-failure
+ExecStart=/opt/vault/vault server $OPTIONS -config=/opt/vault/config.hcl
+
+[Install]
+WantedBy=multi-user.target

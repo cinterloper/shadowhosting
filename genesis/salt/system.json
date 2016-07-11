@@ -1,9 +1,0 @@
-{
- "primary_domain": "iowntheinter.net",
- "primary_contact": "grant@iowntheinter.net",
- "base_4_subnet": "10.X.Y.0/24",
- "base_6_subnet": "fdX:Y::/64",
- "shdw_access_methods": {
-  "udp":1,
-  }
-}

@@ -1,0 +1,129 @@
+{
+  "name": "shadowd",
+  "env_vars": ["KEYSTORE_PASS"],
+  "kvdn_port":6500,
+  "output_type":"json",
+  "reflectors":{
+    "_KVDN_+cornerstone:registration":"_cornerstone:registration"
+  },
+  "startup": {
+    "vx": {
+      "net.iowntheinter.util.ebReflector": {
+        "deps": [],
+        "enabled": true
+      },
+      "net.iowntheinter.shadow.system.io.server.shell": {
+        "deps": [],
+        "enabled": true
+      },
+      "net.iowntheinter.shadow.system.io.server.http": {
+        "deps": [],
+        "enabled": true
+      },
+      "net.iowntheinter.shadow.system.io.server.tcp": {
+        "deps": [],
+        "enabled": true
+      },
+      "net.iowntheinter.shadow.system.io.bridge.saltBridge": {
+        "deps": [],
+        "capabilities":["SALT_EVENT_BRIDGE"],
+        "enabled": true
+      },
+      "net.iowntheinter.shadow.system.workflow.engine": {
+        "deps": [],
+        "enabled": true
+      }
+    },
+    "ext": {
+      "docker": {
+        "directory": {
+          "ifExists": "recreate",
+          "dkrOptsRef": "directoryOpts",
+          "image": "shadowsystem/apacheds",
+          "tag": "latest",
+          "deps": [],
+          "enabled": true
+        },
+        "vault": {
+          "ifExists": "recreate",
+          "dkrOptsRef": "vaultOpts",
+          "image": "shadowsystem/vault",
+          "tag": "latest",
+          "deps": [],
+          "enabled": true
+        },
+        "salt": {
+          "ifExists": "recreate",
+          "dkrOptsRef": "saltOpts",
+          "image": "shadowsystem/saltmaster",
+          "tag": "latest",
+          "deps": [],
+          "enabled": true
+        },
+        "swarm": {
+          "ifExists": "recreate",
+          "dkrOptsRef": "vaultOpts",
+          "image": "shadowsystem/swarm",
+          "tag": "latest",
+          "deps": [],
+          "enabled": false
+        }
+      }
+    }
+  },
+  "optionBlocks": {
+    "swarmOpts": {
+      "Cmd": [
+        "manage","-H","tcp://0.0.0.0:4000"
+      ],
+      "ExposedPorts": {
+        "4000/tcp": {}
+      },
+      "HostConfig": {
+        "PortBindings": {
+          "4000/tcp": [{ "HostPort": "4000" }]
+        }
+      }
+    },
+    "saltOpts": {
+      "ExposedPorts": {
+        "8000/tcp": {},
+        "4505/tcp": {},
+        "4506/tcp": {}
+      },
+      "HostConfig": {
+        "Binds":["/srv/salt:/srv/salt"],
+        "PortBindings": {
+          "8000/tcp": [{ "HostPort": "8000" }],
+          "4505/tcp": [{ "HostPort": "4505" }],
+          "4506/tcp": [{ "HostPort": "4506" }]
+
+
+        }
+      }
+    },
+
+    "vaultOpts": {
+      "ExposedPorts": {
+        "8200/tcp": {}
+        },
+      "HostConfig": {
+        "CapAdd":"IPC_LOCK",
+        "PortBindings": {
+          "8200/tcp": [{ "HostPort": "8200" }]
+        }
+      }
+    },
+
+    "directoryOpts": {
+      "ExposedPorts": {
+        "10389/tcp": {}
+      },
+      "HostConfig": {
+        "PortBindings": {
+          "10389/tcp": [{ "HostPort": "10389" }]
+        }
+      }
+    }
+  }
+}
