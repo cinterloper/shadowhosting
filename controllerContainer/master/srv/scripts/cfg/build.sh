@@ -1,2 +1,0 @@
-archboot-allinone.sh -t
-

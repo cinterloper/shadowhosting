@@ -1,8 +1,0 @@
-HTTP/1.1 401 Unauthorized
-Date: Sun, 18 Oct 2015 08:40:06 GMT
-Content-Length: 57
-Content-Type: application/json
-Www-Authenticate: Session
-Server: TornadoServer/4.2.1
-
-{"status": "401 Unauthorized", "return": "Please log in"}

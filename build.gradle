@@ -1,0 +1,54 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '1.2.2'
+    id 'maven-publish'
+
+}
+
+
+def USER = System.getenv("USER")
+
+repositories {
+
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+version = '3.3.0'
+sourceCompatibility = '1.8'
+def lib_version = '3.3.0'
+
+dependencies {
+    compile "io.vertx:vertx-core:$lib_version"
+    compile "io.vertx:vertx-shell:$lib_version"
+    compile "io.vertx:vertx-lang-groovy:$lib_version"
+    compile "net.iowntheinter:cornerstone:$lib_version-27"
+    compile "net.iowntheinter:cintershell:$lib_version-15"
+    compile "net.iowntheinter:vertx-salt:$lib_version-6"
+    compile "net.iowntheinter:kvdn:$lib_version-16"
+    compile "net.iowntheinter:Xe:$lib_version-1"
+    compile "io.vertx:vertx-tcp-eventbus-bridge:$lib_version"
+
+    compile "io.vertx:vertx-hazelcast:$lib_version"
+    compile 'com.suse.salt:salt-netapi-client:0.7.0'
+    compile 'com.bettercloud:vault-java-driver:1.1.0'
+    compile 'org.apache.directory.api:api-all:1.0.0-RC1'
+
+}
+
+
+mainClassName = 'net.iowntheinter.coreLauncher.impl.coreStarter'
+
+shadowJar {
+    classifier = 'fat'
+    mergeServiceFiles {
+        include 'META-INF/services/io.vertx.core.spi.VerticleFactory'
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}

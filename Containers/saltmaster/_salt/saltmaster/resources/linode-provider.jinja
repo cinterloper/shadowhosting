@@ -1,0 +1,10 @@
+{% set cloud = salt['pillar.get']('salt:cloud', {}) -%}
+
+{% if 'linode_key' in cloud %}
+linode_public:
+    apikey: '{{ cloud.get('linode_key', 'DEFAULT') }}'
+    password: '{{ cloud.get('linode_password', 'DEFAULT') }}'
+    ssh_pubkey: '{{ cloud.get('linode_pubkey', 'DEFAULT') }}'
+    ssh_key_file: '{{ cloud.get('linode_privkey_file', 'DEFAULT') }}'
+    driver: linode
+{% endif %}
