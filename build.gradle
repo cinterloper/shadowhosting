@@ -17,19 +17,18 @@ repositories {
     jcenter()
 }
 
-version = '3.3.0'
+version = '3.3.2'
 sourceCompatibility = '1.8'
-def lib_version = '3.3.0'
+def lib_version = '3.3.2'
 
 dependencies {
     compile "io.vertx:vertx-core:$lib_version"
     compile "io.vertx:vertx-shell:$lib_version"
     compile "io.vertx:vertx-lang-groovy:$lib_version"
-    compile "net.iowntheinter:cornerstone:$lib_version-27"
+    compile "net.iowntheinter:cornerstone:$lib_version-35"
     compile "net.iowntheinter:cintershell:$lib_version-15"
     compile "net.iowntheinter:vertx-salt:$lib_version-6"
-    compile "net.iowntheinter:kvdn:$lib_version-16"
-    compile "net.iowntheinter:Xe:$lib_version-1"
+    compile "net.iowntheinter:kvdn:$lib_version-1.0.0"
     compile "io.vertx:vertx-tcp-eventbus-bridge:$lib_version"
 
     compile "io.vertx:vertx-hazelcast:$lib_version"

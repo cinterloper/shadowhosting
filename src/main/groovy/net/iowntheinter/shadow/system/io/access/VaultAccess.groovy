@@ -7,6 +7,8 @@ package net.iowntheinter.shadow.system.io.access
 import com.bettercloud.vault.Vault
 import com.bettercloud.vault.VaultConfig
 import com.bettercloud.vault.response.LogicalResponse
+import io.vertx.core.Vertx
+import io.vertx.core.eventbus.EventBus
 
 /**
  * Created by grant on 4/15/16.
@@ -16,8 +18,10 @@ class VaultAccess {
     private VAULT_ADDR = System.getenv("VAULT_ENDPOINT")
     private VAULT_TOKEN = System.getenv("VAULT_TOKEN")
     Vault vault
-
-    VaultAccess() {
+    Vertx vertx
+    EventBus eb = vertx.eventBus()
+    VaultAccess(Vertx v) {
+        vertx = v
         final VaultConfig vconfig =
                 new VaultConfig().
                         address(VAULT_ADDR)                             // Defaults to "VAULT_ADDR" environment variable
@@ -38,9 +42,29 @@ class VaultAccess {
     }
 
     void writeSecret(String path, Map data, Closure cb) {
-        final LogicalResponse writeResponse = vault.logical()
+        final LogicalResponse writeResponse
+        try{
+           writeResponse = vault.logical()
                 .write(path, data);
-        cb writeResponse.data
+
+            cb([result:writeResponse.data,error:null])
+            ArrayList components = path.tokenize('/')
+            eb.publish("_Vault_+${components[0]}/${components[1]}", path)
+        }catch(e){
+            cb([result:null,error:e])
+        }
+    }
+
+    void onWrite(String strAddr, Closure cb) {
+        eb.consumer("_Vault_+${strAddr}", { message -> //listen for updates
+            cb(message.body())
+        })
+    }
+
+    void onDelete(String strAddr, Closure cb) {
+        eb.consumer("_Vault_-${strAddr}", { message -> //listen for updates
+            cb(message.body())
+        })
     }
 
 

@@ -2,6 +2,9 @@
 startup_func() {
   $STARTUP_HOOK
 }
+
+#this attempts to get a salt auth token, then use that token to submit a message to the salt event system
+# it checks for the 'success' key in the returned json from salt
 healthcheck_func() {
     SALT_TOKEN=$(curl -s http://$HOSTNAME:8000/login \
     -H "Accept: application/json" \

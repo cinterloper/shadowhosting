@@ -17,6 +17,13 @@ salt:
 ws4py:
   pip.installed:
     - name: ws4py
+
+httplib2:
+  pip.installed
+
+/etc/salt/kvdn.yaml:
+  file.managed:
+    - source: salt://saltmaster/resources/kvdn.yml
 /etc/supervisord.conf:
   file.managed:
     - source: salt://saltmaster/resources/supervisord.conf
@@ -29,3 +36,6 @@ ws4py:
   file.directory
 /etc/salt/reactor.d/:
   file.directory
+/etc/salt/ext/pillar:
+  file.recurse:
+    - source: salt://saltmaster/pillar

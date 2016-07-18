@@ -7,6 +7,7 @@ import io.vertx.core.logging.LoggerFactory
 import io.vertx.ext.shell.command.CommandProcess
 import net.iowntheinter.kvdn.storage.kv.impl.KvTx
 import net.iowntheinter.kvdn.storage.kv.impl.kvdnSession
+import net.iowntheinter.shadow.system.io.access.VaultAccess
 
 /**
  * Created by grant on 4/30/16.
@@ -58,22 +59,20 @@ class credentials {
         def d = ctx.d as Map
         def eb = vertx.eventBus();
         KvTx tx = session.newTx("shadow:config")
-        VaultConfig vault_config = vertx.sharedData().getLocalMap("shadowd_config").get("VaultConfig")
-        Vault vault = new Vault(vault_config)
-        //walk all the validation handlers (defined below) and check their corespondant arguments
-        //this should probably be a helper utility
+        vlt = new VaultAccess(vertx)
+        vlt.writeSecret('secret/linode/creds',d,{ Map result ->
+           if(!result.error){
+             tx.set("linodeCreds",'vault:secret/linode/creds',{
+                 LoggerFactory.getLogger(this.class.getName()).info("sysdomain command recieved: " + d)
+                 p.end()
+             })
+           }else{
+               LoggerFactory.getLogger(this.class.getTypeName()).error(result.error)
+           }
+               p.end(-1)
+        })
 
-        vault.logical().write("secret/linode/creds",d)// really this should do it
 
-        d.each { k, v ->
-            tx.set(k, v, { resPut ->
-                if (resPut.error != null) {
-                    LoggerFactory.getLogger(this.class.getName()).error("error: " + resPut.error)
-                }
-            })
-        }
-        LoggerFactory.getLogger(this.class.getName()).info("sysdomain command recieved: " + d)
-        p.end()
     }
 
 }
