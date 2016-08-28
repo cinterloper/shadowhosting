@@ -4,6 +4,7 @@ import io.vertx.core.Vertx
 import io.vertx.core.cli.CLI
 import io.vertx.core.cli.CommandLine
 import io.vertx.core.cli.Option
+import io.vertx.core.json.JsonObject
 import io.vertx.core.shareddata.LocalMap
 import io.vertx.ext.shell.command.CommandProcess
 import io.vertx.ext.shell.session.Session
@@ -48,7 +49,7 @@ class testVault {
         StringBuilder builder = new StringBuilder();
         cli.usage(builder);
         CommandLine commandLine = cli.parse(args);
-
+        new JsonObject().put
         commandLine.allArguments().each { it ->
             pr.write("arg: " + it)
         }

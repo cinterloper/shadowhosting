@@ -8,19 +8,15 @@
   },
   "startup": {
     "vx": {
+      "net.iowntheinter.shadow.system.io.bridge.tcp": {
+        "deps": [],
+        "enabled": true
+      },
       "net.iowntheinter.util.ebReflector": {
         "deps": [],
         "enabled": true
       },
       "net.iowntheinter.shadow.system.io.server.shell": {
-        "deps": [],
-        "enabled": true
-      },
-      "net.iowntheinter.shadow.system.io.server.http": {
-        "deps": [],
-        "enabled": true
-      },
-      "net.iowntheinter.shadow.system.io.server.tcp": {
         "deps": [],
         "enabled": true
       },
