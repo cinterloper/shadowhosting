@@ -1,5 +1,5 @@
 FROM cinterloper/cornerstone-base
-RUN apt-get update; apt -y upgrade; apt-get -y install wget unzip python python-pip salt-master salt-minion
+RUN apt-get update; apt -y upgrade; apt-get -y install wget unzip python python-pip salt-master salt-minion salt-api
 RUN echo baseimage > /etc/salt/minion_id
 ADD Containers/_salt /srv/salt
 RUN salt-call --local state.highstate #pillar='{"sys_packages":'$(cat /srv/salt/pkgs.json)'}'
