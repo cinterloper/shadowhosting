@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.suse.salt:salt-netapi-client:0.8.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.suse.salt/salt-netapi-client/0.8.0/fb330423cfd7e2f7f46b426311d182b4b876e491/salt-netapi-client-0.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.suse.salt/salt-netapi-client/0.8.0/63be90b646446a453d87f82fe7bef1c856f89769/salt-netapi-client-0.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

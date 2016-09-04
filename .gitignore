@@ -29,3 +29,4 @@ id_rsa
 id_dsa
 id.rsa
 /resources
+.idea/*
