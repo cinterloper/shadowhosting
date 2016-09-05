@@ -25,14 +25,13 @@ dependencies {
     compile "io.vertx:vertx-core:$lib_version"
     compile "io.vertx:vertx-shell:$lib_version"
     compile "io.vertx:vertx-lang-groovy:$lib_version"
-    compile "net.iowntheinter:cornerstone:$lib_version-48"
+    compile "net.iowntheinter:cornerstone:$lib_version-49"
     compile "net.iowntheinter:cintershell:$lib_version-16"
     compile "net.iowntheinter:vertx-salt:$lib_version-10"
-    compile "net.iowntheinter:kvdn:$lib_version-1.0.7"
+    compile "net.iowntheinter:kvdn:$lib_version-1.0.9"
     compile "io.vertx:vertx-tcp-eventbus-bridge:$lib_version"
-
     compile "io.vertx:vertx-hazelcast:$lib_version"
-    compile 'com.suse.salt:salt-netapi-client:0.7.0'
+    compile 'com.suse.salt:salt-netapi-client:0.8.0'
     compile 'com.bettercloud:vault-java-driver:1.1.0'
     compile 'org.apache.directory.api:api-all:1.0.0-RC1'
 
