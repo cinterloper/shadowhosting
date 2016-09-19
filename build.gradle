@@ -17,23 +17,27 @@ repositories {
     jcenter()
 }
 
-version = '3.3.2'
+version = '3.3.3'
 sourceCompatibility = '1.8'
-def lib_version = '3.3.2'
+def lib_version = '3.3.3'
 
 dependencies {
     compile "io.vertx:vertx-core:$lib_version"
     compile "io.vertx:vertx-shell:$lib_version"
     compile "io.vertx:vertx-lang-groovy:$lib_version"
-    compile "net.iowntheinter:cornerstone:$lib_version-49"
-    compile "net.iowntheinter:cintershell:$lib_version-16"
-    compile "net.iowntheinter:vertx-salt:$lib_version-10"
-    compile "net.iowntheinter:kvdn:$lib_version-1.0.9"
+    compile "net.iowntheinter:cornerstone:$lib_version-50"
+    compile "net.iowntheinter:cintershell:$lib_version-17"
+    compile "net.iowntheinter:vertx-salt:$lib_version-12"
+    compile "net.iowntheinter:kvdn:$lib_version-1.1.0"
     compile "io.vertx:vertx-tcp-eventbus-bridge:$lib_version"
     compile "io.vertx:vertx-hazelcast:$lib_version"
     compile 'com.suse.salt:salt-netapi-client:0.8.0'
     compile 'com.bettercloud:vault-java-driver:1.1.0'
     compile 'org.apache.directory.api:api-all:1.0.0-RC1'
+    compile "nl.brightbits.hazelcast:hazelcast-json-jdbc-mapstore:1.0"
+    compile 'org.postgresql:postgresql:9.4.1209'
+    compile 'org.graylog2:gelfj:1.1.15'
+    compile "net.iowntheinter:kvdn-hazelcast-keys:$lib_version-1.1.0"
 
 }
 

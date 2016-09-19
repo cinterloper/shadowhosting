@@ -7,7 +7,7 @@ import net.iowntheinter.kvdn.storage.kv.impl.kvdnSession
 /**
  * Created by grant on 5/10/16.
  */
-class engine extends AbstractVerticle {
+class main extends AbstractVerticle {
     @Override
     public void start() throws Exception {
         initConfigurationWorkflow()

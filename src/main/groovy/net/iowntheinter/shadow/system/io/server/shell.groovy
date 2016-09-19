@@ -30,8 +30,8 @@ class shell extends AbstractVerticle {
         def logger = LoggerFactory.getLogger("userInterface")
         def eb = vertx.eventBus();
         def session = new kvdnSession(vertx)
-
-        startSetupInsecureHttpTerm()
+        startAdminSecureSSHTerm()
+        //startSetupInsecureHttpTerm()
 
         def setupCMD = new commandDialouge(vertx, 'setup', sysdomain.INTRO, sysdomain.QUESTIONS, sysdomain.REACTIONS, { ctx -> sysdomain.FINISH(session,ctx)})
         def componentCMD = new commandOneShot(vertx,'component', component.INTRO, component.COMMAND, component.FINISH )
@@ -49,7 +49,8 @@ class shell extends AbstractVerticle {
                 .setHttpOptions(new HttpTermOptions()
                 .setHost("localhost")
                 .setPort(2245).setAuthOptions(new ShiroAuthOptions().setConfig(new JsonObject().put("properties_path", "auth.properties"))));
-        hoc = new OperatorConsole(vertx,HTTPsso)
+
+       // hoc = new OperatorConsole(vertx,HTTPsso) dosent work anymore
 
     }
     void startAdminSecureSSHTerm(){
@@ -61,7 +62,7 @@ class shell extends AbstractVerticle {
             securityOpts.put("type", ShiroAuthRealmType.LDAP)
                     .put("provider", "shiro")
                     .put("config", new JsonObject()
-                    .put(LDAPProviderConstants.LDAP_URL, "ldap://127.0.0.1:10389")
+                    .put(LDAPProviderConstants.LDAP_URL, "ldap://172.17.0.1:10389")
                     .put(LDAPProviderConstants.LDAP_USER_DN_TEMPLATE_FIELD, "uid={0},ou=system")
                     .put(LDAPProviderConstants.LDAP_AUTHENTICATION_MECHANISM, "simple")
             )
@@ -86,10 +87,8 @@ class shell extends AbstractVerticle {
                                 .put("authOptions", securityOpts));
 
 
-        def ShellServiceOptions SSHsso = new ShellServiceOptions();
 
-        ShellServiceOptionsConverter.fromJson(SSHoptions, SSHsso)
-        soc = new OperatorConsole(vertx, SSHsso)
+        soc = new OperatorConsole(vertx, SSHoptions)
 
     }
 }
